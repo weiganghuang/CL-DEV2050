@@ -1,0 +1,28 @@
+---
+
+- name: jwt
+  import_tasks: jwt.yml
+- name: cat resync
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PUT
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/cat/nso-connector/v1/api/fullResync"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: ""
+  
+      
+      
+
+    # - debug:
+    #     msg: " "
+    #   with_items: "{{myOutput.results}}"
+    #   loop_control: 
+    #     label: "{{item.json.result.request_result}}" 
+
+

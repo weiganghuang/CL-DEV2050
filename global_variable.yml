@@ -1,0 +1,14 @@
+---
+
+# get_crosswork_authentication role variable
+cnc_ip: 198.18.134.219
+cnc_port: 30603
+cnc_user: admin
+cnc_pw: C!sco12345
+
+# cnc_ip: 10.140.131.55
+# cnc_port: 30603
+# cnc_user: admin
+# cnc_pw: cisco
+
+# device_onboarding role variable

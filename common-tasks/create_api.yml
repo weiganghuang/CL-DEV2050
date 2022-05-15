@@ -1,0 +1,29 @@
+---
+
+- name: jwt
+  import_tasks: jwt.yml
+- name: invoke collection api
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PUT
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/collection/v1/collectionjob"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{tmp_file_path}}/request-{{item.ip}}{{ext}}.json')}}"
+  register: myOutput
+  loop: "{{destination_uuids}}"
+      
+      
+
+    # - debug:
+    #     msg: " "
+    #   with_items: "{{myOutput.results}}"
+    #   loop_control: 
+    #     label: "{{item.json.result.request_result}}" 
+
+

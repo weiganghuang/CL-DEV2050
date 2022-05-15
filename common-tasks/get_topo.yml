@@ -1,0 +1,20 @@
+---
+
+- name: get_topo
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: GET
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/nbi/optima/v1/restconf/data/ietf-network-state:networks"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: ""
+  register: topo_output
+
+- debug:
+    msg: "{{topo_output}}" 
+    
