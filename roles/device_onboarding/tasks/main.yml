@@ -5,15 +5,12 @@
 - name: get into JWT
   import_tasks: ../../../common-tasks/jwt.yml
 
-
 - name: generate payload file
   template:
     src: "../templates/add-device.j2"
     dest: "/tmp/add-device.json"
   loop: "{{devices}}" 
   
-
-
 - name: invoke add nodes API using lookup template
   uri:
     validate_certs: no
@@ -31,4 +28,3 @@
   loop: "{{devices}}"
   loop_control:
     pause: 1
-
