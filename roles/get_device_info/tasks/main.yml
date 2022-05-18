@@ -1,57 +1,7 @@
 ---
 # tasks file for getting device infor
 
-#Collect a list of device hostname from nso
-
-- name: get device names
-  cisco.nso.nso_query:
-    url: "http{{tls}}://{{nso_ip}}:{{nso_port}}/jsonrpc"
-    username: "{{ nso_username }}"
-    password: "{{ nso_password }}"
-    xpath: /ncs:devices/device
-    fields:
-    - name    
-  register: devices
-  tags: query
-
-
-#The following will display the first item in each of the list since the var is a list of list
-- name: display devices variable
-  debug:
-    msg: " device {{item}}"
-  loop: "{{ devices.output | flatten(levels=1)}}"
-  tags: query
-  
-
-- name: collect_loopback_0
-  cisco.nso.nso_show:
-    url: "http{{tls}}://{{nso_ip}}:{{nso_port}}/jsonrpc"
-    username: "{{ nso_username }}"
-    password: "{{ nso_password }}"
-    path: "/devices/device{{left_bracket}}{{item}}{{right_bracket}}/config/interface/Loopback{0}/ipv4/address/ip"
-  register: result_loopback_0
-  loop: "{{ devices.output | flatten(levels=1) }}"
-  loop_control:
-    pause: "{{ pause_duration }}"
-    index_var: i
-  when: (i>=0) and (i< upper_limit )
-  tags: get_loopback
-  ignore_errors: True
-
-# - name: Display result_loopback_0 var type
-#   debug:
-#     msg: "{{ result_loopback_0.results | type_debug}}"
-#   tags: query
-
-- name: Display hostname and loopback 0 IP for result_loopback_0 var
-  debug:
-    # device[0] means first item in the list. It should always be 0 since there's only 1 item in the list
-    # Loopback[0] is the first item in the list. It's not loopback ID. It should be always be 0 since there's only 1 item in the list
-    msg: "{{item.output.data['tailf-ncs:devices'].device[0].name}}: {{item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip}}"
-  loop: "{{result_loopback_0.results}}"
-  when: item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined
-  tags: get_loopback
-
+#Collect a loopback2 nso
 
 - name: collect_loopback_2
   cisco.nso.nso_show:
@@ -59,71 +9,27 @@
     username: "{{ nso_username }}"
     password: "{{ nso_password }}"
     # item[0] is the hostname. The right and left backet and join is to format the hostname for the xpath
-    #Loopback{2} in the below line is loopback ID. "2" means loopback2
-    path: "/devices/device{{left_bracket}}{{item.output.data['tailf-ncs:devices'].device[0].name}}{{right_bracket}}/config/interface/Loopback{2}/ipv4/address/ip"
+    # Loopback{2} in the below line is loopback ID. "2" means loopback2
+    path: "/devices/device{{left_bracket}}{{item.host_name}}{{right_bracket}}/config/interface/Loopback{2}/ipv4/address/ip"
   register: result_loopback_2
-  loop: "{{result_loopback_0.results}}"
+  loop: "{{ devices }}"
   loop_control:
     pause: "{{ pause_duration }}"
     index_var: i
-  when: (i>=0) and (i< upper_limit ) and item.output is defined
+  when: (i>=0) and (i< upper_limit )
   tags: get_loopback2
   ignore_errors: True
-
-
-- name: Display the hostname and loopback2 from result_loopback_2 var
-  debug:
-    msg: "{{item.output.data['tailf-ncs:devices'].device[0].name}}: {{item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip}}"  
-  loop: "{{result_loopback_2.results}}"
-  when: item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined
-  ignore_errors: True
-  tags: get_loopback2
 
 
 - name: Create a new dictory with loopback2
   set_fact:
-    # loopback_dir: "{{ loopback_dir|default([]) + [ {'hostname': item.output.data['tailf-ncs:devices'].device[0].name, 'Loopback0': item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip} ] }}"
-    loopback2_dict: "{{ loopback2_dict | default([]) | combine ({ item.output.data['tailf-ncs:devices'].device[0].name : item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip }) }}"
+      loopback2_dict: "{{ loopback2_dict | default([]) | combine ({ item.output.data['tailf-ncs:devices'].device[0].name : item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip }) }}"
   loop: "{{result_loopback_2.results}}"
   when: item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined
   tags: new_dict
 
 
-# - name: display loopback0_dict dict type
-#   debug:
-#     msg: "{{ loopback0_dict | type_debug}}"
-#   tags: new_dict
-
-# - name: display loopback0_dict dict var
-#   debug:
-#     var: loopback0_dict
-#   tags: new_dict
-
-# - name: Display the dict var with specifc key
-#   debug:
-#     msg: "{{ loopback0_dict['Node-1'] }}"
-#   tags: new_dict
-
-- name: Display loopback0 value for devices with loopback10 value
+- name: display loopback2_dict dict var
   debug:
-    msg: "Loopback0: {{ loopback0_dict[item.output.data['tailf-ncs:devices'].device[0].name] }} "
-  with_items: "{{result_loopback_10.results}}"
-  when: (item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined) and (loopback0_dict[item.output.data['tailf-ncs:devices'].device[0].name] is defined)
+    var: loopback2_dict
   tags: new_dict
-
-
-- name: Display loop0 and loop10
-  debug:
-    # msg: "{{item.output.data['tailf-ncs:devices'].device[0].name}}: Loopback0: {{item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip}} Loopback2: {{ loopback0_dict['Node-1'] }} }} "
-    msg: "{{item.output.data['tailf-ncs:devices'].device[0].name}}: Loopback0: {{ loopback0_dict[item.output.data['tailf-ncs:devices'].device[0].name] }} Loopback10: {{item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip}}"
-  with_items: "{{result_loopback_10.results}}"
-  # when: item.output is defined 
-  # when: item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined
-  when: (item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined) and (loopback0_dict[item.output.data['tailf-ncs:devices'].device[0].name] is defined)
-  tags: new_dict
-
-
-- name: create cnc-devices.yml file
-  template:
-    src: "loopback_template.j2"    
-    dest: "{{playbook_dir}}/data/cnc-devices.yml"

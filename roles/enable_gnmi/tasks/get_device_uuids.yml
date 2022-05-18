@@ -1,0 +1,39 @@
+---
+
+# pre-requsite: jwt.yml task 
+
+- name: get device uuids
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        host_name: "{{item.host_name}}"
+  register: device_ids
+  loop: "{{devices}}"
+  when: (i>=0) and (i< upper_limit ) and loopback2_dict[item.host_name] is defined
+  loop_control:
+    index_var: i
+
+- name: save device output
+  set_fact:
+      device_uuids: "{{device_uuids | default({}) | combine({item.json.data[0].host_name: item.json.data[0].uuid} )}}"
+  when: (item.json.data[0] is defined)
+  loop: "{{ device_ids.results }}"
+
+
+- name: display device_uuids  var
+  debug:
+    var: device_uuids
+  tags: device_uuids
+
+  
+  

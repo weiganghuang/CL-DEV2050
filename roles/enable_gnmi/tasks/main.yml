@@ -1,2 +1,20 @@
 ---
 # tasks file for enable_gnmi
+
+# include role to gather device information
+
+- name: import role get device information role
+  import_role: 
+    role: get_device_info
+
+- name: pause
+  pause:
+    seconds: 3
+
+- name: import task to get device uuid
+  import_tasks: get_device_uuids.yml
+
+    
+- name: enable gnmi
+  include_tasks: enable_gnmi.yml
+  with_items: "{{devices}}"

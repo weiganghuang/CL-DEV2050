@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "uuid": "63ebce39-fae3-4427-a7c1-93281dbc5cfb",
+            "admin_state": "ROBOT_ADMIN_STATE_DOWN",
+            "connectivity_info": [
+                {
+                    "type": "ROBOT_MSVC_TRANS_GNMI",
+                    "ipaddrs": [
+                        {
+                            "inet_af": "ROBOT_INET_ADDR_TYPE_v4",
+                            "inet_addr": "198.19.1.101",
+                            "mask": "32"
+                        }
+                    ],
+                    "port": 57400,
+                    "timeout": "30",
+                    "reachability_state": "CONN_STATE_REACHABLE",
+                    "encoding_type": "JSON_IETF"
+                }
+            ],
+            "product_info": {
+                "capability": [
+                    "YANG_CLI",
+                    "GNMI",
+                    "SNMP",
+                    "YANG_MDT"
+                ]
+            }
+        }
+    ]
+}
