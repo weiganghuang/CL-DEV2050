@@ -1,0 +1,60 @@
+# provision.yml
+# https://muhannad0.github.io/post/cloudformation-and-ansible-provision-and-configure/
+---
+- name: Provision AWS
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  vars:
+    region: us-east-1
+    instance_type: t2.micro
+    keypair: my-key-pair
+    ssh_location: 0.0.0.0/0
+    stack_name: webapp
+
+  tasks:
+    - name: Create cfn stack
+      cloudformation:
+        stack_name: "{{ stack_name }}"
+        region: "{{ region }}"
+        disable_rollback: true
+        state: present
+        template: "cfn_template.yml"
+        template_parameters:
+          KeyName: "{{ keypair }}"
+          InstanceType: "{{ instance_type }}"
+          SSHLocation: "{{ ssh_location }}"
+        tags:
+          stack: "{{ stack_name }}"
+
+    - name: Get ec2 instances info
+      ec2_instance_info:
+        region: "{{ region }}"
+        filters:
+          "tag:stack": "{{ stack_name }}"
+          instance-state-name: [ "running" ]
+      register: ec2_list
+
+    - name: Add instances to inventory
+      add_host:
+        name: "{{ item.public_dns_name }}"
+        ansible_user: ec2-user
+        host_key_checking: false
+        groups: "aws,{{ item.tags.env }},{{ item.tags.app }}"
+      no_log: true
+      when: ec2_list.instances|length > 0
+      loop: "{{ ec2_list['instances'] | flatten(levels=1) }}"
+
+
+- hosts: aws
+
+  gather_facts: false
+  vars:
+    ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
+
+  tasks:
+    - name: wait for instances to become available
+      wait_for_connection:
+
+    - name: Gather facts for first time
+      setup:

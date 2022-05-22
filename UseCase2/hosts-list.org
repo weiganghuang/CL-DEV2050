@@ -1,0 +1,17 @@
+# hosts-list
+
+[routers]
+
+LASNV069BC-CS000-CSR001 ansible_host=10.152.72.120
+LASNV086BC-CS000-CSR001 ansible_host=10.152.72.133
+LASNV051AC-CS000-CSR001 ansible_host=10.152.72.103
+LASNV0001L-CS0200-PE001 ansible_host=10.152.72.11
+LASNV0001L-CS0200-PE002 ansible_host=10.152.72.12
+LASNV0001E-CS0201-PE001 ansible_host=10.152.72.7
+LASNV0001E-CS0202-PE002 ansible_host=10.152.72.8
+
+[routers:vars]
+ansible_network_os=iosxr
+ansible_port=22
+ansible_user="{{ansible_user_var}}"
+ansible_password="{{ansible_pass_var}}"

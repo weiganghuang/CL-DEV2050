@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+  gather_facts: true
+  connection: local
+  vars_files:
+    - "{{playbook_dir}}/global_variable.yml"
+
+  roles:
+    - device_onboarding
+    - enable_gnmi
+    # - attach_device_to_cdg
+    #- obtain_cdg_info
