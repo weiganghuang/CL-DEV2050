@@ -1,0 +1,124 @@
+# https://muhannad0.github.io/post/cloudformation-and-ansible-provision-and-configure/
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Setup test environment with EC2 instances
+Parameters:
+  KeyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access
+    Type: 'AWS::EC2::KeyPair::KeyName'
+  InstanceType:
+    Description: EC2 instance type
+    Type: String
+    Default: t2.micro
+    ConstraintDescription: must be a valid EC2 instance type.
+  SSHLocation:
+    Description: The IP address range that can be used to SSH to the EC2 instances
+    Type: String
+    MinLength: 9
+    MaxLength: 18
+    Default: 0.0.0.0/0
+    AllowedPattern: '(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})'
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+
+Mappings:
+  RegionMap:
+    us-east-1:
+      HVM64: ami-02354e95b39ca8dec # use Amazon Linux 2 (64-bit x86)
+      # HVM64: ami-0ac80df6eff0e70b5 # Ubuntu Server 18.04 LTS (64-bit x86)
+
+Resources:
+  WebInstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable Web/SSH Access
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref SSHLocation
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+  
+  DbInstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable DB/SSH Access
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref SSHLocation
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          SourceSecurityGroupId: !GetAtt WebInstanceSecurityGroup.GroupId
+
+  WebInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      SecurityGroups:
+        - !Ref WebInstanceSecurityGroup
+      KeyName: !Ref KeyName
+      ImageId: !FindInMap [ RegionMap, !Ref "AWS::Region", HVM64 ]
+      Tags:
+        - Key: "os"
+          Value: "linux"
+        - Key: "env"
+          Value: "dev"
+        - Key: "app"
+          Value: "web"
+        - Key: "deploy"
+          Value: "ansible"
+        - Key: "Name"
+          Value: "Web Instance"
+  
+      UserData:
+        Fn::Base64:
+          Fn::Sub: |
+            #!/bin/bash -xe
+            sudo yum update -y
+            sudo yum install python-pip -y
+            sudo pip install --upgrade pip
+            sudo pip install --upgrade setuptools
+  
+  DbInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      SecurityGroups:
+        - !Ref DbInstanceSecurityGroup
+      KeyName: !Ref KeyName
+      ImageId: !FindInMap [ RegionMap, !Ref "AWS::Region", HVM64 ]
+      Tags:
+        - Key: "os"
+          Value: "linux"
+        - Key: "env"
+          Value: "dev"
+        - Key: "app"
+          Value: "db"
+        - Key: "deploy"
+          Value: "ansible"
+        - Key: "Name"
+          Value: "Db Instance"
+      UserData:
+        Fn::Base64:
+          Fn::Sub: |
+            #!/bin/bash -xe
+            sudo yum update -y
+            sudo yum install python-pip -y
+            sudo pip install --upgrade pip
+            sudo pip install --upgrade setuptools
+
+Outputs:
+    StackName:
+      Value: !Ref "AWS::StackName"
+    WebInstanceDNS:
+      Value: !GetAtt [WebInstance, PublicDnsName]
+    DbInstanceDNS:
+      Value: !GetAtt DbInstance.PublicDnsName
+    WebSecurityGroupID:
+      Value: !GetAtt WebInstanceSecurityGroup.GroupId
+    DBSecurityGroupID:
+      Value: !GetAtt DbInstanceSecurityGroup.GroupId

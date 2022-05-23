@@ -1,0 +1,57 @@
+---
+# tasks file for gather-xr-show-cmd
+
+- name: Gather XR command list
+  cisco.iosxr.iosxr_command:
+    commands:
+      - show clock
+      - show install active summary
+      - show telemetry model-driven subscription GNMI* | inc Last Sent time
+      - show telemetry model-driven destination  | inc "Token processed at"
+      - show telemetry model-driven subscription GNMI* 
+      - show telemetry model-driven destination
+      - show telemetry model-driven destination internal
+  register: cmd_output
+
+# - name: save output to local directory
+#   copy:
+#     content: "{{ cmd_output.stdout | replace('\\n', '\n') }}"
+#     dest: "show-output/{{ inventory_hostname }}.xr"
+
+# - name: Debug
+#   debug:
+#     var: cmd_output
+#   tags: debuging
+
+- name: save output to local directory
+  copy:
+    content: | 
+      show clock
+      -----
+      {{ cmd_output.stdout[0] | replace('\\n', '\n') }}
+
+      show install active summary
+      -----
+      {{ cmd_output.stdout[1] | replace('\\n', '\n') }}
+
+      show telemetry model-driven subscription GNMI* | inc Last Sent time
+      -----
+      {{ cmd_output.stdout[2] | replace('\\n', '\n') }}
+
+      show telemetry model-driven destination  | inc "Token processed at"
+      -----
+      {{ cmd_output.stdout[3] | replace('\\n', '\n') }}
+
+      show telemetry model-driven subscription GNMI* 
+      -----
+      {{ cmd_output.stdout[4] | replace('\\n', '\n') }}
+
+      show telemetry model-driven destination
+      -----
+      {{ cmd_output.stdout[5] | replace('\\n', '\n') }}
+
+      show telemetry model-driven destination internal
+      -----
+      {{ cmd_output.stdout[6] | replace('\\n', '\n') }}
+
+    dest: "show-output/{{ inventory_hostname }}_{{ lookup('pipe', 'date +%Y%m%d-%H%M') }}.xr"
