@@ -17,4 +17,4 @@
     
 - name: enable gnmi
   include_tasks: enable_gnmi.yml
-  with_items: "{{devices}}"
+  loop: "{{devices}}"
