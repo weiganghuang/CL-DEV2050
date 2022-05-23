@@ -13,13 +13,9 @@
       Accept: application/json
       Authorization: "Bearer {{ myJWT.content }}"
     body_format: json
-    body: 
-      filter:
-        
-        operational_state: "ROBOT_OPER_STATE_OK"
 
   register: device_info
 
-- debug:
-    msg: "device info {{device_info.content | from_json}}"
-
+# - debug:
+#     msg: "device info {{item.node_ip.inet_addr}}: {{item.host_name}}"
+#   loop: "{{(device_info.content | from_json).data}}"
