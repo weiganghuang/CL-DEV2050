@@ -1,13 +1,13 @@
 ---
 
-
-- hosts: routers
-  vars_files: 
-    - vault-var.yml
+- hosts: localhost
+  gather_facts: true
+  connection: local
+  vars_files:
     - "{{playbook_dir}}/global_variable.yml"
 
-  gather_facts: no
-  connection: network_cli
   roles:
-    - gather_show_cmd_output
-
+    - device_onboarding
+    - enable_gnmi
+    # - attach_device_to_cdg
+    #- obtain_cdg_info

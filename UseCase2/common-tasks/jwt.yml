@@ -12,8 +12,8 @@
       Content-Type: application/x-www-form-urlencoded
   register: ApiTicket
 
-# - debug:
-#     msg: "{{ ApiTicket.content }}"
+- debug:
+    msg: "{{ ApiTicket.content }}"
 
 - name: get.jwt.step2
   uri:
@@ -29,8 +29,8 @@
       Content-Type: application/x-www-form-urlencoded
   register: myJWT
 
-# - debug:
-#     msg: "{{myJWT.content}}"
+- debug:
+    msg: "{{myJWT.content}}"
 
 
    

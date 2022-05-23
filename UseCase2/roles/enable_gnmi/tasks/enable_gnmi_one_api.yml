@@ -1,0 +1,68 @@
+---
+
+# - debug:
+#     msg: "{{device_uuids[item.day1_params.external_params.loopback10_ipv4]}}"
+#   when: device_uuids[item.day1_params.external_params.loopback10_ipv4] is defined
+
+- name: prepare gnmi enabling payload files
+  template:
+    src: "enable_gnmi_one_api.j2"    
+    dest: "{{payload_path}}/enable_gnmi.json"
+
+- name: prepare admin up payload file
+  template:
+    src: "admin_up_one_api.j2"    
+    dest: "{{payload_path}}/admin_up.json"
+
+- name: pause
+  pause:
+    seconds: 5
+
+- name: apply enabling gnmi
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PATCH
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{payload_path}}/enable_gnmi.json')}}"
+  register: myOutput
+  
+
+- name: pause
+  pause:
+    seconds: 2
+
+- name: set admin up for the device
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PATCH
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{payload_path}}/admin_up.json')}}"
+  register: myOutput
+  
+
+- name: pause
+  pause:
+    seconds: 2
+
+
+# - debug:
+#     msg: 
+#       - "{{ item.hostname }}"
+#       - "{{item.day1_params.external_params.loopback0_ipv4}}"
+#   with_items: "{{ dhcp }}"
+
+
