@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "inv_key_type": "NODE_IP",
+            "node_ip": {
+                "inet_af": "ROBOT_INET_ADDR_TYPE_v4",
+                "inet_addr": "{{item.connectivity_ip}}",
+                "mask": "32"
+            },
+            "host_name": "{{item.host_name}}",
+            "profile": "{{item.credential_profile}}",
+            "admin_state": "ROBOT_ADMIN_STATE_UP",
+            "connectivity_info": [
+                {
+                    "type": "ROBOT_MSVC_TRANS_SSH",
+                    "ipaddrs": [
+                        {
+                            "inet_af": "ROBOT_INET_ADDR_TYPE_v4",
+                            "inet_addr": "{{item.connectivity_ip}}",
+                            "mask": "32"
+                        }
+                    ],
+                    "port": 22,
+                    "timeout": "30"
+                },
+                {
+                    "type": "ROBOT_MSVC_TRANS_SNMP",
+                    "ipaddrs": [
+                        {
+                            "inet_af": "ROBOT_INET_ADDR_TYPE_v4",
+                            "inet_addr": "{{item.connectivity_ip}}",
+                            "mask": "32"
+                        }
+                    ],
+                    "port": 161,
+                    "timeout": "30"
+                },
+                {
+                    "type": "ROBOT_MSVC_TRANS_NETCONF",
+                    "ipaddrs": [
+                        {
+                            "inet_af": "ROBOT_INET_ADDR_TYPE_v4",
+                            "inet_addr": "{{item.connectivity_ip}}",
+                            "mask": "32"
+                        }
+                    ],
+                    "port": 830,
+                    "timeout": "120"
+                }
+                
+            ],
+            "product_info": {
+                "capability": [
+                    "YANG_CLI",
+                    "SNMP"
+                    
+                ],
+                "syslog_format": "RFC_5424"
+            },
+            "geo_info": {
+                "coordinates": {
+                    "longitude": {
+                        "value": {{item.longitude}}
+                    },
+                    "latitude": {
+                        "value": {{item.latitude}}
+                    }
+                }
+            },
+            "reachability_check": "REACH_CHECK_ENABLE",
+            "providers_family": {
+                "ROBOT_PROVIDER_NSO": {
+                    "providers": {
+                        "{{item.nso_provider_name}}": {
+                            "provider_name": "{{item.nso_provider_name}}"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+---
+# tasks file for device_onboarding
+
+# import a common task to do jwt
+- name: get into JWT
+  import_tasks: ../../../common-tasks/jwt.yml
+ 
+- name:  payload file
+  template:
+    src: "add-device-oneapi.j2"    
+    dest: "{{playbook_dir}}/tmp/add-device-oneapi.json"
+
+- name: invoke add nodes API using the template file
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{playbook_dir}}/tmp/add-device-oneapi.json')}}"
+  register: myOutput
+  register: addNodeAPIOoutput
+  
