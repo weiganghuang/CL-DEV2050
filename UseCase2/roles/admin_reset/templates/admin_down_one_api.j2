@@ -1,10 +1,9 @@
 {
     "data": [
-{%- for one_device in dhcp -%}
-
-{% if one_device.day1_params is defined  and device_uuids[one_device.day1_params.external_params.loopback10_ipv4] is defined %}
+{% for item in devices %}
+{% if device_uuids[item.host_name] is defined %}
         {
-            "uuid": "{{device_uuids[one_device.day1_params.external_params.loopback10_ipv4]}}",
+            "uuid": "{{device_uuids[item.host_name]}}",
             "admin_state": "ROBOT_ADMIN_STATE_DOWN"
 {% if loop.index == loop.length %}
         }
