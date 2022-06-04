@@ -3,7 +3,7 @@
 
 # import a common task to do jwt
 - name: get into JWT
-  import_tasks: ../../../common-tasks/jwt.yml
+  import_tasks: "{{playbook_dir}}/common-tasks/jwt.yml"
   
 - name: invoke add nodes API using lookup template
   uri:
