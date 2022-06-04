@@ -7,7 +7,7 @@
     - "{{playbook_dir}}/global_variable.yml"
 
   roles:
-    - device_onboarding
+    # - device_onboarding
     - admin_reset
     # - attach_device_to_cdg
     #- obtain_cdg_info
