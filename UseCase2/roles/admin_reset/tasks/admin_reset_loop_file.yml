@@ -1,5 +1,17 @@
 ---
 
+- name: prepare admin down payload file
+  template:
+    src: "admin_down.j2"    
+    dest: "{{playbook_dir}}/tmp/admin_down_{{item.host_name}}.json"
+  when: device_uuids[item.host_name] is defined
+  
+- name: prepare admin up payload file
+  template:
+    src: "admin_up.j2"    
+    dest: "{{playbook_dir}}/tmp/admin_up_{{item.host_name}}.json"
+  when: device_uuids[item.host_name] is defined
+
 - name: apply admin down
   uri:
     validate_certs: no
@@ -12,7 +24,7 @@
       Accept: application/yang-data+json
       Authorization: "Bearer {{ myJWT.content }}"
     body_format: json
-    body: "{{ lookup('template', 'admin_down.j2')}}"
+    body: "{{ lookup('file', '{{playbook_dir}}/tmp/admin_down_{{item.host_name}}.json')}}"
   register: myOutput
   when: device_uuids[item.host_name] is defined
 
@@ -32,7 +44,7 @@
       Accept: application/yang-data+json
       Authorization: "Bearer {{ myJWT.content }}"
     body_format: json
-    body: "{{ lookup('template', 'admin_up.j2')}}"
+    body: "{{ lookup('file', '{{playbook_dir}}/tmp/admin_up_{{item.host_name}}.json')}}"
   register: myOutput
   when: device_uuids[item.host_name] is defined
   

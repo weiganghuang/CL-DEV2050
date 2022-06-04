@@ -17,7 +17,7 @@
       Accept: application/yang-data+json
       Authorization: "Bearer {{ myJWT.content }}"
     body_format: json
-    body: "{{ lookup('template', '../templates/add-device.j2') }}"
+    body: "{{ lookup('template', 'add-device.j2') }}"
   register: addNodeAPIOoutput
   loop: "{{devices}}"
   loop_control:
