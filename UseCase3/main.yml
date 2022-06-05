@@ -3,8 +3,8 @@
 
 - hosts: routers
   vars_files: 
-    - vault-var.yml
-    - "{{playbook_dir}}/global_variable.yml"
+    - "{{playbook_dir}}/global_variables.yml"
+    - "{{playbook_dir}}/vault_variables.yml"
 
   gather_facts: no
   connection: network_cli

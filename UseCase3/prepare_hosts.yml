@@ -1,8 +1,8 @@
 
 - hosts: localhost
   vars_files: 
-    - "{{playbook_dir}}/global_variable.yml"
-    - vault-var.yml
+    - "{{playbook_dir}}/global_variables.yml"
+    - "{{playbook_dir}}/vault_variables.yml"
 
   roles:
     - generate-hosts-list

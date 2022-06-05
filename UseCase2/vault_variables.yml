@@ -1,0 +1,5 @@
+ansible_user_var: "cisco"
+ansible_pass_var: "cisco"
+
+cnc_user: admin
+cnc_pw: C!sco12345
