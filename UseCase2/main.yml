@@ -9,6 +9,6 @@
 
   roles:
     # - device_onboarding
+    # - enable_gnmi
     - admin_reset
-    # - attach_device_to_cdg
-    #- obtain_cdg_info
+    

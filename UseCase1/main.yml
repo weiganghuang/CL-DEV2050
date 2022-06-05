@@ -9,5 +9,4 @@
 
   roles:
     - device_onboarding
-    # - attach_device_to_cdg
-    #- obtain_cdg_info
+  
