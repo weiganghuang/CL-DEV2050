@@ -1,0 +1,82 @@
+---
+
+- name: query.all.dg
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: https://{{cnc_ip}}:{{cnc_port}}/crosswork/dg-manager/v1/dg/query
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter: 
+        configData:
+          role: "UNASSIGNED"
+  register: cwDG
+
+- debug:
+    msg: 
+      - "{{ cwDG.json.data[3].duuid }}"
+      - "{{ cwDG.json.data[2].duuid }}"
+      - "{{ cwDG.json.data[1].duuid }}"
+      - "{{ cwDG.json.data[0].duuid }}"
+
+- name: create pool1
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: https://{{cnc_ip}}:{{cnc_port}}/crosswork/dg-manager/v1/hapool
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+     pools:
+     - name: "{{ pool1.name }}"
+       description: "{{ pool1.description }}"
+       ipaddrs:
+       - ipaddr:
+           inet_af: ROBOT_INET_ADDR_TYPE_v4
+           inet_addr: "{{ pool1.vdg_ip }}"
+       pdg_uuids:
+       - "{{ cwDG.json.data[0].duuid }}"
+       - "{{ cwDG.json.data[1].duuid }}"
+       subnetMask: "{{ pool1.vdg_mask }}"
+       spares: "{{ pool1.spares }}"
+       gateway: "{{ pool1.gw }}"
+
+  
+- name: create pool2
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: https://{{cnc_ip}}:{{cnc_port}}/crosswork/dg-manager/v1/hapool
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+     pools:
+     - name: "{{ pool2.name }}"
+       description: "{{ pool2.description }}"
+       ipaddrs:
+       - ipaddr:
+           inet_af: ROBOT_INET_ADDR_TYPE_v4
+           inet_addr: "{{ pool2.vdg_ip }}"
+       pdg_uuids:
+       - "{{ cwDG.json.data[2].duuid }}"
+       - "{{ cwDG.json.data[3].duuid }}"
+       subnetMask: "{{ pool2.vdg_mask }}"
+       spares: "{{ pool2.spares }}"
+       gateway: "{{ pool2.gw }}"  
+  

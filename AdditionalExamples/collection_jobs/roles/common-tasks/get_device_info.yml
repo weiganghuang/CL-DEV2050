@@ -1,0 +1,25 @@
+---
+
+# pre-requsite:   jwt.yml task 
+- name: get all device information
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        
+        operational_state: "ROBOT_OPER_STATE_OK"
+
+  register: device_info
+
+#- debug:
+#    msg: "device info {{device_info.content | from_json}}"
+

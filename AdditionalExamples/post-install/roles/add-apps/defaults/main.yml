@@ -1,0 +1,4 @@
+---
+# defaults file for add-apps
+
+remote_host_dir: "{{ansible_env.HOME}}/CNC-3.0-CCO"

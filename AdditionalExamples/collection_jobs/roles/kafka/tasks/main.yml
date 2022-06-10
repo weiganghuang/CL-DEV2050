@@ -1,0 +1,32 @@
+- name: get into JWT
+  import_tasks: ../../common-tasks/jwt.yml
+
+
+- name: Create  job payloads
+    
+  template:
+    src: "../templates/kafka-cluster.j2"
+    dest: "{{tmp_file_path}}/request-{{item.server}}.json"
+  loop: "{{servers}}"
+
+- name: invoke apis
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/collection/v1/destinations"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{tmp_file_path}}/request-{{item.server}}.json')}}"
+  register: myOutput
+  loop: "{{servers}}"
+
+- debug:
+    msg: "{{item}}"
+  with_items: "{{myOutput.results}}"
+  loop_control: 
+    label: "{{item.json}}" 

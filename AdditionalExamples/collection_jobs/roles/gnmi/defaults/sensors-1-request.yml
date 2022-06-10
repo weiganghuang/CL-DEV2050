@@ -1,0 +1,13 @@
+sensors: 'Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization
+Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary/
+Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/
+Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/
+Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistics/
+Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/
+Cisco-IOS-XR-ifmgr-oper:interface-properties/data-nodes/data-node/system-view/interfaces/interface/
+Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target/common-stats/'
+
+# Cisco-IOS-XR-controller-cpri-oper:cpri/controllers/controller/detail/info/derived-admin-state/
+# Cisco-IOS-XR-ifmgr-oper:interface-properties/data-nodes/data-node/system-view/interfaces/interface/state/
+# Cisco-IOS-XR-ifmgr-oper:interface-properties/data-nodes/data-node/system-view/interfaces/interface/line-state/
+# Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target/common-stats/response-time/'

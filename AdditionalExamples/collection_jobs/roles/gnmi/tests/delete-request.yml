@@ -1,0 +1,39 @@
+---
+- hosts: localhost
+  vars_files: 
+    - '../defaults/main.yml'
+    - '../defaults/sensors-1-request.yml'
+   
+  tasks:
+    # - debug:
+    #     msg: "{{sensors}}"
+      
+    - name: Create collection job json
+      
+      template:
+        src: "../templates/kpi-one-request-del.j2"
+        dest: "{{tmp_file_path}}/delete-request.json"
+
+    - name: JWT
+      import_tasks: jwt.yml
+
+    - name: delete collection jobs
+      uri:
+        validate_certs: no
+        status_code: [200, 201, 202]
+        method: DELETE
+        url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/collection/v1/collectionjob"
+        return_content: yes
+        headers:
+          Content-Type: application/yang-data+json
+          Accept: application/yang-data+json
+          Authorization: "Bearer {{ myJWT.content }}"
+        body_format: json
+        body: "{{ lookup('file', '{{tmp_file_path}}/delete-request.json')}}"
+      register: myOutput
+      
+
+    - debug:
+        msg: "{{myOutput}}"
+      
+

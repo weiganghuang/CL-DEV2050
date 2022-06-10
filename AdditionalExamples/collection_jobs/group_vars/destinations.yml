@@ -1,0 +1,52 @@
+---
+# destinations for collection distribution
+
+tmp_file_path: /tmp/
+j2_create_payload_file_name: "request-mdt-create-body"
+j2_delete_payload_file_name: "request-mdt-delete-body"
+extra_tag: "CNC3.0-TESTING-"
+# cnc 3.0 url
+# kafka_query_api: "crosswork/dg-manager/v1/destinations/query"
+# kafka_api: "crosswork/dg-manager/v1/destinations/"
+
+# cnc 2.0 url
+kafka_query_api: "crosswork/collection/v1/destinations/query"
+kafka_api: "crosswork/collection/v1/destinations/"
+# kafka servers
+
+servers:
+  - server: "external-kafka-cluster"
+    ips:
+      - ip: 10.140.131.190
+        port: 9090
+      - ip: 10.140.131.192
+        port: 9090
+      - ip: 10.140.131.193
+        port: 9090
+
+  - server: "external-kafka-single"
+    ips:
+      - ip: 10.140.131.95
+        port: 9092
+
+# topics and other parameters
+
+snmp: 
+  topic: dish-cisco.transport.controller-cnc.assurance.faults.traps.routers.raw
+  device_tag_name: "snmp"
+  cadence_in_millisec: 60000
+  
+gnmi:
+  topic: "{{extra_tag}}dish-cisco.transport.controller-cnc.assurance.performance.telemetry-gnmi.routers.raw"
+  device_tag_name: "gnmi"
+  cadence_in_millisec: 300000
+
+syslog: 
+  topic: dish-cisco.transport.controller-cnc.assurance.faults.syslogs.routers.raw
+  device_tag_name: "snmp"
+
+# MDT variables only used by role MDT-4.1.2 - jayu2
+mdt:
+  topic: "{{extra_tag}}LAB001TRTCNCMTXTMT"
+  device_tag_name: "mdt"
+  cadence_in_millisec: 300000

@@ -1,0 +1,28 @@
+---
+
+# pre-requsite:   jwt.yml task 
+- name: get vdg uuid
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/dg-manager/v1/dg/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        configData: 
+          role: "ASSIGNED"
+    
+              
+  register: vdg_ids
+
+- debug:
+    msg: "vdg uuid {{vdg_ids.json.data[0].configData.vdgUuid}}"
+  
+
+  

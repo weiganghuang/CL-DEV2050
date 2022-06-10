@@ -1,0 +1,60 @@
+{%- set name = item.json.data[0].name.split('-') | last %}
+{
+    "collection_job": {
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{snmp.device_tag_name}}"
+            }
+        },
+        "sensor_input_configs": [
+            {
+                "sensor_data": {
+                    "snmp_yang_sensor": {
+                        "path": "IP-MIB:IP-MIB/ipAddressTable/ipAddressEntry"
+                    }
+                },
+                "cadence_in_millisec": "{{snmp.cadence_in_millisec}}"
+            },
+            {
+                "sensor_data": {
+                    "snmp_yang_sensor": {
+                        "path": "IF-MIB:IF-MIB/ifTable/ifEntry"
+                    }
+                },
+                "cadence_in_millisec": "{{snmp.cadence_in_millisec}}"
+            }
+        ],
+        "sensor_output_configs": [
+            {
+                "sensor_data": {
+                    "snmp_yang_sensor": {
+                        "path": "IP-MIB:IP-MIB/ipAddressTable/ipAddressEntry"
+                    }
+                },
+                "destination": {
+                    "context_id": "{{snmp.topic}}",
+                    "destination_id": "{{item.json.data[0].uuid}}"
+                }
+            },
+            {
+                "sensor_data": {
+                    "snmp_yang_sensor": {
+                        "path": "IF-MIB:IF-MIB/ifTable/ifEntry"
+                    }
+                },
+                "destination": {
+                    "context_id": "{{snmp.topic}}",
+                    "destination_id": "{{item.json.data[0].uuid}}"
+                }
+            }
+        ],
+        "application_context": {
+            "application_id": "{{extra_tag}}ex_snmp_collection_{{name}}",
+            "context_id": "snmp_collection"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "SNMP_COLLECTOR"
+        }
+    }
+}

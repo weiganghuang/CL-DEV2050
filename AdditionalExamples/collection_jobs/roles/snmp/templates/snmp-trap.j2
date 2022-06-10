@@ -1,0 +1,59 @@
+{
+    "collection_job": {
+        "application_context": {
+            "application_id": "{{ extra_tag}}trap_{{item.ip}}",
+            "context_id": "snmp_trap_sensors"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "TRAP_COLLECTOR"
+        },
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{device_tag_name}}"
+            }
+        },
+        "sensor_input_configs": [
+            {
+                "sensor_data": {
+                    "trap_sensor": {
+                        "path": "snmp-trap-raw-oper:traps/data"
+                    }
+                },
+                "cadence_in_millisec": "60000"
+            },
+            {
+                "sensor_data": {
+                    "trap_yang_sensor": {
+                        "path": "IF-MIB:notifications"
+                    }
+                },
+                "cadence_in_millisec": "0"
+            }
+        ],
+        "sensor_output_configs": [
+            {
+                "sensor_data": {
+                    "trap_sensor": {
+                        "path": "snmp-trap-raw-oper:traps/data"
+                    }
+                },
+                "destination": {
+                    "context_id": "{{destination_context_id}}",
+                    "destination_id": "{{item.id}}"
+                }
+            },
+            {
+                "sensor_data": {
+                    "trap_yang_sensor": {
+                        "path": "IF-MIB:notifications"
+                    }
+                },
+                "destination": {
+                    "context_id": "{{destination_context_id}}",
+                    "destination_id": "{{item.id}}"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+---
+# pre-requsite:   jwt.yml task 
+- name: get uuid from CNC
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/{{kafka_query_api}}"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        name: "{{item.server}}"
+  register: kafkas
+  loop: "{{servers}}"
+
+#- debug: 
+#     msg: "{{item}}"
+#  loop: "{{kafkas.results}}"
+    

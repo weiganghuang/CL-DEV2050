@@ -1,0 +1,23 @@
+- name: get into JWT
+  import_tasks: ../../../common-tasks/jwt.yml
+
+- name: pause
+  pause:
+    seconds: 10
+- name: get device uuid
+  import_tasks: get_device_uuids.yml
+
+- name: clean payload dir
+  file:
+    path: "{{payload_path}}"
+    state: "{{ item }}"
+  with_items:
+    - absent
+    - directory
+  ignore_errors: yes
+
+
+- name: enable gnmi
+  include_tasks: enable_gnmi.yml
+  with_items: "{{dhcp}}"
+

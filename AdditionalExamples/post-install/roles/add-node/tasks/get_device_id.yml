@@ -1,0 +1,25 @@
+---
+
+# pre-requsite:   jwt.yml task 
+- name: get uuid
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        node_ip:
+          inet_addr: "{{item.ip}}"
+  register: device_ids
+  loop: "{{nodes}}"
+
+- debug:
+    msg: "device uuid {{item.json.data[0].uuid}}"
+  loop: "{{device_ids.results}}"

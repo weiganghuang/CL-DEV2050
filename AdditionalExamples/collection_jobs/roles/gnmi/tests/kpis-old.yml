@@ -1,0 +1,514 @@
+﻿kpis:
+
+  - name: CPU_Utilization
+    default: 60
+    paths:
+      - Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization/total-cpu-one-minute
+      - Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization/total-cpu-five-minute
+      - Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization/total-cpu-fifteen-minute
+
+  - name: Memory_utilization
+    default: 120
+    paths:
+      - Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary/ram-memory
+      - Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary/free-physical-memory
+      - Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary/system-ram-memory
+      - Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary/free-application-memory
+
+  # - name: Memory_utilization_(cXR)
+  #  default: 120
+  #     - Cisco-IOS-XR-nto-misc-shmem-oper:memory-summary/nodes/node/summary/ram-memory
+  #     - Cisco-IOS-XR-nto-misc-shmem-oper:memory-summary/nodes/node/summary/free-physical-memory
+  #     - Cisco-IOS-XR-nto-misc-shmem-oper:memory-summary/nodes/node/summary/system-ram-memory
+  #     - Cisco-IOS-XR-nto-misc-shmem-oper:memory-summary/nodes/node/summary/free-application-memory
+  - name: Device_Uptime
+    default: 1000
+    paths:
+      - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/details/detail/interface-name
+
+  - name: Controller-cpri
+    default: 300
+    paths:
+      - Cisco-IOS-XR-controller-cpri-oper:cpri/controllers/controller/detail/info/derived-admin-state
+
+# CEF_drops
+#     default: 60
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/no-route-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/punt-unreachable-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/df-unreachable-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/encapsulation-failure-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/incomplete-adjacency-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/unresolved-prefix-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/unsupported-feature-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/discard-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/checksum-error-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/fragmenation-consumed-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/fragmenation-failure-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/null-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/rpf-check-failure-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/acl-in-rpf-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/rp-destination-drop-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/total-number-of-drop-packets
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/mpls-disabled-interface
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/gre-lookup-failed-drop
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/gre-error-drop
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/lisp-punt-drops
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/lisp-encap-error-drops
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/lisp-decap-error-drops
+# - Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops/multi-label-drops
+# Ethernet_port_error_counters
+#     default: 300
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-bytes
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-good-bytes
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-good-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/number-of-buffer-overrun-packets-dropped
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/number-of-aborted-packets-dropped
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/numberof-invalid-vlan-id-packets-dropped
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/invalid-dest-mac-drop-packets
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/invalid-encap-drop-packets
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/number-of-miscellaneous-packets-dropped
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/dropped-giant-packets-greaterthan-mru
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/dropped-ether-stats-undersize-pkts
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/dropped-jabbers-packets-greaterthan-mru
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/dropped-ether-stats-fragments
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/dropped-packets-with-crc-align-errors
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/ether-stats-collisions
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/symbol-errors
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/dropped-miscellaneous-error-packets
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/rfc2819-ether-stats-oversized-pkts
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/rfc2819-ether-stats-jabbers
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/rfc2819-ether-stats-crc-align-errors
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/rfc3635dot3-stats-alignment-errors
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/total-bytes-transmitted
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/total-good-bytes-transmitted
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/total-frames-transmitted
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-good-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/buffer-underrun-packet-drops
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/aborted-packet-drops
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/uncounted-dropped-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/miscellaneous-output-errors
+# Ethernet_port_packet_size_distribution
+#     default: 300
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total64-octet-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-octet-frames-from65-to127
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-octet-frames-from128-to255
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-octet-frames-from256-to511
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-octet-frames-from512-to1023
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-octet-frames-from1024-to1518
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-octet-frames-from1519-to-max
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total64-octet-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-octet-frames-from65-to127
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-octet-frames-from128-to255
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-octet-frames-from256-to511
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-octet-frames-from512-to1023
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-octet-frames-from1024-to1518
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-octet-frames-from1518-to-max
+# Ethernet_port_packet_statistics
+#     default: 300
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-bytes
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-good-bytes
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-total-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received8021q-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-pause-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-unknown-opcodes
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-good-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-unicast-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-multicast-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/received-broadcast-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/total-bytes-transmitted
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/total-good-bytes-transmitted
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/total-frames-transmitted
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted8021q-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-total-pause-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-good-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-unicast-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-multicast-frames
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/statistics/statistic/transmitted-broadcast-frames
+# Interface_bandwidth_monitor
+#     default: 300
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-load
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-load
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/bandwidth
+# Interface_packet_error_counters
+#     default: 300
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/output-drops
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/output-queue-drops
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/input-drops
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/input-queue-drops
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/runt-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/giant-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/throttled-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/parity-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/unknown-protocol-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/input-errors
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/crc-errors
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/input-overruns
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/framing-errors-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/input-ignored-packets
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/input-aborts
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/output-errors
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/output-underruns
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/output-buffer-failures
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/output-buffers-swapped-out
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/carrier-transitions
+# Interface_flap_detection
+#     default: 300
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/interface-type
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/state
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/line-state
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/encapsulation
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/encapsulation-type-string
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/mtu
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/is-l2-transport-enabled
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/state-transition-count
+# Interface_packet_counters
+#     default: 300
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/bytes-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/multicast-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/broadcast-packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/packets-sent
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/bytes-sent
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/multicast-packets-sent
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters/broadcast-packets-sent
+# Interface_QoS_(egress)
+#     default: 300
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/transmit-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/transmit-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-drop-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/match-data-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-transmit-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/pre-policy-matched-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/pre-policy-matched-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/conform-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/conform-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/exceed-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/exceed-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/violate-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/violate-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/parent-drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/parent-drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/conform-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/exceed-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/violate-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/profile-title
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-transmit-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-transmit-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/random-drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/random-drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/max-threshold-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/max-threshold-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-ecn-marked-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-ecn-marked-bytes
+# Interface_QoS_(ingress)
+#     default: 300
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/transmit-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/transmit-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-drop-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/match-data-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/total-transmit-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/pre-policy-matched-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/general-stats/pre-policy-matched-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/conform-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/conform-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/exceed-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/exceed-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/violate-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/violate-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/parent-drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/parent-drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/conform-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/exceed-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/police-stats-array/violate-rate
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/profile-title
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-transmit-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-transmit-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/random-drop-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/random-drop-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/max-threshold-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/max-threshold-bytes
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-ecn-marked-packets
+# - Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/input/service-policy-names/service-policy-instance/statistics/class-stats/wred-stats-array/red-ecn-marked-bytes
+# Interface_rate_counters
+#     default: 300
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-load
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-load
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/bandwidth
+# Line_state
+#     default: 300
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/type
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/state
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/actual-state
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/line-state
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/actual-line-state
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/encapsulation
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/encapsulation-type-string
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/mtu
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/l2-transport
+# - Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-briefs/interface-brief/bandwidth
+# Interface_counters_by_protocol
+#     default: 300
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/bytes-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/bytes-sent
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/packets-received
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/packets-sent
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/protocol
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/input-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/input-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/output-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/protocols/protocol/output-packet-rate
+# IP_SLA_UDP_Echo_RTT
+#     default: 60
+# - Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target/common-stats/response-time
+# IP_SLA_UDP_jitter_monitoring
+#     default: 60
+# - Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target/specific-stats/udp-jitter-stats/jitter-in
+# - Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target/specific-stats/udp-jitter-stats/jitter-out
+# Traffic_blackhole
+#     default: 300
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-data-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-packet-rate
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/output-load
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/input-load
+# - Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate/bandwidth
+# LLDP_neighbors
+#     default: 120
+# - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary/lldp-neighbor/device-id
+# - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary/lldp-neighbor/chassis-id
+# - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary/lldp-neighbor/port-id-detail
+# - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary/lldp-neighbor/header-version
+# - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary/lldp-neighbor/hold-time
+# - Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary/lldp-neighbor/enabled-capabilities
+# IPv6_RIB_BGP_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/paths-count
+# IPv6_RIB_IS-IS_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/paths-count
+# IPv6_RIB_OSPF_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/paths-count
+# ISIS_neighbor_summary
+#     default: 60
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level12-neigbors/neighbor-up-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level12-neigbors/neighbor-init-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level12-neigbors/neighbor-down-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level1-neighbors/neighbor-up-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level1-neighbors/neighbor-init-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level1-neighbors/neighbor-down-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level2-neighbors/neighbor-init-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level2-neighbors/neighbor-down-count
+# - Cisco-IOS-XR-clns-isis-oper:isis/instances/instance/neighbor-summaries/neighbor-summary/level2-neighbors/neighbor-up-count
+# RIB_BGP_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information/paths-count
+# RIB_CONNECTED_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/paths-count
+# RIB_IS-IS_route_count
+#     default: 60
+#      - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/isis/as/information/paths-count
+# RIB_local_route_count
+#     default: 60
+#      - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/paths-count
+# RIB_OSPF_route_count
+#     default: 60
+#      - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/ospf/as/information/paths-count
+# RIB_static_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/paths-count
+# RIBv6_connected_route_count
+#     default: 60
+#      - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/connected/non-as/information/paths-count
+# RIBv6_local_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/local/non-as/information/paths-count
+# RIBv6_static_route_count
+#     default: 60
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/routes-counts
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/active-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/deleted-routes-count
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/protocol-route-memory
+# - Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/static/non-as/information/paths-count
+# Layer_1_optical_alarms
+#     default: 300
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/amp-gain-deg-high/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/amp-gain-deg-high/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/amp-gain-deg-low/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/amp-gain-deg-low/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/hidgd/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/hidgd/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-lbc/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-lbc/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-rx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-rx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-temperature/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-temperature/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-tx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-tx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-voltage/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-voltage/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/low-rx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/low-rx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/mea/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/mea/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/oorcd/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/oorcd/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/osnr/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/osnr/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/rx-loc/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/rx-loc/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/rx-lol/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/rx-lol/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/rx-los/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/rx-los/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/tx-fault/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/tx-fault/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/tx-lol/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/tx-lol/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/tx-los/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/tx-los/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/txpwr-mismatch/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/txpwr-mismatch/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/wvlool/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/wvlool/is-detected
+# Layer_1_optical_errors
+#     default: 300
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/admin-state
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/oper-state-up
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/link-state
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/error-counts/sync-header-errors
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/error-counts/pcsbip-errors
+# Layer_1_optical_FEC_errors
+#     default: 300
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/admin-state
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/oper-state-up
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/phy-present
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/loopback
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/phy-details/vendor-serial-number
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/phy-details/optics-wavelength
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/phy-details/vendor
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/fec-details/fec
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/fec-details/corrected-codeword-count
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/fec-details/uncorrected-codeword-count
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/phy-info/media-type
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/link-state
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/speed
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/duplex
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/flowcontrol
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/ipg
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/laser-squelch-enabled
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/bandwidth-utilization
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/bandwidth
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/duplex
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/flowcontrol
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/config-override
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/fec
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/autoneg-enabled
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/mask
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/autoneg/speed
+# - Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface/interfaces/interface/layer1-info/led-state
+# Layer_1_optical_power
+#     default: 300
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/high-rx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/high-rx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/high-tx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/high-tx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/low-rx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/low-rx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/low-tx-power/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-alarm-info/low-tx-power/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/lane-index
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/receive-power
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-lanes/optics-lane/transmit-power
+# Layer_1_optical_temperature
+#     default: 300
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-temperature/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-temperature/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/low-temperature/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/low-temperature/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/transceiver-info/optics-pid
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/transceiver-info/optics-serial-no
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/transceiver-info/vendor-name
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/temp-high-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/temp-high-warning-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/temp-low-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/temp-low-warning-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/temperature
+# Layer_1_optical_voltage
+#     default: 300
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-voltage/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/high-voltage/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/low-voltage/counter
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/optics-alarm-info/low-voltage/is-detected
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/transceiver-info/optics-pid
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/transceiver-info/optics-serial-no
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/transceiver-info/vendor-name
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/volt-high-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/volt-high-warning-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/volt-low-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/volt-low-warning-threshold
+# - Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info/voltage

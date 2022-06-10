@@ -1,0 +1,291 @@
+{
+  "application_context": {
+    "application_id": "ex_gnmi_ALL_GNMI_cluster",
+    "context_id": "ALL_GNMI"
+  },
+  "collection_mode": {
+    "lifetime_type": "APPLICATION_MANAGED",
+    "collector_type": "GNMI_COLLECTOR",
+    "schedule_id": "",
+    "n_collections": 0
+  },
+  "job_device_set": {
+    "device_set": {
+      "device_group": "gnmi"
+    }
+  },
+  "sensor_input_configs": [
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-wdsysmon-fd-oper",
+            "elem": [
+              {
+                "name": "system-monitoring/cpu-utilization",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "cadence_in_millisec": "300000"
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-nto-misc-oper",
+            "elem": [
+              {
+                "name": "memory-summary/nodes/node",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "cadence_in_millisec": "300000"
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-infra-statsd-oper",
+            "elem": [
+              {
+                "name": "infra-statistics/interfaces/interface/latest",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "cadence_in_millisec": "300000"
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-drivers-media-eth-oper",
+            "elem": [
+              {
+                "name": "ethernet-interface/statistics",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "cadence_in_millisec": "300000"
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-pfi-im-cmd-oper",
+            "elem": [
+              {
+                "name": "interfaces/interface-xr",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "cadence_in_millisec": "300000"
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-fib-common-oper",
+            "elem": [
+              {
+                "name": "fib-statistics/nodes/node",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "cadence_in_millisec": "300000"
+    }
+  ],
+  "sensor_output_configs": [
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-wdsysmon-fd-oper",
+            "elem": [
+              {
+                "name": "system-monitoring/cpu-utilization",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "filter_profile_id": "",
+      "destination": {
+        "destination_id": "6fcb3f89-2338-4803-a92d-45cd89ec3a41",
+        "context_id": "CYS002TRTCNCMTXTMT",
+        "destination_name": ""
+      }
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-nto-misc-oper",
+            "elem": [
+              {
+                "name": "memory-summary/nodes/node",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "filter_profile_id": "",
+      "destination": {
+        "destination_id": "6fcb3f89-2338-4803-a92d-45cd89ec3a41",
+        "context_id": "CYS002TRTCNCMTXTMT",
+        "destination_name": ""
+      }
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-infra-statsd-oper",
+            "elem": [
+              {
+                "name": "infra-statistics/interfaces/interface/latest",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "filter_profile_id": "",
+      "destination": {
+        "destination_id": "6fcb3f89-2338-4803-a92d-45cd89ec3a41",
+        "context_id": "CYS002TRTCNCMTXTMT",
+        "destination_name": ""
+      }
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-drivers-media-eth-oper",
+            "elem": [
+              {
+                "name": "ethernet-interface/statistics",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "filter_profile_id": "",
+      "destination": {
+        "destination_id": "6fcb3f89-2338-4803-a92d-45cd89ec3a41",
+        "context_id": "CYS002TRTCNCMTXTMT",
+        "destination_name": ""
+      }
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-pfi-im-cmd-oper",
+            "elem": [
+              {
+                "name": "interfaces/interface-xr",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "filter_profile_id": "",
+      "destination": {
+        "destination_id": "6fcb3f89-2338-4803-a92d-45cd89ec3a41",
+        "context_id": "CYS002TRTCNCMTXTMT",
+        "destination_name": ""
+      }
+    },
+    {
+      "sensor_data": {
+        "gnmi_sensor": {
+          "path": {
+            "element": [],
+            "origin": "Cisco-IOS-XR-fib-common-oper",
+            "elem": [
+              {
+                "name": "fib-statistics/nodes/node",
+                "key": {}
+              }
+            ],
+            "target": ""
+          },
+          "mode": "SAMPLE",
+          "device_setting": null
+        }
+      },
+      "filter_profile_id": "",
+      "destination": {
+        "destination_id": "6fcb3f89-2338-4803-a92d-45cd89ec3a41",
+        "context_id": "CYS002TRTCNCMTXTMT",
+        "destination_name": ""
+      }
+    }
+  ]
+}

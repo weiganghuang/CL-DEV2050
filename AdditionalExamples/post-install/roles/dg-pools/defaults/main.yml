@@ -1,0 +1,23 @@
+---
+# post-install/roles/add-nodes/defaults/main.yml
+pool1: 
+    name: CDG-pool1
+    description: pool1
+    vdg_ip: 172.26.240.60
+    vdg_mask: 24
+    spares: 1
+    dg0: 0
+    dg1: 1
+    gw: ""
+
+pool2:
+    name: CDG-pool2
+    description: pool2 for testing
+    vdg_ip: 172.26.240.70
+    vdg_mask: 24
+    spares: 1
+    dg0: 2
+    dg1: 3
+    gw: ""
+
+    

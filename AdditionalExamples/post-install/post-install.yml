@@ -1,0 +1,34 @@
+---
+# Create customized collection jobs using rest API
+# 
+
+
+
+# task play is defined each role tasks/main.yml, template jinjia2 file is at roles/<role>/templates
+# role varialbes defined at roles/<role>/default/main.yml
+- hosts: localhost
+  vars:
+    payload_path: /tmp/post_install_payloads
+    batch_num: 0
+    batch_size: 3
+  vars_files: 
+    - '../vault_vars/local.yml'
+    - 'vars/common-vars.yml'
+    - 'roles/add-node/defaults/main.yml'
+    - 'roles/dg-pools/defaults/main.yml'
+    - 'roles/add-apps/defaults/main.yml'
+    # - 'roles/enable-gnmi/defaults/cnc-devices.yml'
+
+  roles:
+    # - role: credentials
+    #   var_files:
+    #     - 'vars/common-vars.yml'
+    # - providers
+    # - dg-pools
+    # - add-node
+    # - get-topo
+    - role: enable-gnmi
+      vars:
+        - xyz: "xyz"
+
+

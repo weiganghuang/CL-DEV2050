@@ -1,0 +1,44 @@
+---
+
+- name: get into JWT
+  import_tasks: ../../common-tasks/jwt.yml
+
+- name: get kafka uuid
+  import_tasks: ../../common-tasks/get_kafka_id.yml
+
+
+
+- name: Create collection job payloads
+    
+  template:
+    src: "../templates/syslog-payload.j2"
+    dest: "{{tmp_file_path}}/request-syslog-{{item.json.data[0].name}}.json"
+  loop: "{{kafkas.results}}" 
+  loop_control:
+    label: "{{item.json.data[0].name}}"
+
+- name: invoke collection api
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PUT
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/collection/v1/collectionjob"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{tmp_file_path}}/request-syslog-{{item.json.data[0].name}}.json')}}"
+  register: myOutput
+  loop: "{{kafkas.results}}"
+  loop_control:
+    label: "{{item.json.data[0].name}}"
+
+- debug:
+    msg: " "
+  with_items: "{{myOutput.results}}"
+  loop_control: 
+    label: "{{item.json}}"  
+
+

@@ -1,0 +1,26 @@
+---
+# Create customized collection jobs using rest API
+# 
+
+
+
+#task play is defined each role tasks/main.yml, template jinjia2 file is at roles/<role>/templates
+#role varialbes defined at roles/<role>/default/main.yml
+- hosts: localhost
+  vars_files: 
+    - '../vault_vars/local.yml'
+    - 'group_vars/destinations.yml'
+    - 'roles/gnmi/defaults/sensors-1-request.yml'
+    - 'roles/interface-gnmi/defaults/sensors-1-request.yml'
+    - 'roles/interface-snmp/defaults/oids.yml'
+    
+
+  roles: 
+    - kafka
+    #- syslog
+    #- snmp
+    - gnmi
+    #- mdt
+    # - interface-gnmi
+    # - interface-snmp
+

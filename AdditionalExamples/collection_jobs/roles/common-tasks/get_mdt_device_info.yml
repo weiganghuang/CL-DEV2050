@@ -1,0 +1,21 @@
+---
+# pre-requsite:   jwt.yml task 
+# Modified from get_device_info.yml common - Jayu2
+- name: Get Device Info - Whose OperState=OK and is Tagged MDT
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        operational_state: "ROBOT_OPER_STATE_OK"
+        tags:
+           - name: "mdt"
+  register: device_info

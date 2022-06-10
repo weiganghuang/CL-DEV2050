@@ -1,0 +1,38 @@
+---
+- hosts: localhost
+  vars_files: 
+    - '../defaults/main.yml'
+  
+   
+  tasks:
+    
+      
+    - name: get into JWT
+      import_tasks: jwt.yml
+
+    - name: Create  job payloads
+        
+      template:
+        src: "../templates/kafka.j2"
+        dest: "{{tmp_file_path}}/request-{{item}}.json"
+      loop: "{{destinations}}"
+
+    - name: invoke apis
+      uri:
+        validate_certs: no
+        status_code: [200, 201, 202]
+        method: POST
+        url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/collection/v1/destinations"
+        return_content: yes
+        headers:
+          Content-Type: application/yang-data+json
+          Accept: application/yang-data+json
+          Authorization: "Bearer {{ myJWT.content }}"
+        body_format: json
+        body: "{{ lookup('file', '{{tmp_file_path}}/request-{{item}}.json')}}"
+      register: myOutput
+      loop: "{{destinations}}"
+      
+      
+
+

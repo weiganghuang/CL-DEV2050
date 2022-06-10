@@ -1,0 +1,19 @@
+---
+# Create customized collection jobs using rest API
+# 
+
+
+
+# task play is defined each role tasks/main.yml, template jinjia2 file is at roles/<role>/templates
+# role varialbes defined at roles/<role>/default/main.yml
+    
+- hosts: installer
+  vars_files: 
+    - '../vault_vars/local.yml'
+    - 'vars/common-vars.yml'
+    - 'roles/add-node/defaults/main.yml'
+    - 'roles/dg-pools/defaults/main.yml'
+    - 'roles/add-apps/defaults/main.yml'
+  roles: 
+    - add-apps
+

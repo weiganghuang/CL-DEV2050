@@ -1,0 +1,49 @@
+
+
+
+# Load all cApps
+
+
+- name: get app files
+  
+  shell: "ls {{remote_host_dir}}/cw-na-*.tar.gz | grep -v fp"
+  register: app_files
+
+- debug: "{{item}}"
+  with_items: "{{ app_files.stdout_lines}}"
+
+
+- name: get into JWT
+  import_tasks: ../../../common-tasks/jwt.yml
+
+
+- name: load.applications.repo
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: https://{{cnc_ip}}:{{cnc_port}}/crosswork/platform/v2/capp/repository/packagedata
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      ssh_config: 
+         remote_host: "{{ remote_host_ip }}"
+         username: "{{ remote_host_user }}"
+         password: "{{ remote_host_pass }}"
+         port: "{{ remote_host_port }}"
+      remote_file: "{{ item }}"
+      
+  loop: "{{app_files.stdout_lines}}"
+  register: cwAPPS
+
+
+- debug: app_ids "{{item}}"
+  with_items: "{{cwAPPS}}"
+
+
+
+

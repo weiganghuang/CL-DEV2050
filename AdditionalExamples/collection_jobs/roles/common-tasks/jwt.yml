@@ -1,0 +1,37 @@
+
+      
+- name: get.ticket.step1
+  uri:
+    validate_certs: no
+    status_code: [201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/sso/v1/tickets"
+    return_content: yes
+    body: "username={{cnc_user}}&password={{cnc_pw}}"
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  register: ApiTicket
+
+- debug:
+    msg: "{{ ApiTicket.content }}"
+
+- name: get.jwt.step2
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/sso/v1/tickets/{{ApiTicket.content}}"
+    return_content: yes
+    body_format: form-urlencoded
+    body: 
+      service: "https://{{cnc_ip}}:{{cnc_port}}/app-dashboard"
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  register: myJWT
+
+#- debug:
+#    msg: "{{myJWT.content}}"
+
+
+   
+

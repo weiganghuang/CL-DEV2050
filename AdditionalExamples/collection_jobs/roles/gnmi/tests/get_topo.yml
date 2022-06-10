@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  vars_files: 
+    - '../../../group_vars/local.yml'
+  
+   
+  tasks:
+    
+      
+    - name: get into JWT
+      import_tasks: ../../../common-tasks/jwt.yml
+
+    
+
+    - name: get topo
+      import_tasks: ../../../common-tasks/get_topo.yml
+      
+        
+      
+      
+
+

@@ -1,0 +1,73 @@
+{
+    "collection_job": {
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{device_tag_name}}"
+            }
+        },
+    {%- set sensor_paths = item.paths.split(',') %}       
+        "sensor_input_configs":          
+        [
+    {%- set path = sensor_paths[0] -%}
+    {%- set org_elem = path.split(':') %}       
+            {
+                "sensor_data": {
+                    "gnmi_sensor": {
+                        "path": {
+                            "origin": "{{org_elem[0]}}",                                
+                            "elem": [
+                                {
+                                    "name": "{{org_elem[1]}}"
+                                }                                 
+                            ]                                                      
+                        },
+                        "mode": "SAMPLE"
+                    }
+                },
+                "cadence_in_millisec": "{{item.default * 1000}}"
+    {% if loop.index == loop.length %}
+        }
+    {% else %}
+        },
+    {% endif %}
+    {% endfor -%}
+        ],
+        "sensor_output_configs":          
+        [
+    {%- for path in sensor_paths -%}
+    {%- set org_elem = path.split(':') %}       
+            {
+                "sensor_data": {
+                    "gnmi_sensor": {
+                        "path": {
+                            "origin": "{{org_elem[0]}}",                                
+                            "elem": [
+                                {
+                                    "name": "{{org_elem[1]}}"
+                                }                                 
+                            ]                                                      
+                        },
+                        "mode": "SAMPLE"
+                    }
+                },
+                "destination": {
+                    "context_id": "{{destination_context_id}}",
+                    "destination_id": "{{destination_id}}"
+                }
+    {% if loop.index == loop.length %}
+        }
+    {% else %}
+        },
+    {% endif %}
+    {% endfor -%}
+        ],   
+        "application_context": {
+            "application_id": "{{ application_id_prefix}}{{item.name}}",
+            "context_id": "{{item.name}}"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "GNMI_COLLECTOR"
+        }
+    }
+}

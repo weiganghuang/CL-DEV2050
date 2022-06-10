@@ -1,0 +1,46 @@
+---
+
+# pre-requsite: jwt.yml task 
+
+- name: get device uuids
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        node_ip:
+          inet_addr: "{{item.day1_params.external_params.loopback10_ipv4}}"
+  register: devices
+  with_items: "{{dhcp}}"
+  when: (i >=batch_num*batch_size) and (i< (batch_num+1) * batch_size)
+  loop_control:
+    index_var: i
+
+# - debug:
+#     msg: "gnmi not enabled xxxxxxxxx {{item.json.data[0].product_info.capability}}"
+#   when: (item.json.data[0] is defined) and  (("GNMI" not in item.json.data[0].connectivity_info | join()) or ("GNMI" not in item.json.data[0].product_info.capability)) 
+#   with_items: "{{devices.results}}"
+
+# - debug:
+#     msg: "device uuid {{item.json.data[0].node_ip.inet_addr}}: {{item.json.data[0].uuid}} "
+#   when: (item.json.data[0] is defined) and  ("GNMI" not in item.json.data[0].product_info.capability)  
+#   with_items: "{{devices.results}}"
+
+
+- name: save device output
+  set_fact:
+      device_uuids: "{{device_uuids | default({}) | combine({item.json.data[0].node_ip.inet_addr: item.json.data[0].uuid} )}}"
+      loopback2_list: "'hostname:lp10'"
+  when: (item.json.data[0] is defined) and  (("GNMI" not in item.json.data[0].connectivity_info | join()) or ("GNMI" not in item.json.data[0].product_info.capability)) 
+  with_items: "{{ devices.results }}"
+
+  
+  

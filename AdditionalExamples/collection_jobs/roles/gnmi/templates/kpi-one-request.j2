@@ -1,0 +1,79 @@
+{%- set paths = sensors.split() | unique %} 
+{%- set sensor_paths = [] %}
+{%- for p1 in paths -%} 
+    {{sensor_paths.append(p1) if ('cpu' in p1) else sensor_paths.append( '/'.join(p1.split('/')[:-1]) )}}  
+{%- endfor %}
+{%- set sensor_paths = sensor_paths | unique %}
+{%- set name = item.json.data[0].name.split('-') | last %}
+{
+    "collection_job": {
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{gnmi.device_tag_name}}"
+            }
+        },    
+        "sensor_input_configs": [
+{%- for sensor_path in sensor_paths %}
+{%- set org_elem = sensor_path.split(':') %}
+            {
+                "sensor_data": {
+                    "gnmi_sensor": {
+                        "path": {
+                            "origin": "{{org_elem[0]}}",                                
+                            "elem": [
+                                {     
+                                    "name": "{{org_elem[1]}}"
+                                }                                 
+                            ]                                                      
+                        },
+                        "mode": "SAMPLE"
+                    }
+                },
+                "cadence_in_millisec": "{{gnmi.cadence_in_millisec}}"
+{% if loop.index == loop.length %}
+        }
+{% else %}
+        },
+{% endif %}
+{%- endfor %}
+        ],
+        "sensor_output_configs": 
+        [
+{%- for sensor_path in sensor_paths %}
+{%- set org_elem = sensor_path.split(':') %}
+            {
+                "sensor_data": {
+                    "gnmi_sensor": {
+                        "path": {
+                            "origin": "{{org_elem[0]}}",                                
+                            "elem": [
+                                {     
+                                    "name": "{{org_elem[1]}}"
+                                }                                 
+                            ]                                                      
+                        },
+                        "mode": "SAMPLE"
+                    }
+                },         
+        
+                "destination": {
+                    "context_id": "{{gnmi.topic}}",
+                    "destination_id": "{{item.json.data[0].uuid}}"
+                }
+{% if loop.index == loop.length %}
+        }
+{% else %}
+        },
+{% endif %}
+{%- endfor %}
+        ],   
+        "application_context": {
+            "application_id": "{{extra_tag}}ex_gnmi_ALL_GNMI_{{name}}",
+            "context_id": "{{gnmi.topic}}"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "GNMI_COLLECTOR"
+        }
+    }
+}

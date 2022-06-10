@@ -1,0 +1,206 @@
+{
+    "data": [
+        {
+            "duuid": "b4a9f5bf-4033-4c81-bf39-5155491260d3",
+            "name": "CDG-CNC2-CCO-2",
+            "configData": {
+                "description": "Description for Cisco Crosswork Data Gateway",
+                "version": "2.0.0 (branch dg200 - build number 18)",
+                "tags": "Label for Cisco Crosswork Data Gateway",
+                "interfaces": [
+                    {
+                        "name": "eth0",
+                        "mac": "00:50:56:aa:2d:27",
+                        "ipAddr": [
+                            {
+                                "inetAf": "ROBOT_INET_ADDR_TYPE_v4",
+                                "inetAddr": "10.140.131.27",
+                                "mask": "24"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "eth1",
+                        "mac": "00:50:56:aa:a0:86",
+                        "ipAddr": [
+                            {
+                                "inetAf": "ROBOT_INET_ADDR_TYPE_v4",
+                                "inetAddr": "172.26.240.38",
+                                "mask": "24"
+                            }
+                        ]
+                    }
+                ],
+                "certChain": {
+                    "certificate": "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"
+                },
+                "profile": {
+                    "cpu": 8,
+                    "memory": 31,
+                    "nics": 2
+                },
+                "role": "SPARE",
+                "adminState": "AS_UP",
+                "poolId": "bca9583d-8198-4b06-8de7-e69c35852be6"
+            },
+            "operationalData": {
+                "operState": "OS_UP",
+                "operStateDetails": [
+                    {
+                        "componentName": "gnmi-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "mdt-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "syslog-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "snmp-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "cli-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "image-manager",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "route-manager",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "oam-manager",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "docker-ipv6nat",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "controller-gateway",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    }
+                ],
+                "lastUpdatedTime": "1628865781474346762"
+            }
+        },
+        {
+            "duuid": "13112410-72ad-4b8a-9fab-d0cac1d0ddbe",
+            "name": "CDG-CNC2-CCO-1",
+            "configData": {
+                "description": "Description for Cisco Crosswork Data Gateway",
+                "version": "2.0.0 (branch dg200 - build number 18)",
+                "tags": "Label for Cisco Crosswork Data Gateway",
+                "interfaces": [
+                    {
+                        "name": "eth0",
+                        "mac": "00:50:56:aa:c8:af",
+                        "ipAddr": [
+                            {
+                                "inetAf": "ROBOT_INET_ADDR_TYPE_v4",
+                                "inetAddr": "10.140.131.26",
+                                "mask": "24"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "eth1",
+                        "mac": "00:50:56:aa:8a:35",
+                        "ipAddr": [
+                            {
+                                "inetAf": "ROBOT_INET_ADDR_TYPE_v4",
+                                "inetAddr": "172.26.240.37",
+                                "mask": "24"
+                            }
+                        ]
+                    }
+                ],
+                "certChain": {
+                    "certificate": "MIIJhzCCBW+gAwIBAgIUHFx78/uiXeemInu2DrO5pNU5Xh8wDQYJKoZIhvcNAQENBQAwUzELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMREwDwYDVQQHDAhTYW4gSm9zZTELMAkGA1UECgwCREcxFzAVBgNVBAMMDkNERy1DTkMyLUNDTy0xMB4XDTIxMDYwMzE3MDczNloXDTQxMDYwNDE3MDczNlowUzELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMREwDwYDVQQHDAhTYW4gSm9zZTELMAkGA1UECgwCREcxFzAVBgNVBAMMDkNERy1DTkMyLUNDTy0xMIIEIjANBgkqhkiG9w0BAQEFAAOCBA8AMIIECgKCBAEA7g5/CII+UCWqylyDU80Ph8wis3mxVMA71lOMxjpFXQPCqAv9UhpV3kFRK4DpUH3Iz9Pbc6N+Kg3z3FYUzMeP1W8f/m6dvCwznODQN0M9UtqsSJk8qL6AyHp3Wc01t4ozXtVl6DMFBy2T7WqNQ9VwGrqHje6G9+tRf3Mk9uXWgwDOJuyENzTgFWaP7fs6caPZL/vKB1IKTS8n4uoekznu04/2VfZaFjh3F5sBaKjwgCX+Fgg29Pcb7va+/eg15d1ky2AjhvCVDjfLji574A4IjmQIpIyLhKSsMwX+SybQu2ZJULxZsluih/rRGcPXhfEzKdsGK/EI5tgCfQVQ5lpFrDrkif0+qq2p0XPSPbmKhtpM38iGTC0E4/NX3gbuV2yRYLu0swqm88Plsxp7jc6P0gv0cP7rUEpa1W9lhhFp2CSpq+HxRx/eorHzdCAkf6nO6hzDVslVZelGFtLoUpvCGBWq+jrmX0OhIm71fxlonmGYDNH8RILhj+mWb9iNS+FWAIkGvU6Uc2/xBpeKbZFW7z+HrwXXeLLxnKNzD2Ex+6uksqPmA1kjEyhXaMNAq/Ab+0lIPRtS+dA+PRSHIZNo3NTVqOsmKpg59ZHWiCdHUU9RP05Ea3Zl9XPOU2Ay/SMR7TxBUQOGzpYky71CVrAesVEAadqHqag0x+N1F9kL51LcfOMl5/6xSDhakErboVkhuYcceom119kscjCfxq8565nF6RSI3mCQl9PtI6CQg+UlCnt6r8cs9TSMcp2eWPFlflDmyt2OChytvwjFVOhB86knZJ22dHGmTNDwMRf7eKqYncvfiGc4ee1WfWlKmzXdM73MlMLnz9/zpC5X8CESAcamKxKcxydE7pk1Jt7J5uBwfMyteAiTDcbFBmDWEs452gc25NL5HV8/0JqbgcwGRkZPpP/WCHa0skfFMnaHZpvmjz5aGa8I1k7KFJIYyiZzm6BUOy93s0pkPSAb5WzKPvwgCKCKrlqlqZjSO4rwzDBFBXAtSLcuFKtW6aNzpamga5bkzspITjeUZ9kaTkx2koN8nZw2K7EmvmY8xoj0uykmXHRGgxnEzWrZdAI19rLoafVIPirlSr2bbM89Bn3LZdcRC+YVBqkdUs9hnQNBlA4gQk71Osw/Ot+3P9Te6AcB1T3yWKgnbsigCWUA3EXiAlc561bxAmsQE/iP/em332r4S26ETEFv8PeuUqLDGIh80LrZd0G2I3gboMKlwdSKHbJ31RJR9j2zEX0JQwA6vLhzGwa+z33hgsYg5GNSOsSdCrlOr7QcfRyegWxwib2ZqF/u6Wv52BnbmyvaBlAQTnPyA4pEjuTYCishh5bd3z5EnV+J3kvqPg/r8s+VDCE7aQIDAQABo1MwUTAdBgNVHQ4EFgQUFCGpEKy7Y8dCGRSREj8xgXC0wWIwHwYDVR0jBBgwFoAUFCGpEKy7Y8dCGRSREj8xgXC0wWIwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOCBAEAyEhXdgbSDvzFRhx81AkafwWaeNCxTdqWFG/LJ0J6FqZ5CfRw9ubOD/fq2PF6hFXtDJOMUribzr35rCHKtzJS465aSco4faLLwWDCcKWUnUNBjhaWsKG/GstM2RwNwfPe9bg59AdX/nREDrZUiwWzIb64zK0XEPkLaczqcEjiHP7j7q/LGO8SepRdAFxMVzk3ZqF5kkUpLc+oqT8iwJcrweHYWvrVfq+/o9L/RnI1ikk4HrJSGCXQ/bC/qwYe0bE43J0jp6RrmrFO0RAohYGom78TlwZpWlK6kBWpoUhf3qb4QX/hCr+sI0LNT5CU65aoIJ6HYdpR+/x53iZvtuXRhvlyruW+KgK0amq08+rMqtM/nfVMq5362zd5BRl2sEYXaRDguV+UTXhS+fpwIphcE+b3aI09aYkktUlNZAXmNle8XkXIfMciWfnR5Onto6LpNf479y/KWcTt3LJ6dFbqDhGZyl++vWWB4qUXS2xZ4lv9CNscDl/AyXh0lWodnZviwO1O4gpkDmy2jR/FzQXJeFH1RurS/sH3/F+0lMFpMkNhYUXfGx65tB0nHlzkhRTYJI0bGxIaaU29XC3c5i0885w8ShddaYuH+Ex3TFXHKF4/an/Rql30YrIY0xEz8pvyKSn8BkSQ0D/BkQgODy4d5bVzv1Bb5iMgVFHj1JQWy9TrlXvHFo0/U1Xd4VvvGMdRXlAM5jGLebjgd+vAc4/9u24/LpQZ7SEiGbktLnVOzxegBW/AFq2aTqsmdNnx0lxjMOPL4p7mt94rwcx6GihcbnlC4MnePgNLMADvL188M8QzQQ7yCxzShf9BhJPlBhixlKV60D3u6IwQVmhqSOdHx49va2V1Knl9HOKxJYA9VQalu6sAynbdTlu6TlBmMicC1V/OlbJVET30AG5/Yoz3pEv27qpbpkl+lgQHs+5kNyWC3SPpU0gVjLYr4mt722HOtWXRCbaTY++IigM6Jq9tbj64/OzuEkawt17S3PkI3AIxBKPYWksJ4GBheSrLFFEe4iIbU6vltnQ8z3rWQKJr+0CZN3kgd9YmbwA+MKAhCZbg/YfQ8j8imOYw1S1KZBaIVgNuphbcK80AMsSmJG/iD4pAbniZamlUvI+/W8qDYLn2uV/b0aUoIazpRhx04RlXlFAzUnqKJue/NJghNuRp4D4s6aTjo99emDYDeWgOhWIq3JQqSY3YTmPyY4KC+1yIcE8lnePWeSU+IW5TjcM2xwgY8Pt8xGhXYiL22dKg42LAVHgA6sEVHGAJCxzU8SD1cUFuzCDMmR2QdsAvFEsb0gm9UM5r+CVvOhJJzqVwIOsFRsw/HN1BIK6onS5q69SKgVqnhc9Pso2GXfbsb+LA+g=="
+                },
+                "profile": {
+                    "cpu": 8,
+                    "memory": 31,
+                    "nics": 2
+                },
+                "role": "ASSIGNED",
+                "adminState": "AS_UP",
+                "poolId": "bca9583d-8198-4b06-8de7-e69c35852be6",
+                "vdgUuid": "e26ca837-3d82-4b91-86ff-4232b0fc70d2"
+            },
+            "operationalData": {
+                "operState": "OS_UP",
+                "operStateDetails": [
+                    {
+                        "componentName": "gnmi-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "mdt-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "syslog-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "cli-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "snmp-collector",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "oam-manager",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "controller-gateway",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "docker-ipv6nat",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "route-manager",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    },
+                    {
+                        "componentName": "image-manager",
+                        "state": "CS_UP",
+                        "imageTag": "2.0.0"
+                    }
+                ],
+                "lastUpdatedTime": "1628865802832342727"
+            }
+        }
+    ],
+    "totalCount": 2
+}

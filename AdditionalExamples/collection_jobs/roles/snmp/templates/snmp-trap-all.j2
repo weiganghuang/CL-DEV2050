@@ -1,0 +1,40 @@
+{%- set name = item.json.data[0].name.split('-') | last %}
+{
+    "collection_job": {
+        "application_context": {
+            "application_id": "{{extra_tag}}ex_snmp_trap_{{name}}",
+            "context_id": "{{snmp.topic}}"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "TRAP_COLLECTOR"
+        },
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{snmp.device_tag_name}}"
+            }
+        },
+        "sensor_input_configs": [
+            {
+                "sensor_data": {
+                    "trap_sensor": {
+                        "path": "*"
+                    }
+                }
+            }
+        ],
+        "sensor_output_configs": [
+            {
+                "sensor_data": {
+                    "trap_sensor": {
+                        "path": "*"
+                    }
+                },
+                "destination": {
+                    "context_id": "{{snmp.topic}}",
+                    "destination_id": "{{item.json.data[0].uuid}}"
+                }
+            }
+        ]
+    }
+}

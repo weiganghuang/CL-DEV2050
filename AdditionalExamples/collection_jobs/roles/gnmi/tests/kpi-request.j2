@@ -1,0 +1,73 @@
+{%- set paths = item.sensors.split() | unique %} 
+{
+    "collection_job": {
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{device_tag_name}}"
+            }
+        },    
+        "sensor_input_configs": [
+{%- for path in paths %}
+{%- set org_elem = path.split(':') %}
+            {
+                "sensor_data": {
+                    "gnmi_sensor": {
+                        "path": {
+                            "origin": "{{org_elem[0]}}",                                
+                            "elem": [
+                                {     
+                                    "name": "{{org_elem[1]}}"
+                                }                                 
+                            ]                                                      
+                        },
+                        "mode": "SAMPLE"
+                    }
+                },
+                "cadence_in_millisec": "{{cadence_in_millisec}}"
+{% if loop.index == loop.length %}
+        }
+{% else %}
+        },
+{% endif %}
+{%- endfor %}
+        ],
+        "sensor_output_configs": 
+        [
+{%- for path in paths %}
+{%- set org_elem = path.split(':') %}
+            {
+                "sensor_data": {
+                    "gnmi_sensor": {
+                        "path": {
+                            "origin": "{{org_elem[0]}}",                                
+                            "elem": [
+                                {     
+                                    "name": "{{org_elem[1]}}"
+                                }                                 
+                            ]                                                      
+                        },
+                        "mode": "SAMPLE"
+                    }
+                },         
+        
+                "destination": {
+                    "context_id": "{{destination_context_id}}",
+                    "destination_id": "{{destination_id}}"
+                }
+{% if loop.index == loop.length %}
+        }
+{% else %}
+        },
+{% endif %}
+{%- endfor %}
+        ],   
+        "application_context": {
+            "application_id": "{{ application_id_prefix}}{{item.name}}",
+            "context_id": "ALL_GNMI_{{item.name}}"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "GNMI_COLLECTOR"
+        }
+    }
+}

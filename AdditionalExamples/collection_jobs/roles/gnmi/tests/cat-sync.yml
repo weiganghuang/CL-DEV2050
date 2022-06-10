@@ -1,0 +1,31 @@
+---
+- hosts: localhost
+  vars_files: 
+    - '../../../group_vars/local.yml'
+  
+   
+  tasks:
+    
+      
+    - name: get into JWT
+      import_tasks: jwt.yml
+
+    
+
+    - name: invoke apis
+      uri:
+        validate_certs: no
+        status_code: [200, 201, 202, 405]
+        method: POST
+        url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/cat/nso-connector/v1/api/fullResync"
+        # return_content: yes
+        headers:
+          Content-Type: application/json
+          Accept: application/json
+          Authorization: "Bearer {{ myJWT.content }}"
+      
+        
+      
+      
+
+

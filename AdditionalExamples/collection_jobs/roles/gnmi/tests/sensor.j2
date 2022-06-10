@@ -1,0 +1,60 @@
+{%- set sensor_path = item.split(':')%}
+{
+    "collection_job": {
+        "job_device_set": {
+            "device_set": {
+                "device_group": "{{device_tag_name}}"
+            }
+        },      
+        "sensor_input_configs":        
+        [            
+                {
+                    "sensor_data": {
+                        "gnmi_sensor": {
+                            "path": {
+                                "origin": "{{sensor_path[0]}}",                                
+                                "elem": [
+                                    {
+                                        "name": "{{sensor_path[1]}}"
+                                    }                                 
+                                ]                                                      
+                            },
+                            "mode": "SAMPLE"
+                        }
+                    },
+                "cadence_in_millisec": "{{cadence_in_millisec}}",
+            }
+        ],
+        "sensor_output_configs":        
+        [            
+                {
+                    "sensor_data": {
+                        "gnmi_sensor": {
+                            "path": {
+                                "origin": "{{sensor_path[0]}}",                                
+                                "elem": [
+                                    {
+                                        "name": "{{sensor_path[1]}}"
+                                    }                                 
+                                ]                       
+                                
+                            },
+                            "mode": "SAMPLE"
+                        }
+                    },
+                "destination": {
+                    "context_id": "{{destination_context_id}}",
+                    "destination_id": "{{destination_id}}"
+                }
+            }
+        ],
+        "application_context": {
+            "application_id": "{{ application_id_prefix}}{{sensor_path[0]}}",
+            "context_id": "{{sensor_path[1]}}"
+        },
+        "collection_mode": {
+            "lifetime_type": "APPLICATION_MANAGED",
+            "collector_type": "GNMI_COLLECTOR"
+        }
+    }
+}

@@ -1,0 +1,68 @@
+- name: get into JWT
+  import_tasks: ../../../common-tasks/jwt.yml
+
+
+- name: Create  job payloads
+    
+  template:
+    src: "../templates/add-node.j2"
+    dest: "{{tmp_file_path}}/add-node-{{item.ip}}.json"
+  loop: "{{nodes}}"
+
+- pause:
+    seconds: 5
+
+- name: invoke nodes apis
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{tmp_file_path}}/add-node-{{item.ip}}.json')}}"
+  register: myOutput
+  loop: "{{nodes}}"
+
+- debug:
+    msg: " "
+  with_items: "{{myOutput.results}}"
+  loop_control: 
+    label: "{{item.json}}" 
+
+- name: get device uuids, register in device_ids
+  import_tasks: get_device_id.yml
+
+
+- name: get vdg uuids, regsiter in vdg_ids
+  import_tasks: get_vdg_id.yml
+
+- name: Create job payloads
+    
+  template:
+    src: "../templates/attach-dg.j2"
+    dest: "{{tmp_file_path}}/attach-dg-{{item.json.data[0].node_ip.inet_addr}}.json"
+  loop: "{{device_ids.results}}"
+
+- pause:
+    seconds: 5
+
+- name: attach devices to dg
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PUT
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/dg/devicemapping"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('file', '{{tmp_file_path}}/attach-dg-{{item.json.data[0].node_ip.inet_addr}}.json')}}"
+  register: myOutput
+  loop: "{{device_ids.results}}"

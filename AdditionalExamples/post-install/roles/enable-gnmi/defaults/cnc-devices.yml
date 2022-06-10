@@ -1,0 +1,5602 @@
+---
+
+dhcp:
+
+  - datalinkIp: 10.36.14.80
+    hostname: ATABY00012A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.84
+        loopback10_ipv4: 10.36.14.80
+  - datalinkIp: 10.36.14.82
+    hostname: ATABY00026A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.86
+        loopback10_ipv4: 10.36.14.82
+  - datalinkIp: 10.36.14.27
+    hostname: ATABY00029A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.31
+        loopback10_ipv4: 10.36.14.27
+  - datalinkIp: 10.36.14.83
+    hostname: ATABY00030A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.87
+        loopback10_ipv4: 10.36.14.83
+  - datalinkIp: 10.36.14.90
+    hostname: ATBHM00002A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.94
+        loopback10_ipv4: 10.36.14.90
+  - datalinkIp: 10.36.14.30
+    hostname: ATBHM00012A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.34
+        loopback10_ipv4: 10.36.14.30
+  - datalinkIp: 10.36.14.32
+    hostname: ATBHM00063A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.36
+        loopback10_ipv4: 10.36.14.32
+  - datalinkIp: 10.36.14.152
+    hostname: ATBHM00072A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.156
+        loopback10_ipv4: 10.36.14.152
+  - datalinkIp: 10.36.14.33
+    hostname: ATBHM00079A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.37
+        loopback10_ipv4: 10.36.14.33
+  - datalinkIp: 10.36.14.159
+    hostname: ATBHM00091B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.163
+        loopback10_ipv4: 10.36.14.159
+  - datalinkIp: 10.36.14.160
+    hostname: ATBHM00093A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.164
+        loopback10_ipv4: 10.36.14.160
+  - datalinkIp: 10.36.14.172
+    hostname: ATBHM00105A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.176
+        loopback10_ipv4: 10.36.14.172
+  - datalinkIp: 10.36.14.173
+    hostname: ATBHM00106A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.177
+        loopback10_ipv4: 10.36.14.173
+  - datalinkIp: 10.36.14.178
+    hostname: ATBHM00110A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.182
+        loopback10_ipv4: 10.36.14.178
+  - datalinkIp: 10.36.14.132
+    hostname: ATBHM00131A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.136
+        loopback10_ipv4: 10.36.14.132
+  - datalinkIp: 10.36.14.136
+    hostname: ATBHM00143A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.140
+        loopback10_ipv4: 10.36.14.136
+  - datalinkIp: 10.36.14.149
+    hostname: ATBHM00148A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.153
+        loopback10_ipv4: 10.36.14.149
+  - datalinkIp: 10.36.14.163
+    hostname: ATBHM00158B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.167
+        loopback10_ipv4: 10.36.14.163
+  - datalinkIp: 10.36.14.181
+    hostname: ATBHM00194A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.185
+        loopback10_ipv4: 10.36.14.181
+  - datalinkIp: 10.36.14.35
+    hostname: ATBHM00206A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.39
+        loopback10_ipv4: 10.36.14.35
+  - datalinkIp: 10.36.14.195
+    hostname: ATBHM00207A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.199
+        loopback10_ipv4: 10.36.14.195
+  - datalinkIp: 10.36.14.97
+    hostname: ATBHM00227A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.101
+        loopback10_ipv4: 10.36.14.97
+  - datalinkIp: 10.36.14.88
+    hostname: ATBHM00252A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.92
+        loopback10_ipv4: 10.36.14.88
+  - datalinkIp: 10.36.14.212
+    hostname: ATBHM00260A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.216
+        loopback10_ipv4: 10.36.14.212
+  - datalinkIp: 10.36.14.207
+    hostname: ATBHM00263A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.211
+        loopback10_ipv4: 10.36.14.207
+  - datalinkIp: 10.36.14.203
+    hostname: ATBHM00268A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.207
+        loopback10_ipv4: 10.36.14.203
+  - datalinkIp: 10.36.14.225
+    hostname: ATBHM00269A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.229
+        loopback10_ipv4: 10.36.14.225
+  - datalinkIp: 10.36.14.110
+    hostname: ATBHM00318A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.114
+        loopback10_ipv4: 10.36.14.110
+  - datalinkIp: 10.36.14.107
+    hostname: ATBHM00319A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.111
+        loopback10_ipv4: 10.36.14.107
+  - datalinkIp: 10.36.14.106
+    hostname: ATBHM00324B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.110
+        loopback10_ipv4: 10.36.14.106
+  - datalinkIp: 10.36.14.39
+    hostname: ATBHM00379A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.43
+        loopback10_ipv4: 10.36.14.39
+  - datalinkIp: 10.36.14.138
+    hostname: ATBHM00380A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.142
+        loopback10_ipv4: 10.36.14.138
+  - datalinkIp: 10.36.14.41
+    hostname: ATBHM00383A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.45
+        loopback10_ipv4: 10.36.14.41
+  - datalinkIp: 10.36.14.147
+    hostname: ATBHM00393A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.151
+        loopback10_ipv4: 10.36.14.147
+  - datalinkIp: 10.36.14.44
+    hostname: ATBHM00403A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.48
+        loopback10_ipv4: 10.36.14.44
+  - datalinkIp: 10.36.14.45
+    hostname: ATBHM00406A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.49
+        loopback10_ipv4: 10.36.14.45
+  - datalinkIp: 10.36.14.46
+    hostname: ATBHM00407A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.50
+        loopback10_ipv4: 10.36.14.46
+  - datalinkIp: 10.36.14.47
+    hostname: ATBHM00408A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.51
+        loopback10_ipv4: 10.36.14.47
+  - datalinkIp: 10.36.14.50
+    hostname: ATBHM00414A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.54
+        loopback10_ipv4: 10.36.14.50
+  - datalinkIp: 10.36.14.233
+    hostname: ATBHM00427A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.237
+        loopback10_ipv4: 10.36.14.233
+  - datalinkIp: 10.36.14.237
+    hostname: ATBHM00450A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.242
+        loopback10_ipv4: 10.36.14.237
+  - datalinkIp: 10.36.14.58
+    hostname: ATBHM00453A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.62
+        loopback10_ipv4: 10.36.14.58
+  - datalinkIp: 10.36.14.59
+    hostname: ATBHM00458A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.63
+        loopback10_ipv4: 10.36.14.59
+  - datalinkIp: 10.36.14.60
+    hostname: ATBHM00461A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.64
+        loopback10_ipv4: 10.36.14.60
+  - datalinkIp: 10.36.14.61
+    hostname: ATBHM00464A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.65
+        loopback10_ipv4: 10.36.14.61
+  - datalinkIp: 10.36.14.63
+    hostname: ATBHM00485A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.67
+        loopback10_ipv4: 10.36.14.63
+  - datalinkIp: 10.36.14.247
+    hostname: ATBHM00487A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.252
+        loopback10_ipv4: 10.36.14.247
+  - datalinkIp: 10.92.218.27
+    hostname: BOBDL00014B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.216.31
+        loopback10_ipv4: 10.92.218.27
+  - datalinkIp: 10.92.218.44
+    hostname: BOBDL00036A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.216.48
+        loopback10_ipv4: 10.92.218.44
+  - datalinkIp: 10.92.218.50
+    hostname: BOBDL00038A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.216.54
+        loopback10_ipv4: 10.92.218.50
+  - datalinkIp: 10.92.218.48
+    hostname: BOBDL00039A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.216.52
+        loopback10_ipv4: 10.92.218.48
+  - datalinkIp: 10.92.218.49
+    hostname: BOBDL00043A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.216.53
+        loopback10_ipv4: 10.92.218.49
+  - datalinkIp: 10.92.218.139
+    hostname: BOBDL00086A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.216.143
+        loopback10_ipv4: 10.92.218.139
+  - datalinkIp: 10.137.2.14
+    hostname: CHIND00095A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.18
+        loopback10_ipv4: 10.137.2.14
+  - datalinkIp: 10.137.2.16
+    hostname: CHIND00112A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.20
+        loopback10_ipv4: 10.137.2.16
+  - datalinkIp: 10.137.2.18
+    hostname: CHIND00140A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.22
+        loopback10_ipv4: 10.137.2.18
+  - datalinkIp: 10.137.2.19
+    hostname: CHIND00143A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.23
+        loopback10_ipv4: 10.137.2.19
+  - datalinkIp: 10.137.2.21
+    hostname: CHIND00157A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.25
+        loopback10_ipv4: 10.137.2.21
+  - datalinkIp: 10.137.2.24
+    hostname: CHIND00227A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.28
+        loopback10_ipv4: 10.137.2.24
+  - datalinkIp: 10.137.2.25
+    hostname: CHIND00230A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.29
+        loopback10_ipv4: 10.137.2.25
+  - datalinkIp: 10.137.2.30
+    hostname: CHIND00274A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.34
+        loopback10_ipv4: 10.137.2.30
+  - datalinkIp: 10.137.2.31
+    hostname: CHIND00277A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.35
+        loopback10_ipv4: 10.137.2.31
+  - datalinkIp: 10.137.2.34
+    hostname: CHIND00283A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.38
+        loopback10_ipv4: 10.137.2.34
+  - datalinkIp: 10.137.2.54
+    hostname: CHIND00284A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.59
+        loopback10_ipv4: 10.137.2.54
+  - datalinkIp: 10.137.2.35
+    hostname: CHIND00293A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.39
+        loopback10_ipv4: 10.137.2.35
+  - datalinkIp: 10.137.2.36
+    hostname: CHIND00304A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.40
+        loopback10_ipv4: 10.137.2.36
+  - datalinkIp: 10.137.2.37
+    hostname: CHIND00310A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.41
+        loopback10_ipv4: 10.137.2.37
+  - datalinkIp: 10.137.2.38
+    hostname: CHIND00317A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.42
+        loopback10_ipv4: 10.137.2.38
+  - datalinkIp: 10.137.2.39
+    hostname: CHIND00318A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.43
+        loopback10_ipv4: 10.137.2.39
+  - datalinkIp: 10.137.2.40
+    hostname: CHIND00324A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.44
+        loopback10_ipv4: 10.137.2.40
+  - datalinkIp: 10.137.2.41
+    hostname: CHIND00325A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.45
+        loopback10_ipv4: 10.137.2.41
+  - datalinkIp: 10.137.2.42
+    hostname: CHIND00331A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.47
+        loopback10_ipv4: 10.137.2.42
+  - datalinkIp: 10.137.2.43
+    hostname: CHIND00356A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.48
+        loopback10_ipv4: 10.137.2.43
+  - datalinkIp: 10.137.2.45
+    hostname: CHIND00365B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.50
+        loopback10_ipv4: 10.137.2.45
+  - datalinkIp: 10.137.2.56
+    hostname: CHIND00379A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.61
+        loopback10_ipv4: 10.137.2.56
+  - datalinkIp: 10.137.2.48
+    hostname: CHIND00396A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.53
+        loopback10_ipv4: 10.137.2.48
+  - datalinkIp: 10.137.2.57
+    hostname: CHIND00412A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.62
+        loopback10_ipv4: 10.137.2.57
+  - datalinkIp: 10.137.2.49
+    hostname: CHIND00418A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.54
+        loopback10_ipv4: 10.137.2.49
+  - datalinkIp: 10.137.2.50
+    hostname: CHIND00440A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.55
+        loopback10_ipv4: 10.137.2.50
+  - datalinkIp: 10.137.2.52
+    hostname: CHIND00458A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.57
+        loopback10_ipv4: 10.137.2.52
+  - datalinkIp: 10.137.2.53
+    hostname: CHIND00459A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.137.0.58
+        loopback10_ipv4: 10.137.2.53
+  - datalinkIp: 10.112.14.26
+    hostname: CLCLT00140A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.12.30
+        loopback10_ipv4: 10.112.14.26
+  - datalinkIp: 10.140.196.101
+    hostname: CLRDU00034A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.140.194.105
+        loopback10_ipv4: 10.140.196.101
+  - datalinkIp: 10.140.196.43
+    hostname: CLRDU00292A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.140.194.47
+        loopback10_ipv4: 10.140.196.43
+  - datalinkIp: 10.255.30.91
+    hostname: CS-PE001V-USW2AZ1R001P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.91
+        loopback10_ipv4: 10.255.30.91
+  - datalinkIp: 10.255.30.151
+    hostname: CS-PE001V-USW2AZ2B111P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.151
+        loopback10_ipv4: 10.255.30.151
+  - datalinkIp: 10.255.31.0
+    hostname: CS-PE001V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.0
+        loopback10_ipv4: 10.255.31.0
+  - datalinkIp: 10.255.30.152
+    hostname: CS-PE002V-USW2AZ2B111P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.152
+        loopback10_ipv4: 10.255.30.152
+  - datalinkIp: 10.255.31.1
+    hostname: CS-PE002V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.1
+        loopback10_ipv4: 10.255.31.1
+  - datalinkIp: 10.255.32.169
+    hostname: CS-PE003V-USE2AZ1B211P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.2.169
+        loopback10_ipv4: 10.255.32.169
+  - datalinkIp: 10.255.30.93
+    hostname: CS-PE003V-USW2AZ1R001P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.93
+        loopback10_ipv4: 10.255.30.93
+  - datalinkIp: 10.255.30.153
+    hostname: CS-PE003V-USW2AZ2B111P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.153
+        loopback10_ipv4: 10.255.30.153
+  - datalinkIp: 10.255.31.2
+    hostname: CS-PE003V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.2
+        loopback10_ipv4: 10.255.31.2
+  - datalinkIp: 10.255.32.170
+    hostname: CS-PE004V-USE2AZ1B211P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.2.170
+        loopback10_ipv4: 10.255.32.170
+  - datalinkIp: 10.255.30.94
+    hostname: CS-PE004V-USW2AZ1R001P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.94
+        loopback10_ipv4: 10.255.30.94
+  - datalinkIp: 10.255.30.154
+    hostname: CS-PE004V-USW2AZ2B111P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.154
+        loopback10_ipv4: 10.255.30.154
+  - datalinkIp: 10.255.31.3
+    hostname: CS-PE004V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.3
+        loopback10_ipv4: 10.255.31.3
+  - datalinkIp: 10.255.31.4
+    hostname: CS-PE005V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.4
+        loopback10_ipv4: 10.255.31.4
+  - datalinkIp: 10.255.31.5
+    hostname: CS-PE006V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.5
+        loopback10_ipv4: 10.255.31.5
+  - datalinkIp: 10.255.31.6
+    hostname: CS-PE105V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.6
+        loopback10_ipv4: 10.255.31.6
+  - datalinkIp: 10.255.31.7
+    hostname: CS-PE106V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.7
+        loopback10_ipv4: 10.255.31.7
+  - datalinkIp: 10.255.31.8
+    hostname: CS-PE205V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.8
+        loopback10_ipv4: 10.255.31.8
+  - datalinkIp: 10.255.31.9
+    hostname: CS-PE206V-USW2AZ2B112P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.1.9
+        loopback10_ipv4: 10.255.31.9
+  - datalinkIp: 10.255.30.1
+    hostname: CS-RR001V-USW2AZ1N001P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.1
+        loopback10_ipv4: 10.255.30.1
+  - datalinkIp: 10.255.30.2
+    hostname: CS-RR002V-USW2AZ2N001P.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.255.0.2
+        loopback10_ipv4: 10.255.30.2
+  - datalinkIp: 10.112.2.47
+    hostname: CVCLE00016A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.55
+        loopback10_ipv4: 10.112.2.47
+  - datalinkIp: 10.112.2.48
+    hostname: CVCLE00025A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.56
+        loopback10_ipv4: 10.112.2.48
+  - datalinkIp: 10.112.2.50
+    hostname: CVCLE00030A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.58
+        loopback10_ipv4: 10.112.2.50
+  - datalinkIp: 10.112.2.57
+    hostname: CVCLE00034A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.65
+        loopback10_ipv4: 10.112.2.57
+  - datalinkIp: 10.112.2.58
+    hostname: CVCLE00035A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.66
+        loopback10_ipv4: 10.112.2.58
+  - datalinkIp: 10.112.2.59
+    hostname: CVCLE00036A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.67
+        loopback10_ipv4: 10.112.2.59
+  - datalinkIp: 10.112.2.147
+    hostname: CVCLE00050A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.155
+        loopback10_ipv4: 10.112.2.147
+  - datalinkIp: 10.112.2.146
+    hostname: CVCLE00051A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.154
+        loopback10_ipv4: 10.112.2.146
+  - datalinkIp: 10.112.2.145
+    hostname: CVCLE00059A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.153
+        loopback10_ipv4: 10.112.2.145
+  - datalinkIp: 10.112.2.12
+    hostname: CVCLE00065A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.20
+        loopback10_ipv4: 10.112.2.12
+  - datalinkIp: 10.112.2.141
+    hostname: CVCLE00075A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.149
+        loopback10_ipv4: 10.112.2.141
+  - datalinkIp: 10.112.2.136
+    hostname: CVCLE00085A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.144
+        loopback10_ipv4: 10.112.2.136
+  - datalinkIp: 10.112.2.137
+    hostname: CVCLE00087A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.145
+        loopback10_ipv4: 10.112.2.137
+  - datalinkIp: 10.112.2.139
+    hostname: CVCLE00094A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.147
+        loopback10_ipv4: 10.112.2.139
+  - datalinkIp: 10.112.2.133
+    hostname: CVCLE00097A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.141
+        loopback10_ipv4: 10.112.2.133
+  - datalinkIp: 10.112.2.134
+    hostname: CVCLE00101A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.142
+        loopback10_ipv4: 10.112.2.134
+  - datalinkIp: 10.112.2.131
+    hostname: CVCLE00126A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.139
+        loopback10_ipv4: 10.112.2.131
+  - datalinkIp: 10.112.2.168
+    hostname: CVCLE00130A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.176
+        loopback10_ipv4: 10.112.2.168
+  - datalinkIp: 10.112.2.129
+    hostname: CVCLE00131A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.137
+        loopback10_ipv4: 10.112.2.129
+  - datalinkIp: 10.112.2.127
+    hostname: CVCLE00147A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.135
+        loopback10_ipv4: 10.112.2.127
+  - datalinkIp: 10.112.2.122
+    hostname: CVCLE00149A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.130
+        loopback10_ipv4: 10.112.2.122
+  - datalinkIp: 10.112.2.42
+    hostname: CVCLE00153A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.50
+        loopback10_ipv4: 10.112.2.42
+  - datalinkIp: 10.112.2.123
+    hostname: CVCLE00155A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.131
+        loopback10_ipv4: 10.112.2.123
+  - datalinkIp: 10.112.2.39
+    hostname: CVCLE00156A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.47
+        loopback10_ipv4: 10.112.2.39
+  - datalinkIp: 10.112.2.45
+    hostname: CVCLE00158A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.53
+        loopback10_ipv4: 10.112.2.45
+  - datalinkIp: 10.112.2.186
+    hostname: CVCLE00159A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.194
+        loopback10_ipv4: 10.112.2.186
+  - datalinkIp: 10.112.2.187
+    hostname: CVCLE00164A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.195
+        loopback10_ipv4: 10.112.2.187
+  - datalinkIp: 10.112.2.43
+    hostname: CVCLE00167A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.51
+        loopback10_ipv4: 10.112.2.43
+  - datalinkIp: 10.112.2.172
+    hostname: CVCLE00205A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.180
+        loopback10_ipv4: 10.112.2.172
+  - datalinkIp: 10.112.2.35
+    hostname: CVCLE00208A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.43
+        loopback10_ipv4: 10.112.2.35
+  - datalinkIp: 10.112.2.30
+    hostname: CVCLE00219A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.38
+        loopback10_ipv4: 10.112.2.30
+  - datalinkIp: 10.112.2.201
+    hostname: CVCLE00223A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.209
+        loopback10_ipv4: 10.112.2.201
+  - datalinkIp: 10.112.2.203
+    hostname: CVCLE00225A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.211
+        loopback10_ipv4: 10.112.2.203
+  - datalinkIp: 10.112.3.37
+    hostname: CVCLE00242A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.1.45
+        loopback10_ipv4: 10.112.3.37
+  - datalinkIp: 10.112.2.24
+    hostname: CVCLE00257A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.32
+        loopback10_ipv4: 10.112.2.24
+  - datalinkIp: 10.112.2.205
+    hostname: CVCLE00264A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.213
+        loopback10_ipv4: 10.112.2.205
+  - datalinkIp: 10.112.2.206
+    hostname: CVCLE00268A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.214
+        loopback10_ipv4: 10.112.2.206
+  - datalinkIp: 10.112.2.18
+    hostname: CVCLE00278A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.26
+        loopback10_ipv4: 10.112.2.18
+  - datalinkIp: 10.112.2.19
+    hostname: CVCLE00280A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.27
+        loopback10_ipv4: 10.112.2.19
+  - datalinkIp: 10.112.2.120
+    hostname: CVCLE00286A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.128
+        loopback10_ipv4: 10.112.2.120
+  - datalinkIp: 10.112.2.118
+    hostname: CVCLE00289A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.126
+        loopback10_ipv4: 10.112.2.118
+  - datalinkIp: 10.112.2.116
+    hostname: CVCLE00292A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.124
+        loopback10_ipv4: 10.112.2.116
+  - datalinkIp: 10.112.2.115
+    hostname: CVCLE00295A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.123
+        loopback10_ipv4: 10.112.2.115
+  - datalinkIp: 10.112.2.114
+    hostname: CVCLE00299A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.122
+        loopback10_ipv4: 10.112.2.114
+  - datalinkIp: 10.112.2.112
+    hostname: CVCLE00300A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.120
+        loopback10_ipv4: 10.112.2.112
+  - datalinkIp: 10.112.2.109
+    hostname: CVCLE00306A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.92
+        loopback10_ipv4: 10.112.2.109
+  - datalinkIp: 10.112.2.108
+    hostname: CVCLE00307A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.117
+        loopback10_ipv4: 10.112.2.108
+  - datalinkIp: 10.112.2.100
+    hostname: CVCLE00329A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.109
+        loopback10_ipv4: 10.112.2.100
+  - datalinkIp: 10.112.2.97
+    hostname: CVCLE00332A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.106
+        loopback10_ipv4: 10.112.2.97
+  - datalinkIp: 10.112.2.98
+    hostname: CVCLE00333A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.107
+        loopback10_ipv4: 10.112.2.98
+  - datalinkIp: 10.112.2.94
+    hostname: CVCLE00341A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.103
+        loopback10_ipv4: 10.112.2.94
+  - datalinkIp: 10.112.2.53
+    hostname: CVCLE00342A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.61
+        loopback10_ipv4: 10.112.2.53
+  - datalinkIp: 10.112.3.30
+    hostname: CVCLE00345A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.1.38
+        loopback10_ipv4: 10.112.3.30
+  - datalinkIp: 10.112.3.31
+    hostname: CVCLE00346A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.1.39
+        loopback10_ipv4: 10.112.3.31
+  - datalinkIp: 10.112.2.93
+    hostname: CVCLE00353A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.102
+        loopback10_ipv4: 10.112.2.93
+  - datalinkIp: 10.112.2.249
+    hostname: CVCLE00365A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.1.1
+        loopback10_ipv4: 10.112.2.249
+  - datalinkIp: 10.112.3.5
+    hostname: CVCLE00377B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.1.13
+        loopback10_ipv4: 10.112.3.5
+  - datalinkIp: 10.112.2.88
+    hostname: CVCLE00378A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.97
+        loopback10_ipv4: 10.112.2.88
+  - datalinkIp: 10.112.2.87
+    hostname: CVCLE00379A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.96
+        loopback10_ipv4: 10.112.2.87
+  - datalinkIp: 10.112.2.82
+    hostname: CVCLE00397A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.90
+        loopback10_ipv4: 10.112.2.82
+  - datalinkIp: 10.112.2.80
+    hostname: CVCLE00402A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.88
+        loopback10_ipv4: 10.112.2.80
+  - datalinkIp: 10.112.2.79
+    hostname: CVCLE00403A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.87
+        loopback10_ipv4: 10.112.2.79
+  - datalinkIp: 10.112.2.78
+    hostname: CVCLE00405A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.86
+        loopback10_ipv4: 10.112.2.78
+  - datalinkIp: 10.112.2.241
+    hostname: CVCLE00414A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.249
+        loopback10_ipv4: 10.112.2.241
+  - datalinkIp: 10.112.2.243
+    hostname: CVCLE00426A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.251
+        loopback10_ipv4: 10.112.2.243
+  - datalinkIp: 10.112.2.244
+    hostname: CVCLE00428A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.252
+        loopback10_ipv4: 10.112.2.244
+  - datalinkIp: 10.112.2.68
+    hostname: CVCLE00432A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.76
+        loopback10_ipv4: 10.112.2.68
+  - datalinkIp: 10.112.2.11
+    hostname: CVCLE00435A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.19
+        loopback10_ipv4: 10.112.2.11
+  - datalinkIp: 10.112.2.246
+    hostname: CVCLE00441A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.254
+        loopback10_ipv4: 10.112.2.246
+  - datalinkIp: 10.112.2.65
+    hostname: CVCLE00460A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.73
+        loopback10_ipv4: 10.112.2.65
+  - datalinkIp: 10.112.3.14
+    hostname: CVCLE00464A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.1.22
+        loopback10_ipv4: 10.112.3.14
+  - datalinkIp: 10.112.2.64
+    hostname: CVCLE00466A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.112.0.72
+        loopback10_ipv4: 10.112.2.64
+  - datalinkIp: 10.117.154.12
+    hostname: CVCMH00043A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.16
+        loopback10_ipv4: 10.117.154.12
+  - datalinkIp: 10.117.154.15
+    hostname: CVCMH00271A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.19
+        loopback10_ipv4: 10.117.154.15
+  - datalinkIp: 10.117.154.75
+    hostname: CVCMH00278A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.79
+        loopback10_ipv4: 10.117.154.75
+  - datalinkIp: 10.117.154.17
+    hostname: CVCMH00318A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.21
+        loopback10_ipv4: 10.117.154.17
+  - datalinkIp: 10.117.154.18
+    hostname: CVCMH00336A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.22
+        loopback10_ipv4: 10.117.154.18
+  - datalinkIp: 10.117.154.76
+    hostname: CVCMH00350A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.80
+        loopback10_ipv4: 10.117.154.76
+  - datalinkIp: 10.117.154.19
+    hostname: CVCMH00353A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.23
+        loopback10_ipv4: 10.117.154.19
+  - datalinkIp: 10.117.154.20
+    hostname: CVCMH00354A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.24
+        loopback10_ipv4: 10.117.154.20
+  - datalinkIp: 10.117.154.21
+    hostname: CVCMH00363B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.25
+        loopback10_ipv4: 10.117.154.21
+  - datalinkIp: 10.117.154.77
+    hostname: CVCMH00364A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.81
+        loopback10_ipv4: 10.117.154.77
+  - datalinkIp: 10.117.154.69
+    hostname: CVCMH00367A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.73
+        loopback10_ipv4: 10.117.154.69
+  - datalinkIp: 10.117.154.23
+    hostname: CVCMH00389A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.27
+        loopback10_ipv4: 10.117.154.23
+  - datalinkIp: 10.117.154.26
+    hostname: CVCMH00410A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.30
+        loopback10_ipv4: 10.117.154.26
+  - datalinkIp: 10.117.154.27
+    hostname: CVCMH00412A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.31
+        loopback10_ipv4: 10.117.154.27
+  - datalinkIp: 10.117.154.28
+    hostname: CVCMH00413A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.32
+        loopback10_ipv4: 10.117.154.28
+  - datalinkIp: 10.117.154.29
+    hostname: CVCMH00416A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.33
+        loopback10_ipv4: 10.117.154.29
+  - datalinkIp: 10.117.154.30
+    hostname: CVCMH00418A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.34
+        loopback10_ipv4: 10.117.154.30
+  - datalinkIp: 10.117.154.79
+    hostname: CVCMH00419A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.83
+        loopback10_ipv4: 10.117.154.79
+  - datalinkIp: 10.117.154.33
+    hostname: CVCMH00427A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.37
+        loopback10_ipv4: 10.117.154.33
+  - datalinkIp: 10.117.154.36
+    hostname: CVCMH00434A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.40
+        loopback10_ipv4: 10.117.154.36
+  - datalinkIp: 10.117.154.41
+    hostname: CVCMH00482A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.45
+        loopback10_ipv4: 10.117.154.41
+  - datalinkIp: 10.117.154.42
+    hostname: CVCMH00484A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.46
+        loopback10_ipv4: 10.117.154.42
+  - datalinkIp: 10.117.154.43
+    hostname: CVCMH00487A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.47
+        loopback10_ipv4: 10.117.154.43
+  - datalinkIp: 10.117.154.45
+    hostname: CVCMH00491A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.49
+        loopback10_ipv4: 10.117.154.45
+  - datalinkIp: 10.117.154.52
+    hostname: CVCMH00505A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.56
+        loopback10_ipv4: 10.117.154.52
+  - datalinkIp: 10.117.154.54
+    hostname: CVCMH00510A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.58
+        loopback10_ipv4: 10.117.154.54
+  - datalinkIp: 10.117.154.55
+    hostname: CVCMH00511A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.59
+        loopback10_ipv4: 10.117.154.55
+  - datalinkIp: 10.117.154.57
+    hostname: CVCMH00517A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.61
+        loopback10_ipv4: 10.117.154.57
+  - datalinkIp: 10.117.154.58
+    hostname: CVCMH00537A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.62
+        loopback10_ipv4: 10.117.154.58
+  - datalinkIp: 10.117.154.59
+    hostname: CVCMH00539B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.63
+        loopback10_ipv4: 10.117.154.59
+  - datalinkIp: 10.117.154.61
+    hostname: CVCMH00554A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.65
+        loopback10_ipv4: 10.117.154.61
+  - datalinkIp: 10.117.154.66
+    hostname: CVCMH00569A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.70
+        loopback10_ipv4: 10.117.154.66
+  - datalinkIp: 10.117.154.10
+    hostname: CVCMH00574A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.14
+        loopback10_ipv4: 10.117.154.10
+  - datalinkIp: 10.117.154.68
+    hostname: CVCMH00578A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.117.152.72
+        loopback10_ipv4: 10.117.154.68
+  - datalinkIp: 10.154.24.9
+    hostname: CYSWY0001L-CS000-PE001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.17
+        loopback10_ipv4: 10.154.24.9
+  - datalinkIp: 10.154.24.43
+    hostname: CYSWY0001L-CS000-PE002.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.21
+        loopback10_ipv4: 10.154.24.43
+  - datalinkIp: 10.154.24.50
+    hostname: CYSWY202BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.26
+        loopback10_ipv4: 10.154.24.50
+  - datalinkIp: 10.154.24.53
+    hostname: CYSWY203CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.31
+        loopback10_ipv4: 10.154.24.53
+  - datalinkIp: 10.154.24.54
+    hostname: CYSWY204AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.32
+        loopback10_ipv4: 10.154.24.54
+  - datalinkIp: 10.154.24.48
+    hostname: CYSWY205AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.27
+        loopback10_ipv4: 10.154.24.48
+  - datalinkIp: 10.154.24.47
+    hostname: CYSWY206AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.25
+        loopback10_ipv4: 10.154.24.47
+  - datalinkIp: 10.154.24.55
+    hostname: CYSWY207AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.33
+        loopback10_ipv4: 10.154.24.55
+  - datalinkIp: 10.154.110.206
+    hostname: DADAL00002A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.250
+        loopback10_ipv4: 10.154.110.206
+  - datalinkIp: 10.154.110.47
+    hostname: DADAL00027B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.91
+        loopback10_ipv4: 10.154.110.47
+  - datalinkIp: 10.154.110.48
+    hostname: DADAL00028B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.92
+        loopback10_ipv4: 10.154.110.48
+  - datalinkIp: 10.154.111.22
+    hostname: DADAL00031A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.66
+        loopback10_ipv4: 10.154.111.22
+  - datalinkIp: 10.154.110.147
+    hostname: DADAL00077A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.191
+        loopback10_ipv4: 10.154.110.147
+  - datalinkIp: 10.154.110.54
+    hostname: DADAL00080B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.98
+        loopback10_ipv4: 10.154.110.54
+  - datalinkIp: 10.154.111.3
+    hostname: DADAL00084A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.47
+        loopback10_ipv4: 10.154.111.3
+  - datalinkIp: 10.154.110.168
+    hostname: DADAL00090B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.212
+        loopback10_ipv4: 10.154.110.168
+  - datalinkIp: 10.154.110.205
+    hostname: DADAL00114A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.249
+        loopback10_ipv4: 10.154.110.205
+  - datalinkIp: 10.154.111.7
+    hostname: DADAL00128A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.51
+        loopback10_ipv4: 10.154.111.7
+  - datalinkIp: 10.154.110.235
+    hostname: DADAL00132B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.23
+        loopback10_ipv4: 10.154.110.235
+  - datalinkIp: 10.154.111.40
+    hostname: DADAL00134A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.83
+        loopback10_ipv4: 10.154.111.40
+  - datalinkIp: 10.154.111.29
+    hostname: DADAL00140A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.72
+        loopback10_ipv4: 10.154.111.29
+  - datalinkIp: 10.154.111.71
+    hostname: DADAL00146A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.114
+        loopback10_ipv4: 10.154.111.71
+  - datalinkIp: 10.154.111.10
+    hostname: DADAL00152A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.54
+        loopback10_ipv4: 10.154.111.10
+  - datalinkIp: 10.154.110.172
+    hostname: DADAL00161A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.216
+        loopback10_ipv4: 10.154.110.172
+  - datalinkIp: 10.154.110.204
+    hostname: DADAL00166A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.248
+        loopback10_ipv4: 10.154.110.204
+  - datalinkIp: 10.154.110.215
+    hostname: DADAL00175A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.3
+        loopback10_ipv4: 10.154.110.215
+  - datalinkIp: 10.154.110.126
+    hostname: DADAL00182A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.170
+        loopback10_ipv4: 10.154.110.126
+  - datalinkIp: 10.154.110.63
+    hostname: DADAL00191A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.107
+        loopback10_ipv4: 10.154.110.63
+  - datalinkIp: 10.154.110.223
+    hostname: DADAL00208A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.11
+        loopback10_ipv4: 10.154.110.223
+  - datalinkIp: 10.154.110.232
+    hostname: DADAL00212A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.20
+        loopback10_ipv4: 10.154.110.232
+  - datalinkIp: 10.154.110.107
+    hostname: DADAL00219A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.151
+        loopback10_ipv4: 10.154.110.107
+  - datalinkIp: 10.154.111.8
+    hostname: DADAL00225A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.52
+        loopback10_ipv4: 10.154.111.8
+  - datalinkIp: 10.154.110.191
+    hostname: DADAL00236A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.235
+        loopback10_ipv4: 10.154.110.191
+  - datalinkIp: 10.154.110.250
+    hostname: DADAL00251A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.38
+        loopback10_ipv4: 10.154.110.250
+  - datalinkIp: 10.154.110.151
+    hostname: DADAL00252A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.195
+        loopback10_ipv4: 10.154.110.151
+  - datalinkIp: 10.154.110.74
+    hostname: DADAL00295A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.118
+        loopback10_ipv4: 10.154.110.74
+  - datalinkIp: 10.154.111.17
+    hostname: DADAL00307A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.61
+        loopback10_ipv4: 10.154.111.17
+  - datalinkIp: 10.154.110.158
+    hostname: DADAL00322A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.202
+        loopback10_ipv4: 10.154.110.158
+  - datalinkIp: 10.154.111.23
+    hostname: DADAL00328A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.67
+        loopback10_ipv4: 10.154.111.23
+  - datalinkIp: 10.154.110.138
+    hostname: DADAL00331A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.182
+        loopback10_ipv4: 10.154.110.138
+  - datalinkIp: 10.154.110.161
+    hostname: DADAL00340A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.205
+        loopback10_ipv4: 10.154.110.161
+  - datalinkIp: 10.154.110.162
+    hostname: DADAL00343A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.206
+        loopback10_ipv4: 10.154.110.162
+  - datalinkIp: 10.154.111.41
+    hostname: DADAL00358A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.84
+        loopback10_ipv4: 10.154.111.41
+  - datalinkIp: 10.154.110.135
+    hostname: DADAL00359A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.179
+        loopback10_ipv4: 10.154.110.135
+  - datalinkIp: 10.154.110.133
+    hostname: DADAL00366A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.177
+        loopback10_ipv4: 10.154.110.133
+  - datalinkIp: 10.154.111.74
+    hostname: DADAL00381C-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.117
+        loopback10_ipv4: 10.154.111.74
+  - datalinkIp: 10.154.110.92
+    hostname: DADAL00383A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.136
+        loopback10_ipv4: 10.154.110.92
+  - datalinkIp: 10.154.111.4
+    hostname: DADAL00388A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.48
+        loopback10_ipv4: 10.154.111.4
+  - datalinkIp: 10.154.111.75
+    hostname: DADAL00402A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.118
+        loopback10_ipv4: 10.154.111.75
+  - datalinkIp: 10.154.111.83
+    hostname: DADAL00431A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.126
+        loopback10_ipv4: 10.154.111.83
+  - datalinkIp: 10.154.111.35
+    hostname: DADAL00432A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.78
+        loopback10_ipv4: 10.154.111.35
+  - datalinkIp: 10.154.111.36
+    hostname: DADAL00439A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.79
+        loopback10_ipv4: 10.154.111.36
+  - datalinkIp: 10.154.110.186
+    hostname: DADAL00465A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.230
+        loopback10_ipv4: 10.154.110.186
+  - datalinkIp: 10.154.111.37
+    hostname: DADAL00473A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.80
+        loopback10_ipv4: 10.154.111.37
+  - datalinkIp: 10.154.111.38
+    hostname: DADAL00474A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.81
+        loopback10_ipv4: 10.154.111.38
+  - datalinkIp: 10.154.110.247
+    hostname: DADAL00480B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.35
+        loopback10_ipv4: 10.154.110.247
+  - datalinkIp: 10.154.110.188
+    hostname: DADAL00494B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.232
+        loopback10_ipv4: 10.154.110.188
+  - datalinkIp: 10.154.110.193
+    hostname: DADAL00498A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.237
+        loopback10_ipv4: 10.154.110.193
+  - datalinkIp: 10.154.111.21
+    hostname: DADAL00501A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.65
+        loopback10_ipv4: 10.154.111.21
+  - datalinkIp: 10.154.110.86
+    hostname: DADAL00503B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.130
+        loopback10_ipv4: 10.154.110.86
+  - datalinkIp: 10.154.110.100
+    hostname: DADAL00504A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.144
+        loopback10_ipv4: 10.154.110.100
+  - datalinkIp: 10.154.110.1
+    hostname: DALTX0001E-CS000-PE001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.1
+        loopback10_ipv4: 10.154.110.1
+  - datalinkIp: 10.154.110.2
+    hostname: DALTX0001E-CS000-PE002.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.2
+        loopback10_ipv4: 10.154.110.2
+  - datalinkIp: 10.154.110.11
+    hostname: DALTX0001L-CS000-PE001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.11
+        loopback10_ipv4: 10.154.110.11
+  - datalinkIp: 10.154.110.22
+    hostname: DALTX0001L-CS000-PE002.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.48
+        loopback10_ipv4: 10.154.110.22
+  - datalinkIp: 10.154.110.25
+    hostname: DALTX195AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.56
+        loopback10_ipv4: 10.154.110.25
+  - datalinkIp: 10.154.110.33
+    hostname: DALTX201AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.68
+        loopback10_ipv4: 10.154.110.33
+  - datalinkIp: 10.154.110.20
+    hostname: DALTX289AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.46
+        loopback10_ipv4: 10.154.110.20
+  - datalinkIp: 10.154.110.19
+    hostname: DALTX347AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.45
+        loopback10_ipv4: 10.154.110.19
+  - datalinkIp: 10.154.110.26
+    hostname: DALTX386AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.57
+        loopback10_ipv4: 10.154.110.26
+  - datalinkIp: 10.154.110.21
+    hostname: DALTX390AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.142.47
+        loopback10_ipv4: 10.154.110.21
+  - datalinkIp: 10.41.150.16
+    hostname: DCSBY00053A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.24
+        loopback10_ipv4: 10.41.150.16
+  - datalinkIp: 10.41.150.1
+    hostname: DCWDCP0001A-CS000-PE001.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.1
+        loopback10_ipv4: 10.41.150.1
+  - datalinkIp: 10.116.220.80
+    hostname: DEDET00014A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.84
+        loopback10_ipv4: 10.116.220.80
+  - datalinkIp: 10.116.220.48
+    hostname: DEDET00030A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.52
+        loopback10_ipv4: 10.116.220.48
+  - datalinkIp: 10.116.220.38
+    hostname: DEDET00032A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.42
+        loopback10_ipv4: 10.116.220.38
+  - datalinkIp: 10.116.220.17
+    hostname: DEDET00117A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.21
+        loopback10_ipv4: 10.116.220.17
+  - datalinkIp: 10.116.220.16
+    hostname: DEDET00124A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.20
+        loopback10_ipv4: 10.116.220.16
+  - datalinkIp: 10.116.220.89
+    hostname: DEDET00136A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.93
+        loopback10_ipv4: 10.116.220.89
+  - datalinkIp: 10.116.220.21
+    hostname: DEDET00151A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.25
+        loopback10_ipv4: 10.116.220.21
+  - datalinkIp: 10.116.220.24
+    hostname: DEDET00167A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.28
+        loopback10_ipv4: 10.116.220.24
+  - datalinkIp: 10.116.220.18
+    hostname: DEDET00246A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.22
+        loopback10_ipv4: 10.116.220.18
+  - datalinkIp: 10.116.220.20
+    hostname: DEDET00288A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.24
+        loopback10_ipv4: 10.116.220.20
+  - datalinkIp: 10.116.220.19
+    hostname: DEDET00343A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.23
+        loopback10_ipv4: 10.116.220.19
+  - datalinkIp: 10.116.220.25
+    hostname: DEDET00348A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.29
+        loopback10_ipv4: 10.116.220.25
+  - datalinkIp: 10.116.220.14
+    hostname: DEDET00370A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.18
+        loopback10_ipv4: 10.116.220.14
+  - datalinkIp: 10.116.220.81
+    hostname: DEDET00416A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.85
+        loopback10_ipv4: 10.116.220.81
+  - datalinkIp: 10.116.220.26
+    hostname: DEDET00417A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.30
+        loopback10_ipv4: 10.116.220.26
+  - datalinkIp: 10.116.220.43
+    hostname: DEDET00422A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.47
+        loopback10_ipv4: 10.116.220.43
+  - datalinkIp: 10.116.220.29
+    hostname: DEDET00438A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.33
+        loopback10_ipv4: 10.116.220.29
+  - datalinkIp: 10.116.220.31
+    hostname: DEDET00442A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.35
+        loopback10_ipv4: 10.116.220.31
+  - datalinkIp: 10.116.220.36
+    hostname: DEDET00447A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.40
+        loopback10_ipv4: 10.116.220.36
+  - datalinkIp: 10.116.220.33
+    hostname: DEDET00455A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.37
+        loopback10_ipv4: 10.116.220.33
+  - datalinkIp: 10.116.220.82
+    hostname: DEDET00457A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.86
+        loopback10_ipv4: 10.116.220.82
+  - datalinkIp: 10.116.220.50
+    hostname: DEDET00467A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.54
+        loopback10_ipv4: 10.116.220.50
+  - datalinkIp: 10.116.220.35
+    hostname: DEDET00474A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.39
+        loopback10_ipv4: 10.116.220.35
+  - datalinkIp: 10.116.220.51
+    hostname: DEDET00517A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.55
+        loopback10_ipv4: 10.116.220.51
+  - datalinkIp: 10.116.220.52
+    hostname: DEDET00518A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.56
+        loopback10_ipv4: 10.116.220.52
+  - datalinkIp: 10.116.220.37
+    hostname: DEDET00524A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.41
+        loopback10_ipv4: 10.116.220.37
+  - datalinkIp: 10.116.220.53
+    hostname: DEDET00620A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.57
+        loopback10_ipv4: 10.116.220.53
+  - datalinkIp: 10.116.220.54
+    hostname: DEDET00637A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.58
+        loopback10_ipv4: 10.116.220.54
+  - datalinkIp: 10.116.220.93
+    hostname: DEDET00644A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.97
+        loopback10_ipv4: 10.116.220.93
+  - datalinkIp: 10.116.220.56
+    hostname: DEDET00653A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.60
+        loopback10_ipv4: 10.116.220.56
+  - datalinkIp: 10.116.220.58
+    hostname: DEDET00700A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.62
+        loopback10_ipv4: 10.116.220.58
+  - datalinkIp: 10.116.220.59
+    hostname: DEDET00718A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.63
+        loopback10_ipv4: 10.116.220.59
+  - datalinkIp: 10.116.220.60
+    hostname: DEDET00726A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.64
+        loopback10_ipv4: 10.116.220.60
+  - datalinkIp: 10.116.220.62
+    hostname: DEDET00745A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.66
+        loopback10_ipv4: 10.116.220.62
+  - datalinkIp: 10.116.220.63
+    hostname: DEDET00748A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.67
+        loopback10_ipv4: 10.116.220.63
+  - datalinkIp: 10.116.220.94
+    hostname: DEMBS00013A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.98
+        loopback10_ipv4: 10.116.220.94
+  - datalinkIp: 10.116.220.74
+    hostname: DEMBS00025A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.78
+        loopback10_ipv4: 10.116.220.74
+  - datalinkIp: 10.116.220.75
+    hostname: DEMBS00027A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.79
+        loopback10_ipv4: 10.116.220.75
+  - datalinkIp: 10.116.220.76
+    hostname: DEMBS00031A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.80
+        loopback10_ipv4: 10.116.220.76
+  - datalinkIp: 10.116.220.78
+    hostname: DEMBS00035A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.82
+        loopback10_ipv4: 10.116.220.78
+  - datalinkIp: 10.116.220.85
+    hostname: DEMBS00041A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.89
+        loopback10_ipv4: 10.116.220.85
+  - datalinkIp: 10.116.220.95
+    hostname: DEMBS00045A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.218.99
+        loopback10_ipv4: 10.116.220.95
+  - datalinkIp: 10.154.24.71
+    hostname: DNDEN00343A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.154.18.49
+        loopback10_ipv4: 10.154.24.71
+  - datalinkIp: 10.40.14.197
+    hostname: HOHOU00038A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.203
+        loopback10_ipv4: 10.40.14.197
+  - datalinkIp: 10.40.14.28
+    hostname: HOHOU00063A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.34
+        loopback10_ipv4: 10.40.14.28
+  - datalinkIp: 10.40.14.146
+    hostname: HOHOU00073A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.152
+        loopback10_ipv4: 10.40.14.146
+  - datalinkIp: 10.40.14.151
+    hostname: HOHOU00100A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.157
+        loopback10_ipv4: 10.40.14.151
+  - datalinkIp: 10.40.14.153
+    hostname: HOHOU00103A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.159
+        loopback10_ipv4: 10.40.14.153
+  - datalinkIp: 10.40.14.211
+    hostname: HOHOU00113B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.217
+        loopback10_ipv4: 10.40.14.211
+  - datalinkIp: 10.40.14.158
+    hostname: HOHOU00118A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.164
+        loopback10_ipv4: 10.40.14.158
+  - datalinkIp: 10.40.14.160
+    hostname: HOHOU00120A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.166
+        loopback10_ipv4: 10.40.14.160
+  - datalinkIp: 10.40.14.66
+    hostname: HOHOU00122A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.72
+        loopback10_ipv4: 10.40.14.66
+  - datalinkIp: 10.40.14.67
+    hostname: HOHOU00126A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.73
+        loopback10_ipv4: 10.40.14.67
+  - datalinkIp: 10.40.14.162
+    hostname: HOHOU00134B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.168
+        loopback10_ipv4: 10.40.14.162
+  - datalinkIp: 10.40.14.68
+    hostname: HOHOU00137A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.74
+        loopback10_ipv4: 10.40.14.68
+  - datalinkIp: 10.40.15.11
+    hostname: HOHOU00142A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.18
+        loopback10_ipv4: 10.40.15.11
+  - datalinkIp: 10.40.14.166
+    hostname: HOHOU00146A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.172
+        loopback10_ipv4: 10.40.14.166
+  - datalinkIp: 10.40.14.167
+    hostname: HOHOU00150B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.173
+        loopback10_ipv4: 10.40.14.167
+  - datalinkIp: 10.40.14.178
+    hostname: HOHOU00151A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.184
+        loopback10_ipv4: 10.40.14.178
+  - datalinkIp: 10.40.14.168
+    hostname: HOHOU00152B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.174
+        loopback10_ipv4: 10.40.14.168
+  - datalinkIp: 10.40.15.9
+    hostname: HOHOU00163A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.16
+        loopback10_ipv4: 10.40.15.9
+  - datalinkIp: 10.40.14.180
+    hostname: HOHOU00165B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.186
+        loopback10_ipv4: 10.40.14.180
+  - datalinkIp: 10.40.15.6
+    hostname: HOHOU00168A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.13
+        loopback10_ipv4: 10.40.15.6
+  - datalinkIp: 10.40.14.219
+    hostname: HOHOU00172A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.225
+        loopback10_ipv4: 10.40.14.219
+  - datalinkIp: 10.40.15.0
+    hostname: HOHOU00186A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.7
+        loopback10_ipv4: 10.40.15.0
+  - datalinkIp: 10.40.14.184
+    hostname: HOHOU00219A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.190
+        loopback10_ipv4: 10.40.14.184
+  - datalinkIp: 10.40.15.18
+    hostname: HOHOU00221A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.25
+        loopback10_ipv4: 10.40.15.18
+  - datalinkIp: 10.40.14.209
+    hostname: HOHOU00226A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.215
+        loopback10_ipv4: 10.40.14.209
+  - datalinkIp: 10.40.14.183
+    hostname: HOHOU00235A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.189
+        loopback10_ipv4: 10.40.14.183
+  - datalinkIp: 10.40.14.177
+    hostname: HOHOU00267A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.183
+        loopback10_ipv4: 10.40.14.177
+  - datalinkIp: 10.40.14.236
+    hostname: HOHOU00304A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.242
+        loopback10_ipv4: 10.40.14.236
+  - datalinkIp: 10.40.15.20
+    hostname: HOHOU00312A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.27
+        loopback10_ipv4: 10.40.15.20
+  - datalinkIp: 10.154.110.255
+    hostname: HOHOU00353B-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.143.43
+        loopback10_ipv4: 10.154.110.255
+  - datalinkIp: 10.40.14.187
+    hostname: HOHOU00361A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.193
+        loopback10_ipv4: 10.40.14.187
+  - datalinkIp: 10.40.14.70
+    hostname: HOHOU00364A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.76
+        loopback10_ipv4: 10.40.14.70
+  - datalinkIp: 10.40.14.25
+    hostname: HOHOU00365A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.31
+        loopback10_ipv4: 10.40.14.25
+  - datalinkIp: 10.40.15.24
+    hostname: HOHOU00369A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.31
+        loopback10_ipv4: 10.40.15.24
+  - datalinkIp: 10.40.15.61
+    hostname: HOHOU00385A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.68
+        loopback10_ipv4: 10.40.15.61
+  - datalinkIp: 10.40.14.189
+    hostname: HOHOU00395A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.195
+        loopback10_ipv4: 10.40.14.189
+  - datalinkIp: 10.40.15.77
+    hostname: HOHOU00413A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.84
+        loopback10_ipv4: 10.40.15.77
+  - datalinkIp: 10.40.14.71
+    hostname: HOHOU00448A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.77
+        loopback10_ipv4: 10.40.14.71
+  - datalinkIp: 10.40.14.77
+    hostname: HOHOU00537A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.83
+        loopback10_ipv4: 10.40.14.77
+  - datalinkIp: 10.40.15.67
+    hostname: HOHOU00551A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.74
+        loopback10_ipv4: 10.40.15.67
+  - datalinkIp: 10.40.14.141
+    hostname: HOHOU00561A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.147
+        loopback10_ipv4: 10.40.14.141
+  - datalinkIp: 10.40.14.47
+    hostname: HOHOU00576A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.53
+        loopback10_ipv4: 10.40.14.47
+  - datalinkIp: 10.40.14.48
+    hostname: HOHOU00584A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.54
+        loopback10_ipv4: 10.40.14.48
+  - datalinkIp: 10.40.14.130
+    hostname: HOHOU00587B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.136
+        loopback10_ipv4: 10.40.14.130
+  - datalinkIp: 10.40.14.126
+    hostname: HOHOU00597B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.132
+        loopback10_ipv4: 10.40.14.126
+  - datalinkIp: 10.40.14.120
+    hostname: HOHOU00611A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.126
+        loopback10_ipv4: 10.40.14.120
+  - datalinkIp: 10.40.14.78
+    hostname: HOHOU00614A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.84
+        loopback10_ipv4: 10.40.14.78
+  - datalinkIp: 10.40.14.116
+    hostname: HOHOU00628A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.122
+        loopback10_ipv4: 10.40.14.116
+  - datalinkIp: 10.40.14.102
+    hostname: HOHOU00667A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.108
+        loopback10_ipv4: 10.40.14.102
+  - datalinkIp: 10.40.14.99
+    hostname: HOHOU00674A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.105
+        loopback10_ipv4: 10.40.14.99
+  - datalinkIp: 10.40.15.69
+    hostname: HOHOU00675A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.76
+        loopback10_ipv4: 10.40.15.69
+  - datalinkIp: 10.40.15.81
+    hostname: HOHOU00678A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.88
+        loopback10_ipv4: 10.40.15.81
+  - datalinkIp: 10.40.14.91
+    hostname: HOHOU00698B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.97
+        loopback10_ipv4: 10.40.14.91
+  - datalinkIp: 10.40.14.84
+    hostname: HOHOU00725A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.12.90
+        loopback10_ipv4: 10.40.14.84
+  - datalinkIp: 10.40.15.71
+    hostname: HOHOU00745A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.13.78
+        loopback10_ipv4: 10.40.15.71
+  - datalinkIp: 10.92.14.7
+    hostname: JKJAN00099A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.12.11
+        loopback10_ipv4: 10.92.14.7
+  - datalinkIp: 10.92.14.13
+    hostname: JKJAN00117A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.12.17
+        loopback10_ipv4: 10.92.14.13
+  - datalinkIp: 10.92.14.23
+    hostname: JKJAN00222A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.12.28
+        loopback10_ipv4: 10.92.14.23
+  - datalinkIp: 10.92.14.9
+    hostname: JKMSY00007A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.12.13
+        loopback10_ipv4: 10.92.14.9
+  - datalinkIp: 10.92.14.12
+    hostname: JKMSY00054A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.92.12.16
+        loopback10_ipv4: 10.92.14.12
+  - datalinkIp: 10.114.84.12
+    hostname: KCMCI00001A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.16
+        loopback10_ipv4: 10.114.84.12
+  - datalinkIp: 10.114.84.13
+    hostname: KCMCI00006A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.17
+        loopback10_ipv4: 10.114.84.13
+  - datalinkIp: 10.114.84.51
+    hostname: KCMCI00017A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.55
+        loopback10_ipv4: 10.114.84.51
+  - datalinkIp: 10.138.2.7
+    hostname: KCMCI00021A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.138.0.11
+        loopback10_ipv4: 10.138.2.7
+  - datalinkIp: 10.138.2.8
+    hostname: KCMCI00026A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.138.0.12
+        loopback10_ipv4: 10.138.2.8
+  - datalinkIp: 10.114.84.56
+    hostname: KCMCI00036A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.60
+        loopback10_ipv4: 10.114.84.56
+  - datalinkIp: 10.114.84.57
+    hostname: KCMCI00037A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.61
+        loopback10_ipv4: 10.114.84.57
+  - datalinkIp: 10.114.84.25
+    hostname: KCMCI00043B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.29
+        loopback10_ipv4: 10.114.84.25
+  - datalinkIp: 10.114.84.27
+    hostname: KCMCI00046A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.31
+        loopback10_ipv4: 10.114.84.27
+  - datalinkIp: 10.114.84.62
+    hostname: KCMCI00050A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.66
+        loopback10_ipv4: 10.114.84.62
+  - datalinkIp: 10.114.84.63
+    hostname: KCMCI00051A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.67
+        loopback10_ipv4: 10.114.84.63
+  - datalinkIp: 10.114.84.29
+    hostname: KCMCI00052A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.33
+        loopback10_ipv4: 10.114.84.29
+  - datalinkIp: 10.138.2.10
+    hostname: KCMCI00088A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.138.0.14
+        loopback10_ipv4: 10.138.2.10
+  - datalinkIp: 10.114.84.33
+    hostname: KCMCI00092A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.37
+        loopback10_ipv4: 10.114.84.33
+  - datalinkIp: 10.114.84.18
+    hostname: KCMCI00100A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.22
+        loopback10_ipv4: 10.114.84.18
+  - datalinkIp: 10.114.84.74
+    hostname: KCMCI00102A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.78
+        loopback10_ipv4: 10.114.84.74
+  - datalinkIp: 10.114.84.7
+    hostname: KCMCI00109A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.11
+        loopback10_ipv4: 10.114.84.7
+  - datalinkIp: 10.114.84.77
+    hostname: KCMCI00113A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.81
+        loopback10_ipv4: 10.114.84.77
+  - datalinkIp: 10.114.84.17
+    hostname: KCMCI00116A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.21
+        loopback10_ipv4: 10.114.84.17
+  - datalinkIp: 10.114.84.82
+    hostname: KCMCI00122A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.86
+        loopback10_ipv4: 10.114.84.82
+  - datalinkIp: 10.114.84.84
+    hostname: KCMCI00125A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.88
+        loopback10_ipv4: 10.114.84.84
+  - datalinkIp: 10.114.84.89
+    hostname: KCMCI00131A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.93
+        loopback10_ipv4: 10.114.84.89
+  - datalinkIp: 10.114.84.115
+    hostname: KCMCI00139A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.119
+        loopback10_ipv4: 10.114.84.115
+  - datalinkIp: 10.114.84.117
+    hostname: KCMCI00143A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.121
+        loopback10_ipv4: 10.114.84.117
+  - datalinkIp: 10.114.84.124
+    hostname: KCMCI00156B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.128
+        loopback10_ipv4: 10.114.84.124
+  - datalinkIp: 10.114.84.129
+    hostname: KCMCI00163A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.133
+        loopback10_ipv4: 10.114.84.129
+  - datalinkIp: 10.114.84.119
+    hostname: KCMCI00188B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.123
+        loopback10_ipv4: 10.114.84.119
+  - datalinkIp: 10.114.84.127
+    hostname: KCMCI00201A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.131
+        loopback10_ipv4: 10.114.84.127
+  - datalinkIp: 10.114.84.135
+    hostname: KCMCI00205A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.139
+        loopback10_ipv4: 10.114.84.135
+  - datalinkIp: 10.114.84.43
+    hostname: KCMCI00208A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.47
+        loopback10_ipv4: 10.114.84.43
+  - datalinkIp: 10.114.84.42
+    hostname: KCMCI00211A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.46
+        loopback10_ipv4: 10.114.84.42
+  - datalinkIp: 10.114.84.159
+    hostname: KCMCI00215A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.163
+        loopback10_ipv4: 10.114.84.159
+  - datalinkIp: 10.114.84.92
+    hostname: KCMCI00228A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.96
+        loopback10_ipv4: 10.114.84.92
+  - datalinkIp: 10.114.84.160
+    hostname: KCMCI00233B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.164
+        loopback10_ipv4: 10.114.84.160
+  - datalinkIp: 10.114.84.94
+    hostname: KCMCI00234A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.98
+        loopback10_ipv4: 10.114.84.94
+  - datalinkIp: 10.114.84.21
+    hostname: KCMCI00246A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.25
+        loopback10_ipv4: 10.114.84.21
+  - datalinkIp: 10.114.84.103
+    hostname: KCMCI00247A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.107
+        loopback10_ipv4: 10.114.84.103
+  - datalinkIp: 10.114.84.105
+    hostname: KCMCI00248A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.109
+        loopback10_ipv4: 10.114.84.105
+  - datalinkIp: 10.114.84.174
+    hostname: KCMCI00251A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.178
+        loopback10_ipv4: 10.114.84.174
+  - datalinkIp: 10.114.84.86
+    hostname: KCMCI00252A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.90
+        loopback10_ipv4: 10.114.84.86
+  - datalinkIp: 10.114.84.128
+    hostname: KCMCI00263C-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.132
+        loopback10_ipv4: 10.114.84.128
+  - datalinkIp: 10.114.84.132
+    hostname: KCMCI00266A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.136
+        loopback10_ipv4: 10.114.84.132
+  - datalinkIp: 10.114.84.136
+    hostname: KCMCI00267A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.140
+        loopback10_ipv4: 10.114.84.136
+  - datalinkIp: 10.114.84.143
+    hostname: KCMCI00274A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.147
+        loopback10_ipv4: 10.114.84.143
+  - datalinkIp: 10.114.84.23
+    hostname: KCMCI00275A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.27
+        loopback10_ipv4: 10.114.84.23
+  - datalinkIp: 10.114.84.144
+    hostname: KCMCI00276A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.148
+        loopback10_ipv4: 10.114.84.144
+  - datalinkIp: 10.114.84.113
+    hostname: KCMCI00281A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.117
+        loopback10_ipv4: 10.114.84.113
+  - datalinkIp: 10.114.84.112
+    hostname: KCMCI00282A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.116
+        loopback10_ipv4: 10.114.84.112
+  - datalinkIp: 10.114.84.9
+    hostname: KCMCI00286A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.13
+        loopback10_ipv4: 10.114.84.9
+  - datalinkIp: 10.114.84.109
+    hostname: KCMCI00287A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.113
+        loopback10_ipv4: 10.114.84.109
+  - datalinkIp: 10.114.84.107
+    hostname: KCMCI00294A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.111
+        loopback10_ipv4: 10.114.84.107
+  - datalinkIp: 10.114.84.171
+    hostname: KCRMO00055A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.175
+        loopback10_ipv4: 10.114.84.171
+  - datalinkIp: 10.114.84.177
+    hostname: KCRMO00056A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.114.82.181
+        loopback10_ipv4: 10.114.84.177
+  - datalinkIp: 10.36.15.10
+    hostname: KNTYS00047A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.15
+        loopback10_ipv4: 10.36.15.10
+  - datalinkIp: 10.36.15.14
+    hostname: KNTYS00074A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.19
+        loopback10_ipv4: 10.36.15.14
+  - datalinkIp: 10.36.15.56
+    hostname: KNTYS00135A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.61
+        loopback10_ipv4: 10.36.15.56
+  - datalinkIp: 10.36.15.57
+    hostname: KNTYS00140A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.62
+        loopback10_ipv4: 10.36.15.57
+  - datalinkIp: 10.36.15.62
+    hostname: KNTYS00147A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.67
+        loopback10_ipv4: 10.36.15.62
+  - datalinkIp: 10.36.15.63
+    hostname: KNTYS00150A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.68
+        loopback10_ipv4: 10.36.15.63
+  - datalinkIp: 10.36.15.68
+    hostname: KNTYS00165A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.73
+        loopback10_ipv4: 10.36.15.68
+  - datalinkIp: 10.36.15.33
+    hostname: KNTYS00215A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.38
+        loopback10_ipv4: 10.36.15.33
+  - datalinkIp: 10.36.15.37
+    hostname: KNTYS00224A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.42
+        loopback10_ipv4: 10.36.15.37
+  - datalinkIp: 10.36.15.47
+    hostname: KNTYS00286A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.52
+        loopback10_ipv4: 10.36.15.47
+  - datalinkIp: 10.36.15.48
+    hostname: KNTYS00289A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.53
+        loopback10_ipv4: 10.36.15.48
+  - datalinkIp: 10.36.15.75
+    hostname: KNTYS00293A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.80
+        loopback10_ipv4: 10.36.15.75
+  - datalinkIp: 10.36.15.77
+    hostname: KNTYS00310A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.82
+        loopback10_ipv4: 10.36.15.77
+  - datalinkIp: 10.36.15.78
+    hostname: KNTYS00314A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.13.83
+        loopback10_ipv4: 10.36.15.78
+  - datalinkIp: 10.36.14.25
+    hostname: KNTYS00369A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.12.29
+        loopback10_ipv4: 10.36.14.25
+  - datalinkIp: 10.152.72.7
+    hostname: LASNV0001E-CS0201-PE001.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.7
+        loopback10_ipv4: 10.152.72.7
+  - datalinkIp: 10.152.72.8
+    hostname: LASNV0001E-CS0202-PE002.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.8
+        loopback10_ipv4: 10.152.72.8
+  - datalinkIp: 10.152.72.11
+    hostname: LASNV0001L-CS0200-PE001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.11
+        loopback10_ipv4: 10.152.72.11
+  - datalinkIp: 10.152.72.12
+    hostname: LASNV0001L-CS0200-PE002.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.12
+        loopback10_ipv4: 10.152.72.12
+  - datalinkIp: 10.152.72.2
+    hostname: LASNV001DC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.62
+        loopback10_ipv4: 10.152.72.2
+  - datalinkIp: 10.152.72.64
+    hostname: LASNV002CC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.63
+        loopback10_ipv4: 10.152.72.64
+  - datalinkIp: 10.152.72.65
+    hostname: LASNV003AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.64
+        loopback10_ipv4: 10.152.72.65
+  - datalinkIp: 10.152.72.37
+    hostname: LASNV005CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.36
+        loopback10_ipv4: 10.152.72.37
+  - datalinkIp: 10.152.72.67
+    hostname: LASNV007BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.66
+        loopback10_ipv4: 10.152.72.67
+  - datalinkIp: 10.152.72.69
+    hostname: LASNV009AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.68
+        loopback10_ipv4: 10.152.72.69
+  - datalinkIp: 10.152.72.70
+    hostname: LASNV010BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.69
+        loopback10_ipv4: 10.152.72.70
+  - datalinkIp: 10.152.72.71
+    hostname: LASNV011AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.70
+        loopback10_ipv4: 10.152.72.71
+  - datalinkIp: 10.152.72.72
+    hostname: LASNV012BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.71
+        loopback10_ipv4: 10.152.72.72
+  - datalinkIp: 10.152.72.73
+    hostname: LASNV013AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.72
+        loopback10_ipv4: 10.152.72.73
+  - datalinkIp: 10.152.72.74
+    hostname: LASNV014AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.73
+        loopback10_ipv4: 10.152.72.74
+  - datalinkIp: 10.152.72.75
+    hostname: LASNV015BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.74
+        loopback10_ipv4: 10.152.72.75
+  - datalinkIp: 10.152.72.76
+    hostname: LASNV016BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.75
+        loopback10_ipv4: 10.152.72.76
+  - datalinkIp: 10.152.72.77
+    hostname: LASNV017CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.76
+        loopback10_ipv4: 10.152.72.77
+  - datalinkIp: 10.152.72.78
+    hostname: LASNV018BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.77
+        loopback10_ipv4: 10.152.72.78
+  - datalinkIp: 10.152.72.38
+    hostname: LASNV019CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.37
+        loopback10_ipv4: 10.152.72.38
+  - datalinkIp: 10.152.72.39
+    hostname: LASNV020BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.38
+        loopback10_ipv4: 10.152.72.39
+  - datalinkIp: 10.152.72.40
+    hostname: LASNV021AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.39
+        loopback10_ipv4: 10.152.72.40
+  - datalinkIp: 10.152.72.79
+    hostname: LASNV022BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.78
+        loopback10_ipv4: 10.152.72.79
+  - datalinkIp: 10.152.72.80
+    hostname: LASNV023AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.79
+        loopback10_ipv4: 10.152.72.80
+  - datalinkIp: 10.152.72.81
+    hostname: LASNV024CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.80
+        loopback10_ipv4: 10.152.72.81
+  - datalinkIp: 10.152.72.82
+    hostname: LASNV025BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.81
+        loopback10_ipv4: 10.152.72.82
+  - datalinkIp: 10.152.72.83
+    hostname: LASNV026AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.82
+        loopback10_ipv4: 10.152.72.83
+  - datalinkIp: 10.152.72.41
+    hostname: LASNV027AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.40
+        loopback10_ipv4: 10.152.72.41
+  - datalinkIp: 10.152.72.84
+    hostname: LASNV028BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.83
+        loopback10_ipv4: 10.152.72.84
+  - datalinkIp: 10.152.72.85
+    hostname: LASNV029AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.84
+        loopback10_ipv4: 10.152.72.85
+  - datalinkIp: 10.152.72.42
+    hostname: LASNV030BC-CS00-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.41
+        loopback10_ipv4: 10.152.72.42
+  - datalinkIp: 10.152.72.86
+    hostname: LASNV031BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.85
+        loopback10_ipv4: 10.152.72.86
+  - datalinkIp: 10.152.72.87
+    hostname: LASNV032BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.86
+        loopback10_ipv4: 10.152.72.87
+  - datalinkIp: 10.152.72.88
+    hostname: LASNV033BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.87
+        loopback10_ipv4: 10.152.72.88
+  - datalinkIp: 10.152.72.89
+    hostname: LASNV034CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.88
+        loopback10_ipv4: 10.152.72.89
+  - datalinkIp: 10.152.72.90
+    hostname: LASNV035BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.89
+        loopback10_ipv4: 10.152.72.90
+  - datalinkIp: 10.152.72.91
+    hostname: LASNV036BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.90
+        loopback10_ipv4: 10.152.72.91
+  - datalinkIp: 10.152.72.92
+    hostname: LASNV037BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.91
+        loopback10_ipv4: 10.152.72.92
+  - datalinkIp: 10.152.72.93
+    hostname: LASNV039BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.92
+        loopback10_ipv4: 10.152.72.93
+  - datalinkIp: 10.152.72.95
+    hostname: LASNV041BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.94
+        loopback10_ipv4: 10.152.72.95
+  - datalinkIp: 10.152.72.96
+    hostname: LASNV042BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.95
+        loopback10_ipv4: 10.152.72.96
+  - datalinkIp: 10.152.72.44
+    hostname: LASNV043BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.43
+        loopback10_ipv4: 10.152.72.44
+  - datalinkIp: 10.152.72.98
+    hostname: LASNV045BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.97
+        loopback10_ipv4: 10.152.72.98
+  - datalinkIp: 10.152.72.99
+    hostname: LASNV046AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.98
+        loopback10_ipv4: 10.152.72.99
+  - datalinkIp: 10.152.72.100
+    hostname: LASNV047CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.99
+        loopback10_ipv4: 10.152.72.100
+  - datalinkIp: 10.152.72.45
+    hostname: LASNV048AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.44
+        loopback10_ipv4: 10.152.72.45
+  - datalinkIp: 10.152.72.101
+    hostname: LASNV049AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.100
+        loopback10_ipv4: 10.152.72.101
+  - datalinkIp: 10.152.72.102
+    hostname: LASNV050CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.101
+        loopback10_ipv4: 10.152.72.102
+  - datalinkIp: 10.152.72.103
+    hostname: LASNV051AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.102
+        loopback10_ipv4: 10.152.72.103
+  - datalinkIp: 10.152.72.104
+    hostname: LASNV052BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.103
+        loopback10_ipv4: 10.152.72.104
+  - datalinkIp: 10.152.72.105
+    hostname: LASNV053AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.104
+        loopback10_ipv4: 10.152.72.105
+  - datalinkIp: 10.152.72.46
+    hostname: LASNV054BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.45
+        loopback10_ipv4: 10.152.72.46
+  - datalinkIp: 10.152.72.106
+    hostname: LASNV055AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.105
+        loopback10_ipv4: 10.152.72.106
+  - datalinkIp: 10.152.72.107
+    hostname: LASNV056BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.106
+        loopback10_ipv4: 10.152.72.107
+  - datalinkIp: 10.152.72.108
+    hostname: LASNV057AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.107
+        loopback10_ipv4: 10.152.72.108
+  - datalinkIp: 10.152.72.109
+    hostname: LASNV058BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.108
+        loopback10_ipv4: 10.152.72.109
+  - datalinkIp: 10.152.72.110
+    hostname: LASNV059BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.109
+        loopback10_ipv4: 10.152.72.110
+  - datalinkIp: 10.152.72.111
+    hostname: LASNV060AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.110
+        loopback10_ipv4: 10.152.72.111
+  - datalinkIp: 10.152.72.112
+    hostname: LASNV061BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.111
+        loopback10_ipv4: 10.152.72.112
+  - datalinkIp: 10.152.72.113
+    hostname: LASNV062BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.112
+        loopback10_ipv4: 10.152.72.113
+  - datalinkIp: 10.152.72.114
+    hostname: LASNV063BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.113
+        loopback10_ipv4: 10.152.72.114
+  - datalinkIp: 10.152.72.115
+    hostname: LASNV064AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.114
+        loopback10_ipv4: 10.152.72.115
+  - datalinkIp: 10.152.72.116
+    hostname: LASNV065AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.115
+        loopback10_ipv4: 10.152.72.116
+  - datalinkIp: 10.152.72.117
+    hostname: LASNV066AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.116
+        loopback10_ipv4: 10.152.72.117
+  - datalinkIp: 10.152.72.118
+    hostname: LASNV067BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.117
+        loopback10_ipv4: 10.152.72.118
+  - datalinkIp: 10.152.72.119
+    hostname: LASNV068BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.118
+        loopback10_ipv4: 10.152.72.119
+  - datalinkIp: 10.152.72.120
+    hostname: LASNV069BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.119
+        loopback10_ipv4: 10.152.72.120
+  - datalinkIp: 10.152.72.121
+    hostname: LASNV070BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.120
+        loopback10_ipv4: 10.152.72.121
+  - datalinkIp: 10.152.72.122
+    hostname: LASNV071AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.121
+        loopback10_ipv4: 10.152.72.122
+  - datalinkIp: 10.152.72.123
+    hostname: LASNV072AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.122
+        loopback10_ipv4: 10.152.72.123
+  - datalinkIp: 10.152.72.124
+    hostname: LASNV073AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.123
+        loopback10_ipv4: 10.152.72.124
+  - datalinkIp: 10.152.72.47
+    hostname: LASNV075AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.46
+        loopback10_ipv4: 10.152.72.47
+  - datalinkIp: 10.152.72.48
+    hostname: LASNV077AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.47
+        loopback10_ipv4: 10.152.72.48
+  - datalinkIp: 10.152.72.127
+    hostname: LASNV078BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.126
+        loopback10_ipv4: 10.152.72.127
+  - datalinkIp: 10.152.72.49
+    hostname: LASNV079BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.48
+        loopback10_ipv4: 10.152.72.49
+  - datalinkIp: 10.152.72.50
+    hostname: LASNV080BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.49
+        loopback10_ipv4: 10.152.72.50
+  - datalinkIp: 10.152.72.128
+    hostname: LASNV081BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.127
+        loopback10_ipv4: 10.152.72.128
+  - datalinkIp: 10.152.72.129
+    hostname: LASNV082BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.128
+        loopback10_ipv4: 10.152.72.129
+  - datalinkIp: 10.152.72.130
+    hostname: LASNV083CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.129
+        loopback10_ipv4: 10.152.72.130
+  - datalinkIp: 10.152.72.131
+    hostname: LASNV084BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.130
+        loopback10_ipv4: 10.152.72.131
+  - datalinkIp: 10.152.72.132
+    hostname: LASNV085BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.131
+        loopback10_ipv4: 10.152.72.132
+  - datalinkIp: 10.152.72.133
+    hostname: LASNV086BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.132
+        loopback10_ipv4: 10.152.72.133
+  - datalinkIp: 10.152.72.51
+    hostname: LASNV087BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.50
+        loopback10_ipv4: 10.152.72.51
+  - datalinkIp: 10.152.72.134
+    hostname: LASNV088CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.133
+        loopback10_ipv4: 10.152.72.134
+  - datalinkIp: 10.152.72.135
+    hostname: LASNV089BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.134
+        loopback10_ipv4: 10.152.72.135
+  - datalinkIp: 10.152.72.136
+    hostname: LASNV090BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.135
+        loopback10_ipv4: 10.152.72.136
+  - datalinkIp: 10.152.72.137
+    hostname: LASNV091BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.136
+        loopback10_ipv4: 10.152.72.137
+  - datalinkIp: 10.152.72.140
+    hostname: LASNV094BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.139
+        loopback10_ipv4: 10.152.72.140
+  - datalinkIp: 10.152.72.141
+    hostname: LASNV095BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.140
+        loopback10_ipv4: 10.152.72.141
+  - datalinkIp: 10.152.72.142
+    hostname: LASNV096BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.141
+        loopback10_ipv4: 10.152.72.142
+  - datalinkIp: 10.152.72.143
+    hostname: LASNV097BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.142
+        loopback10_ipv4: 10.152.72.143
+  - datalinkIp: 10.152.72.145
+    hostname: LASNV099BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.144
+        loopback10_ipv4: 10.152.72.145
+  - datalinkIp: 10.152.72.146
+    hostname: LASNV100BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.145
+        loopback10_ipv4: 10.152.72.146
+  - datalinkIp: 10.152.72.147
+    hostname: LASNV101BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.146
+        loopback10_ipv4: 10.152.72.147
+  - datalinkIp: 10.152.72.148
+    hostname: LASNV102BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.147
+        loopback10_ipv4: 10.152.72.148
+  - datalinkIp: 10.152.72.149
+    hostname: LASNV103BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.148
+        loopback10_ipv4: 10.152.72.149
+  - datalinkIp: 10.152.72.52
+    hostname: LASNV104BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.51
+        loopback10_ipv4: 10.152.72.52
+  - datalinkIp: 10.152.72.150
+    hostname: LASNV105BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.149
+        loopback10_ipv4: 10.152.72.150
+  - datalinkIp: 10.152.72.54
+    hostname: LASNV106BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.53
+        loopback10_ipv4: 10.152.72.54
+  - datalinkIp: 10.152.72.152
+    hostname: LASNV107CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.151
+        loopback10_ipv4: 10.152.72.152
+  - datalinkIp: 10.152.72.153
+    hostname: LASNV108BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.152
+        loopback10_ipv4: 10.152.72.153
+  - datalinkIp: 10.152.72.154
+    hostname: LASNV109BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.153
+        loopback10_ipv4: 10.152.72.154
+  - datalinkIp: 10.152.72.155
+    hostname: LASNV110BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.154
+        loopback10_ipv4: 10.152.72.155
+  - datalinkIp: 10.152.72.157
+    hostname: LASNV112BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.156
+        loopback10_ipv4: 10.152.72.157
+  - datalinkIp: 10.152.72.159
+    hostname: LASNV115CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.158
+        loopback10_ipv4: 10.152.72.159
+  - datalinkIp: 10.152.72.160
+    hostname: LASNV116AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.159
+        loopback10_ipv4: 10.152.72.160
+  - datalinkIp: 10.152.72.161
+    hostname: LASNV117AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.160
+        loopback10_ipv4: 10.152.72.161
+  - datalinkIp: 10.152.72.162
+    hostname: LASNV118BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.161
+        loopback10_ipv4: 10.152.72.162
+  - datalinkIp: 10.152.72.163
+    hostname: LASNV119CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.162
+        loopback10_ipv4: 10.152.72.163
+  - datalinkIp: 10.152.72.164
+    hostname: LASNV120BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.163
+        loopback10_ipv4: 10.152.72.164
+  - datalinkIp: 10.152.72.165
+    hostname: LASNV121BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.164
+        loopback10_ipv4: 10.152.72.165
+  - datalinkIp: 10.152.72.166
+    hostname: LASNV122CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.165
+        loopback10_ipv4: 10.152.72.166
+  - datalinkIp: 10.152.72.167
+    hostname: LASNV123BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.166
+        loopback10_ipv4: 10.152.72.167
+  - datalinkIp: 10.152.72.168
+    hostname: LASNV124BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.167
+        loopback10_ipv4: 10.152.72.168
+  - datalinkIp: 10.152.72.151
+    hostname: LASNV125CC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.150
+        loopback10_ipv4: 10.152.72.151
+  - datalinkIp: 10.152.72.169
+    hostname: LASNV126BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.168
+        loopback10_ipv4: 10.152.72.169
+  - datalinkIp: 10.152.72.170
+    hostname: LASNV127BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.169
+        loopback10_ipv4: 10.152.72.170
+  - datalinkIp: 10.152.72.55
+    hostname: LASNV128BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.54
+        loopback10_ipv4: 10.152.72.55
+  - datalinkIp: 10.152.72.173
+    hostname: LASNV132BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.172
+        loopback10_ipv4: 10.152.72.173
+  - datalinkIp: 10.152.72.176
+    hostname: LASNV137AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.175
+        loopback10_ipv4: 10.152.72.176
+  - datalinkIp: 10.152.72.178
+    hostname: LASNV144AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.177
+        loopback10_ipv4: 10.152.72.178
+  - datalinkIp: 10.152.72.179
+    hostname: LASNV147AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.178
+        loopback10_ipv4: 10.152.72.179
+  - datalinkIp: 10.152.72.180
+    hostname: LASNV150BC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.179
+        loopback10_ipv4: 10.152.72.180
+  - datalinkIp: 10.152.72.181
+    hostname: LASNV151AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.180
+        loopback10_ipv4: 10.152.72.181
+  - datalinkIp: 10.152.72.182
+    hostname: LASNV168AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.181
+        loopback10_ipv4: 10.152.72.182
+  - datalinkIp: 10.152.72.183
+    hostname: LASNV172AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.182
+        loopback10_ipv4: 10.152.72.183
+  - datalinkIp: 10.152.72.57
+    hostname: LASNV182AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.56
+        loopback10_ipv4: 10.152.72.57
+  - datalinkIp: 10.152.72.186
+    hostname: LASNV188AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.185
+        loopback10_ipv4: 10.152.72.186
+  - datalinkIp: 10.152.72.187
+    hostname: LASNV189AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.186
+        loopback10_ipv4: 10.152.72.187
+  - datalinkIp: 10.152.72.188
+    hostname: LASNV202AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.187
+        loopback10_ipv4: 10.152.72.188
+  - datalinkIp: 10.152.72.59
+    hostname: LASNV210BC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.58
+        loopback10_ipv4: 10.152.72.59
+  - datalinkIp: 10.152.72.60
+    hostname: LASNV217AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.59
+        loopback10_ipv4: 10.152.72.60
+  - datalinkIp: 10.152.72.61
+    hostname: LASNV222AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.60
+        loopback10_ipv4: 10.152.72.61
+  - datalinkIp: 10.152.72.62
+    hostname: LASNV224AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.61
+        loopback10_ipv4: 10.152.72.62
+  - datalinkIp: 10.152.72.190
+    hostname: LASNV226AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.189
+        loopback10_ipv4: 10.152.72.190
+  - datalinkIp: 10.152.72.191
+    hostname: LASNV227AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.190
+        loopback10_ipv4: 10.152.72.191
+  - datalinkIp: 10.152.72.192
+    hostname: LASNV228AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.191
+        loopback10_ipv4: 10.152.72.192
+  - datalinkIp: 10.152.72.193
+    hostname: LASNV229AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.192
+        loopback10_ipv4: 10.152.72.193
+  - datalinkIp: 10.152.72.194
+    hostname: LASNV230AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.193
+        loopback10_ipv4: 10.152.72.194
+  - datalinkIp: 10.152.72.4
+    hostname: LASNV232AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.210
+        loopback10_ipv4: 10.152.72.4
+  - datalinkIp: 10.152.72.5
+    hostname: LASNV233AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.211
+        loopback10_ipv4: 10.152.72.5
+  - datalinkIp: 10.42.82.10
+    hostname: MNBIS00002A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.14
+        loopback10_ipv4: 10.42.82.10
+  - datalinkIp: 10.42.82.11
+    hostname: MNBIS00006A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.15
+        loopback10_ipv4: 10.42.82.11
+  - datalinkIp: 10.42.82.13
+    hostname: MNBIS00007A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.17
+        loopback10_ipv4: 10.42.82.13
+  - datalinkIp: 10.42.82.12
+    hostname: MNBIS00008A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.16
+        loopback10_ipv4: 10.42.82.12
+  - datalinkIp: 10.42.82.14
+    hostname: MNBIS00011B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.18
+        loopback10_ipv4: 10.42.82.14
+  - datalinkIp: 10.42.82.15
+    hostname: MNBIS00013A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.19
+        loopback10_ipv4: 10.42.82.15
+  - datalinkIp: 10.42.82.21
+    hostname: MNBIS00015A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.25
+        loopback10_ipv4: 10.42.82.21
+  - datalinkIp: 10.42.82.16
+    hostname: MNBIS00016B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.20
+        loopback10_ipv4: 10.42.82.16
+  - datalinkIp: 10.42.82.17
+    hostname: MNBIS00031A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.21
+        loopback10_ipv4: 10.42.82.17
+  - datalinkIp: 10.42.82.20
+    hostname: MNBIS00036A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.24
+        loopback10_ipv4: 10.42.82.20
+  - datalinkIp: 10.42.82.25
+    hostname: MNBIS00042B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.29
+        loopback10_ipv4: 10.42.82.25
+  - datalinkIp: 10.42.82.27
+    hostname: MNRAP00001A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.31
+        loopback10_ipv4: 10.42.82.27
+  - datalinkIp: 10.42.82.7
+    hostname: MNRAP00015A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.11
+        loopback10_ipv4: 10.42.82.7
+  - datalinkIp: 10.42.82.29
+    hostname: MNRAP00016A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.42.80.33
+        loopback10_ipv4: 10.42.82.29
+  - datalinkIp: 10.38.82.60
+    hostname: NABNA00008A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.68
+        loopback10_ipv4: 10.38.82.60
+  - datalinkIp: 10.38.82.59
+    hostname: NABNA00014A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.67
+        loopback10_ipv4: 10.38.82.59
+  - datalinkIp: 10.38.82.61
+    hostname: NABNA00017A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.69
+        loopback10_ipv4: 10.38.82.61
+  - datalinkIp: 10.38.82.57
+    hostname: NABNA00022A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.65
+        loopback10_ipv4: 10.38.82.57
+  - datalinkIp: 10.38.82.62
+    hostname: NABNA00027A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.70
+        loopback10_ipv4: 10.38.82.62
+  - datalinkIp: 10.38.82.13
+    hostname: NABNA00045A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.21
+        loopback10_ipv4: 10.38.82.13
+  - datalinkIp: 10.38.82.66
+    hostname: NABNA00052A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.74
+        loopback10_ipv4: 10.38.82.66
+  - datalinkIp: 10.38.82.14
+    hostname: NABNA00056A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.22
+        loopback10_ipv4: 10.38.82.14
+  - datalinkIp: 10.38.82.70
+    hostname: NABNA00065A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.78
+        loopback10_ipv4: 10.38.82.70
+  - datalinkIp: 10.38.82.74
+    hostname: NABNA00078A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.82
+        loopback10_ipv4: 10.38.82.74
+  - datalinkIp: 10.38.82.50
+    hostname: NABNA00106A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.58
+        loopback10_ipv4: 10.38.82.50
+  - datalinkIp: 10.38.82.46
+    hostname: NABNA00126A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.54
+        loopback10_ipv4: 10.38.82.46
+  - datalinkIp: 10.38.82.83
+    hostname: NABNA00129A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.90
+        loopback10_ipv4: 10.38.82.83
+  - datalinkIp: 10.38.82.43
+    hostname: NABNA00139A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.51
+        loopback10_ipv4: 10.38.82.43
+  - datalinkIp: 10.38.82.42
+    hostname: NABNA00141A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.50
+        loopback10_ipv4: 10.38.82.42
+  - datalinkIp: 10.38.82.41
+    hostname: NABNA00142A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.49
+        loopback10_ipv4: 10.38.82.41
+  - datalinkIp: 10.38.82.38
+    hostname: NABNA00154A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.46
+        loopback10_ipv4: 10.38.82.38
+  - datalinkIp: 10.38.82.39
+    hostname: NABNA00167A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.47
+        loopback10_ipv4: 10.38.82.39
+  - datalinkIp: 10.38.82.86
+    hostname: NABNA00200A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.93
+        loopback10_ipv4: 10.38.82.86
+  - datalinkIp: 10.38.82.31
+    hostname: NABNA00204A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.39
+        loopback10_ipv4: 10.38.82.31
+  - datalinkIp: 10.38.82.28
+    hostname: NABNA00223A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.36
+        loopback10_ipv4: 10.38.82.28
+  - datalinkIp: 10.38.82.27
+    hostname: NABNA00224A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.35
+        loopback10_ipv4: 10.38.82.27
+  - datalinkIp: 10.38.82.89
+    hostname: NABNA00225A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.96
+        loopback10_ipv4: 10.38.82.89
+  - datalinkIp: 10.38.82.26
+    hostname: NABNA00227A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.34
+        loopback10_ipv4: 10.38.82.26
+  - datalinkIp: 10.38.82.91
+    hostname: NABNA00230A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.98
+        loopback10_ipv4: 10.38.82.91
+  - datalinkIp: 10.38.82.24
+    hostname: NABNA00240A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.32
+        loopback10_ipv4: 10.38.82.24
+  - datalinkIp: 10.38.82.93
+    hostname: NABNA00243A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.100
+        loopback10_ipv4: 10.38.82.93
+  - datalinkIp: 10.38.82.23
+    hostname: NABNA00247A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.31
+        loopback10_ipv4: 10.38.82.23
+  - datalinkIp: 10.38.82.22
+    hostname: NABNA00250A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.30
+        loopback10_ipv4: 10.38.82.22
+  - datalinkIp: 10.38.82.21
+    hostname: NABNA00255A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.29
+        loopback10_ipv4: 10.38.82.21
+  - datalinkIp: 10.38.82.20
+    hostname: NABNA00257A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.28
+        loopback10_ipv4: 10.38.82.20
+  - datalinkIp: 10.38.82.18
+    hostname: NABNA00260A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.26
+        loopback10_ipv4: 10.38.82.18
+  - datalinkIp: 10.38.82.16
+    hostname: NABNA00264A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.24
+        loopback10_ipv4: 10.38.82.16
+  - datalinkIp: 10.38.82.15
+    hostname: NABNA00265A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.23
+        loopback10_ipv4: 10.38.82.15
+  - datalinkIp: 10.38.82.10
+    hostname: NABNA00266A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.18
+        loopback10_ipv4: 10.38.82.10
+  - datalinkIp: 10.38.82.11
+    hostname: NABNA00269A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.19
+        loopback10_ipv4: 10.38.82.11
+  - datalinkIp: 10.38.82.94
+    hostname: NABNA00273A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.101
+        loopback10_ipv4: 10.38.82.94
+  - datalinkIp: 10.38.82.95
+    hostname: NABNA00274A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.102
+        loopback10_ipv4: 10.38.82.95
+  - datalinkIp: 10.38.82.96
+    hostname: NABNA00279A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.103
+        loopback10_ipv4: 10.38.82.96
+  - datalinkIp: 10.38.82.6
+    hostname: NABNA00281A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.14
+        loopback10_ipv4: 10.38.82.6
+  - datalinkIp: 10.38.82.97
+    hostname: NABNA00283A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.104
+        loopback10_ipv4: 10.38.82.97
+  - datalinkIp: 10.38.82.8
+    hostname: NABNA00301A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.16
+        loopback10_ipv4: 10.38.82.8
+  - datalinkIp: 10.38.82.7
+    hostname: NABNA00306A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.38.80.15
+        loopback10_ipv4: 10.38.82.7
+  - datalinkIp: 10.143.2.169
+    hostname: NAOWB00004A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.173
+        loopback10_ipv4: 10.143.2.169
+  - datalinkIp: 10.143.2.170
+    hostname: NAOWB00008A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.174
+        loopback10_ipv4: 10.143.2.170
+  - datalinkIp: 10.143.2.126
+    hostname: NAOWB00034A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.130
+        loopback10_ipv4: 10.143.2.126
+  - datalinkIp: 10.143.2.24
+    hostname: NASDF00040A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.28
+        loopback10_ipv4: 10.143.2.24
+  - datalinkIp: 10.143.2.64
+    hostname: NASDF00048A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.68
+        loopback10_ipv4: 10.143.2.64
+  - datalinkIp: 10.143.2.65
+    hostname: NASDF00049A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.69
+        loopback10_ipv4: 10.143.2.65
+  - datalinkIp: 10.143.2.23
+    hostname: NASDF00079A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.27
+        loopback10_ipv4: 10.143.2.23
+  - datalinkIp: 10.143.2.18
+    hostname: NASDF00087A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.22
+        loopback10_ipv4: 10.143.2.18
+  - datalinkIp: 10.143.2.94
+    hostname: NASDF00089A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.98
+        loopback10_ipv4: 10.143.2.94
+  - datalinkIp: 10.143.2.101
+    hostname: NASDF00098A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.105
+        loopback10_ipv4: 10.143.2.101
+  - datalinkIp: 10.143.2.17
+    hostname: NASDF00100B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.21
+        loopback10_ipv4: 10.143.2.17
+  - datalinkIp: 10.143.2.15
+    hostname: NASDF00111A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.19
+        loopback10_ipv4: 10.143.2.15
+  - datalinkIp: 10.143.2.16
+    hostname: NASDF00122A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.20
+        loopback10_ipv4: 10.143.2.16
+  - datalinkIp: 10.143.2.13
+    hostname: NASDF00135A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.17
+        loopback10_ipv4: 10.143.2.13
+  - datalinkIp: 10.143.2.154
+    hostname: NASDF00142A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.158
+        loopback10_ipv4: 10.143.2.154
+  - datalinkIp: 10.143.2.134
+    hostname: NASDF00147A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.138
+        loopback10_ipv4: 10.143.2.134
+  - datalinkIp: 10.143.2.123
+    hostname: NASDF00149A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.127
+        loopback10_ipv4: 10.143.2.123
+  - datalinkIp: 10.143.2.174
+    hostname: NASDF00157A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.178
+        loopback10_ipv4: 10.143.2.174
+  - datalinkIp: 10.143.2.12
+    hostname: NASDF00161B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.16
+        loopback10_ipv4: 10.143.2.12
+  - datalinkIp: 10.143.2.131
+    hostname: NASDF00170A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.143.0.135
+        loopback10_ipv4: 10.143.2.131
+  - datalinkIp: 10.142.2.11
+    hostname: OKCOK001AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.11
+        loopback10_ipv4: 10.142.2.11
+  - datalinkIp: 10.142.2.7
+    hostname: OKCOK012AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.7
+        loopback10_ipv4: 10.142.2.7
+  - datalinkIp: 10.142.2.1
+    hostname: OKCOK015AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.1
+        loopback10_ipv4: 10.142.2.1
+  - datalinkIp: 10.142.2.15
+    hostname: OKCOK019AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.15
+        loopback10_ipv4: 10.142.2.15
+  - datalinkIp: 10.142.2.16
+    hostname: OKCOK023AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.16
+        loopback10_ipv4: 10.142.2.16
+  - datalinkIp: 10.142.2.10
+    hostname: OKCOK026AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.10
+        loopback10_ipv4: 10.142.2.10
+  - datalinkIp: 10.142.2.21
+    hostname: OKCOK028AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.21
+        loopback10_ipv4: 10.142.2.21
+  - datalinkIp: 10.142.2.3
+    hostname: OKCOK029AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.3
+        loopback10_ipv4: 10.142.2.3
+  - datalinkIp: 10.142.2.2
+    hostname: OKCOK030AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.2
+        loopback10_ipv4: 10.142.2.2
+  - datalinkIp: 10.142.2.12
+    hostname: OKCOK032AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.12
+        loopback10_ipv4: 10.142.2.12
+  - datalinkIp: 10.142.2.6
+    hostname: OKCOK043AC-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.6
+        loopback10_ipv4: 10.142.2.6
+  - datalinkIp: 10.142.2.4
+    hostname: OKCOK047AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.4
+        loopback10_ipv4: 10.142.2.4
+  - datalinkIp: 10.142.2.8
+    hostname: OKCOK057AC-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.8
+        loopback10_ipv4: 10.142.2.8
+  - datalinkIp: 10.108.208.18
+    hostname: OKFYV00054A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.108.14.22
+        loopback10_ipv4: 10.108.208.18
+  - datalinkIp: 10.108.208.12
+    hostname: OKFYV00064A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.108.14.16
+        loopback10_ipv4: 10.108.208.12
+  - datalinkIp: 10.108.208.19
+    hostname: OKFYV00065A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.108.14.23
+        loopback10_ipv4: 10.108.208.19
+  - datalinkIp: 10.108.208.23
+    hostname: OKFYV00073A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.108.14.27
+        loopback10_ipv4: 10.108.208.23
+  - datalinkIp: 10.108.208.26
+    hostname: OKFYV00076A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.108.14.30
+        loopback10_ipv4: 10.108.208.26
+  - datalinkIp: 10.108.208.27
+    hostname: OKFYV00097A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.108.14.31
+        loopback10_ipv4: 10.108.208.27
+  - datalinkIp: 10.142.2.55
+    hostname: OKOKC00002A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.62
+        loopback10_ipv4: 10.142.2.55
+  - datalinkIp: 10.142.2.62
+    hostname: OKOKC00004A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.69
+        loopback10_ipv4: 10.142.2.62
+  - datalinkIp: 10.142.2.29
+    hostname: OKOKC00005A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.29
+        loopback10_ipv4: 10.142.2.29
+  - datalinkIp: 10.142.2.9
+    hostname: OKOKC00007A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.9
+        loopback10_ipv4: 10.142.2.9
+  - datalinkIp: 10.142.2.78
+    hostname: OKOKC00008A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.85
+        loopback10_ipv4: 10.142.2.78
+  - datalinkIp: 10.142.2.28
+    hostname: OKOKC00009A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.28
+        loopback10_ipv4: 10.142.2.28
+  - datalinkIp: 10.142.2.63
+    hostname: OKOKC00010A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.70
+        loopback10_ipv4: 10.142.2.63
+  - datalinkIp: 10.142.2.64
+    hostname: OKOKC00011B-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.71
+        loopback10_ipv4: 10.142.2.64
+  - datalinkIp: 10.142.2.85
+    hostname: OKOKC00014A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.92
+        loopback10_ipv4: 10.142.2.85
+  - datalinkIp: 10.142.2.43
+    hostname: OKOKC00016A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.49
+        loopback10_ipv4: 10.142.2.43
+  - datalinkIp: 10.142.2.36
+    hostname: OKOKC00017A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.36
+        loopback10_ipv4: 10.142.2.36
+  - datalinkIp: 10.142.2.45
+    hostname: OKOKC00018A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.51
+        loopback10_ipv4: 10.142.2.45
+  - datalinkIp: 10.142.2.37
+    hostname: OKOKC00021A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.37
+        loopback10_ipv4: 10.142.2.37
+  - datalinkIp: 10.142.2.65
+    hostname: OKOKC00022A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.72
+        loopback10_ipv4: 10.142.2.65
+  - datalinkIp: 10.142.2.27
+    hostname: OKOKC00024A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.27
+        loopback10_ipv4: 10.142.2.27
+  - datalinkIp: 10.142.2.53
+    hostname: OKOKC00025A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.60
+        loopback10_ipv4: 10.142.2.53
+  - datalinkIp: 10.142.2.66
+    hostname: OKOKC00027A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.73
+        loopback10_ipv4: 10.142.2.66
+  - datalinkIp: 10.142.2.54
+    hostname: OKOKC00031A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.61
+        loopback10_ipv4: 10.142.2.54
+  - datalinkIp: 10.142.2.50
+    hostname: OKOKC00033A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.56
+        loopback10_ipv4: 10.142.2.50
+  - datalinkIp: 10.142.2.88
+    hostname: OKOKC00035A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.95
+        loopback10_ipv4: 10.142.2.88
+  - datalinkIp: 10.142.2.38
+    hostname: OKOKC00037A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.38
+        loopback10_ipv4: 10.142.2.38
+  - datalinkIp: 10.142.2.56
+    hostname: OKOKC00038A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.63
+        loopback10_ipv4: 10.142.2.56
+  - datalinkIp: 10.142.2.67
+    hostname: OKOKC00039A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.74
+        loopback10_ipv4: 10.142.2.67
+  - datalinkIp: 10.142.2.68
+    hostname: OKOKC00040A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.75
+        loopback10_ipv4: 10.142.2.68
+  - datalinkIp: 10.142.2.39
+    hostname: OKOKC00041A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.39
+        loopback10_ipv4: 10.142.2.39
+  - datalinkIp: 10.142.2.79
+    hostname: OKOKC00042A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.86
+        loopback10_ipv4: 10.142.2.79
+  - datalinkIp: 10.142.2.22
+    hostname: OKOKC00044A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.22
+        loopback10_ipv4: 10.142.2.22
+  - datalinkIp: 10.142.2.18
+    hostname: OKOKC00046A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.18
+        loopback10_ipv4: 10.142.2.18
+  - datalinkIp: 10.142.2.25
+    hostname: OKOKC00048A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.25
+        loopback10_ipv4: 10.142.2.25
+  - datalinkIp: 10.142.2.61
+    hostname: OKOKC00049A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.68
+        loopback10_ipv4: 10.142.2.61
+  - datalinkIp: 10.142.2.44
+    hostname: OKOKC00050A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.50
+        loopback10_ipv4: 10.142.2.44
+  - datalinkIp: 10.142.2.46
+    hostname: OKOKC00051A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.52
+        loopback10_ipv4: 10.142.2.46
+  - datalinkIp: 10.142.2.47
+    hostname: OKOKC00052A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.53
+        loopback10_ipv4: 10.142.2.47
+  - datalinkIp: 10.142.2.40
+    hostname: OKOKC00053A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.40
+        loopback10_ipv4: 10.142.2.40
+  - datalinkIp: 10.142.2.80
+    hostname: OKOKC00054A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.87
+        loopback10_ipv4: 10.142.2.80
+  - datalinkIp: 10.142.2.81
+    hostname: OKOKC00055A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.88
+        loopback10_ipv4: 10.142.2.81
+  - datalinkIp: 10.142.2.57
+    hostname: OKOKC00056A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.64
+        loopback10_ipv4: 10.142.2.57
+  - datalinkIp: 10.142.2.20
+    hostname: OKOKC00058A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.20
+        loopback10_ipv4: 10.142.2.20
+  - datalinkIp: 10.142.2.42
+    hostname: OKOKC00059A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.48
+        loopback10_ipv4: 10.142.2.42
+  - datalinkIp: 10.142.2.71
+    hostname: OKOKC00060E-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.78
+        loopback10_ipv4: 10.142.2.71
+  - datalinkIp: 10.142.2.48
+    hostname: OKOKC00061A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.54
+        loopback10_ipv4: 10.142.2.48
+  - datalinkIp: 10.142.2.72
+    hostname: OKOKC00062A-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.79
+        loopback10_ipv4: 10.142.2.72
+  - datalinkIp: 10.142.2.59
+    hostname: OKOKC00063A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.66
+        loopback10_ipv4: 10.142.2.59
+  - datalinkIp: 10.142.2.58
+    hostname: OKOKC00064C-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.65
+        loopback10_ipv4: 10.142.2.58
+  - datalinkIp: 10.142.2.83
+    hostname: OKOKC00065C-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.90
+        loopback10_ipv4: 10.142.2.83
+  - datalinkIp: 10.142.2.49
+    hostname: OKOKC00066B-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.55
+        loopback10_ipv4: 10.142.2.49
+  - datalinkIp: 10.142.2.52
+    hostname: OKOKC00067B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.58
+        loopback10_ipv4: 10.142.2.52
+  - datalinkIp: 10.142.2.23
+    hostname: OKOKC00069B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.23
+        loopback10_ipv4: 10.142.2.23
+  - datalinkIp: 10.142.2.87
+    hostname: OKOKC00070B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.94
+        loopback10_ipv4: 10.142.2.87
+  - datalinkIp: 10.142.2.84
+    hostname: OKOKC00071B-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.91
+        loopback10_ipv4: 10.142.2.84
+  - datalinkIp: 10.142.2.82
+    hostname: OKOKC00072C-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.89
+        loopback10_ipv4: 10.142.2.82
+  - datalinkIp: 10.142.2.74
+    hostname: OKOKC00073B-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.81
+        loopback10_ipv4: 10.142.2.74
+  - datalinkIp: 10.142.2.60
+    hostname: OKOKC00074B-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.67
+        loopback10_ipv4: 10.142.2.60
+  - datalinkIp: 10.142.2.76
+    hostname: OKOKC00076A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.83
+        loopback10_ipv4: 10.142.2.76
+  - datalinkIp: 10.142.2.51
+    hostname: OKOKC00077B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.57
+        loopback10_ipv4: 10.142.2.51
+  - datalinkIp: 10.142.2.77
+    hostname: OKOKC00078B-CS000-CSR001.net.prod.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.84
+        loopback10_ipv4: 10.142.2.77
+  - datalinkIp: 10.142.2.86
+    hostname: OKOKC00079A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.93
+        loopback10_ipv4: 10.142.2.86
+  - datalinkIp: 10.142.2.103
+    hostname: OKOKC20002B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.110
+        loopback10_ipv4: 10.142.2.103
+  - datalinkIp: 10.142.2.109
+    hostname: OKOKC20006B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.116
+        loopback10_ipv4: 10.142.2.109
+  - datalinkIp: 10.142.2.119
+    hostname: OKOKC20014A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.126
+        loopback10_ipv4: 10.142.2.119
+  - datalinkIp: 10.142.2.118
+    hostname: OKOKC20015A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.125
+        loopback10_ipv4: 10.142.2.118
+  - datalinkIp: 10.142.2.120
+    hostname: OKOKC20016A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.127
+        loopback10_ipv4: 10.142.2.120
+  - datalinkIp: 10.142.2.102
+    hostname: OKOKC20019A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.109
+        loopback10_ipv4: 10.142.2.102
+  - datalinkIp: 10.142.2.115
+    hostname: OKOKC20021A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.122
+        loopback10_ipv4: 10.142.2.115
+  - datalinkIp: 10.142.2.123
+    hostname: OKOKC20023A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.130
+        loopback10_ipv4: 10.142.2.123
+  - datalinkIp: 10.142.2.124
+    hostname: OKOKC20025A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.131
+        loopback10_ipv4: 10.142.2.124
+  - datalinkIp: 10.142.2.98
+    hostname: OKOKC20036B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.105
+        loopback10_ipv4: 10.142.2.98
+  - datalinkIp: 10.142.2.101
+    hostname: OKOKC20041A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.108
+        loopback10_ipv4: 10.142.2.101
+  - datalinkIp: 10.142.2.100
+    hostname: OKOKC20053A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.107
+        loopback10_ipv4: 10.142.2.100
+  - datalinkIp: 10.142.2.99
+    hostname: OKOKC20054B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.142.0.106
+        loopback10_ipv4: 10.142.2.99
+  - datalinkIp: 10.36.218.17
+    hostname: PHCPA00068A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.216.21
+        loopback10_ipv4: 10.36.218.17
+  - datalinkIp: 10.36.218.18
+    hostname: PHCPA00073A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.216.22
+        loopback10_ipv4: 10.36.218.18
+  - datalinkIp: 10.36.218.19
+    hostname: PHCPA00074A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.216.23
+        loopback10_ipv4: 10.36.218.19
+  - datalinkIp: 10.36.218.13
+    hostname: PHHAR00033A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.216.17
+        loopback10_ipv4: 10.36.218.13
+  - datalinkIp: 10.36.218.15
+    hostname: PHPHL00427A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.36.216.19
+        loopback10_ipv4: 10.36.218.15
+  - datalinkIp: 10.41.150.19
+    hostname: RIRIC00028A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.27
+        loopback10_ipv4: 10.41.150.19
+  - datalinkIp: 10.41.150.82
+    hostname: RIRIC00066A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.92
+        loopback10_ipv4: 10.41.150.82
+  - datalinkIp: 10.41.150.90
+    hostname: RIRIC00096A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.100
+        loopback10_ipv4: 10.41.150.90
+  - datalinkIp: 10.41.150.92
+    hostname: RIRIC00103A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.102
+        loopback10_ipv4: 10.41.150.92
+  - datalinkIp: 10.41.150.98
+    hostname: RIRIC00116A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.107
+        loopback10_ipv4: 10.41.150.98
+  - datalinkIp: 10.41.150.137
+    hostname: RIRIC00124A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.146
+        loopback10_ipv4: 10.41.150.137
+  - datalinkIp: 10.41.150.20
+    hostname: RIRIC00139A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.28
+        loopback10_ipv4: 10.41.150.20
+  - datalinkIp: 10.41.150.21
+    hostname: RIRIC00144A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.29
+        loopback10_ipv4: 10.41.150.21
+  - datalinkIp: 10.41.150.22
+    hostname: RIRIC00174A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.30
+        loopback10_ipv4: 10.41.150.22
+  - datalinkIp: 10.41.150.23
+    hostname: RIRIC00179A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.31
+        loopback10_ipv4: 10.41.150.23
+  - datalinkIp: 10.41.150.27
+    hostname: RIRIC00191A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.35
+        loopback10_ipv4: 10.41.150.27
+  - datalinkIp: 10.41.150.117
+    hostname: RIRIC00198A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.126
+        loopback10_ipv4: 10.41.150.117
+  - datalinkIp: 10.41.150.30
+    hostname: RIRIC00200A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.38
+        loopback10_ipv4: 10.41.150.30
+  - datalinkIp: 10.41.150.120
+    hostname: RIRIC00201A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.129
+        loopback10_ipv4: 10.41.150.120
+  - datalinkIp: 10.41.150.31
+    hostname: RIRIC00202A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.39
+        loopback10_ipv4: 10.41.150.31
+  - datalinkIp: 10.41.150.32
+    hostname: RIRIC00203A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.40
+        loopback10_ipv4: 10.41.150.32
+  - datalinkIp: 10.41.150.33
+    hostname: RIRIC00204A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.41
+        loopback10_ipv4: 10.41.150.33
+  - datalinkIp: 10.41.150.67
+    hostname: RIRIC00210A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.77
+        loopback10_ipv4: 10.41.150.67
+  - datalinkIp: 10.41.150.36
+    hostname: RIRIC00216A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.44
+        loopback10_ipv4: 10.41.150.36
+  - datalinkIp: 10.41.150.35
+    hostname: RIRIC00217A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.43
+        loopback10_ipv4: 10.41.150.35
+  - datalinkIp: 10.41.150.140
+    hostname: RIRIC00221A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.149
+        loopback10_ipv4: 10.41.150.140
+  - datalinkIp: 10.41.150.132
+    hostname: RIRIC00237A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.141
+        loopback10_ipv4: 10.41.150.132
+  - datalinkIp: 10.41.151.93
+    hostname: RIRIC00241A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.149.102
+        loopback10_ipv4: 10.41.151.93
+  - datalinkIp: 10.41.150.141
+    hostname: RIRIC00266A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.150
+        loopback10_ipv4: 10.41.150.141
+  - datalinkIp: 10.41.150.47
+    hostname: RIRIC00267A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.55
+        loopback10_ipv4: 10.41.150.47
+  - datalinkIp: 10.41.151.105
+    hostname: RIRIC00268A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.149.113
+        loopback10_ipv4: 10.41.151.105
+  - datalinkIp: 10.41.150.61
+    hostname: RIRIC00269A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.69
+        loopback10_ipv4: 10.41.150.61
+  - datalinkIp: 10.41.150.102
+    hostname: RIRIC00274A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.111
+        loopback10_ipv4: 10.41.150.102
+  - datalinkIp: 10.41.150.64
+    hostname: RIRIC00278A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.74
+        loopback10_ipv4: 10.41.150.64
+  - datalinkIp: 10.41.150.103
+    hostname: RIRIC00282A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.112
+        loopback10_ipv4: 10.41.150.103
+  - datalinkIp: 10.41.150.105
+    hostname: RIRIC00285A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.114
+        loopback10_ipv4: 10.41.150.105
+  - datalinkIp: 10.41.150.143
+    hostname: RIRIC00359A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.152
+        loopback10_ipv4: 10.41.150.143
+  - datalinkIp: 10.41.150.121
+    hostname: RIRIC00379A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.130
+        loopback10_ipv4: 10.41.150.121
+  - datalinkIp: 10.41.150.127
+    hostname: RIRIC00391A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.136
+        loopback10_ipv4: 10.41.150.127
+  - datalinkIp: 10.41.150.144
+    hostname: RIRIC00402B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.153
+        loopback10_ipv4: 10.41.150.144
+  - datalinkIp: 10.41.150.62
+    hostname: RIRIC00436A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.70
+        loopback10_ipv4: 10.41.150.62
+  - datalinkIp: 10.41.151.26
+    hostname: RIRIC00452A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.149.35
+        loopback10_ipv4: 10.41.151.26
+  - datalinkIp: 10.41.150.131
+    hostname: RIRIC00458A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.140
+        loopback10_ipv4: 10.41.150.131
+  - datalinkIp: 10.41.150.146
+    hostname: RIRIC00473A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.155
+        loopback10_ipv4: 10.41.150.146
+  - datalinkIp: 10.41.150.147
+    hostname: RIRIC00487A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.156
+        loopback10_ipv4: 10.41.150.147
+  - datalinkIp: 10.41.150.149
+    hostname: RIRIC00493A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.158
+        loopback10_ipv4: 10.41.150.149
+  - datalinkIp: 10.41.150.150
+    hostname: RIRIC00495A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.159
+        loopback10_ipv4: 10.41.150.150
+  - datalinkIp: 10.41.150.49
+    hostname: RIRIC00503A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.73
+        loopback10_ipv4: 10.41.150.49
+  - datalinkIp: 10.41.150.50
+    hostname: RIRIC00505A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.58
+        loopback10_ipv4: 10.41.150.50
+  - datalinkIp: 10.41.150.152
+    hostname: RIRIC00511A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.161
+        loopback10_ipv4: 10.41.150.152
+  - datalinkIp: 10.41.150.52
+    hostname: RIRIC00516A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.60
+        loopback10_ipv4: 10.41.150.52
+  - datalinkIp: 10.41.151.139
+    hostname: RIRIC00522A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.149.149
+        loopback10_ipv4: 10.41.151.139
+  - datalinkIp: 10.41.150.153
+    hostname: RIRIC00526A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.162
+        loopback10_ipv4: 10.41.150.153
+  - datalinkIp: 10.41.150.53
+    hostname: RIRIC00527A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.61
+        loopback10_ipv4: 10.41.150.53
+  - datalinkIp: 10.41.150.154
+    hostname: RIRIC00529A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.163
+        loopback10_ipv4: 10.41.150.154
+  - datalinkIp: 10.41.150.54
+    hostname: RIRIC00530A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.62
+        loopback10_ipv4: 10.41.150.54
+  - datalinkIp: 10.41.150.57
+    hostname: RIRIC00555A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.65
+        loopback10_ipv4: 10.41.150.57
+  - datalinkIp: 10.41.150.83
+    hostname: RIRIC00556A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.93
+        loopback10_ipv4: 10.41.150.83
+  - datalinkIp: 10.41.150.101
+    hostname: RIRIC00558A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.110
+        loopback10_ipv4: 10.41.150.101
+  - datalinkIp: 10.41.150.59
+    hostname: RIRIC00564A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.41.148.67
+        loopback10_ipv4: 10.41.150.59
+  - datalinkIp: 10.152.72.214
+    hostname: SDLAS00044A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.226
+        loopback10_ipv4: 10.152.72.214
+  - datalinkIp: 10.152.72.212
+    hostname: SDLAS00141B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.230
+        loopback10_ipv4: 10.152.72.212
+  - datalinkIp: 10.152.72.213
+    hostname: SDLAS80001A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.152.66.231
+        loopback10_ipv4: 10.152.72.213
+  - datalinkIp: 10.116.2.8
+    hostname: SEGEG00019B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.12
+        loopback10_ipv4: 10.116.2.8
+  - datalinkIp: 10.116.2.7
+    hostname: SEGEG00033B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.11
+        loopback10_ipv4: 10.116.2.7
+  - datalinkIp: 10.116.2.10
+    hostname: SEGEG00050A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.14
+        loopback10_ipv4: 10.116.2.10
+  - datalinkIp: 10.116.2.31
+    hostname: SEGEG00057A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.35
+        loopback10_ipv4: 10.116.2.31
+  - datalinkIp: 10.116.2.14
+    hostname: SEGEG00066A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.18
+        loopback10_ipv4: 10.116.2.14
+  - datalinkIp: 10.116.2.15
+    hostname: SEGEG00067B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.19
+        loopback10_ipv4: 10.116.2.15
+  - datalinkIp: 10.116.2.16
+    hostname: SEGEG00068A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.20
+        loopback10_ipv4: 10.116.2.16
+  - datalinkIp: 10.116.2.34
+    hostname: SEGEG00108A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.38
+        loopback10_ipv4: 10.116.2.34
+  - datalinkIp: 10.116.2.25
+    hostname: SEGEG00137B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.29
+        loopback10_ipv4: 10.116.2.25
+  - datalinkIp: 10.116.2.39
+    hostname: SEGEG00139B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.43
+        loopback10_ipv4: 10.116.2.39
+  - datalinkIp: 10.116.2.26
+    hostname: SEGEG00151A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.116.0.30
+        loopback10_ipv4: 10.116.2.26
+  - datalinkIp: 10.106.2.14
+    hostname: SLSLC00082A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.106.0.18
+        loopback10_ipv4: 10.106.2.14
+  - datalinkIp: 10.106.2.13
+    hostname: SLSLC00115A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.106.0.17
+        loopback10_ipv4: 10.106.2.13
+  - datalinkIp: 10.118.86.111
+    hostname: STSTL00002A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.114
+        loopback10_ipv4: 10.118.86.111
+  - datalinkIp: 10.118.86.108
+    hostname: STSTL00003A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.111
+        loopback10_ipv4: 10.118.86.108
+  - datalinkIp: 10.118.86.107
+    hostname: STSTL00004A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.110
+        loopback10_ipv4: 10.118.86.107
+  - datalinkIp: 10.118.86.105
+    hostname: STSTL00006A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.108
+        loopback10_ipv4: 10.118.86.105
+  - datalinkIp: 10.118.86.104
+    hostname: STSTL00008A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.107
+        loopback10_ipv4: 10.118.86.104
+  - datalinkIp: 10.118.86.99
+    hostname: STSTL00012A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.102
+        loopback10_ipv4: 10.118.86.99
+  - datalinkIp: 10.118.86.97
+    hostname: STSTL00013A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.100
+        loopback10_ipv4: 10.118.86.97
+  - datalinkIp: 10.118.86.96
+    hostname: STSTL00014A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.99
+        loopback10_ipv4: 10.118.86.96
+  - datalinkIp: 10.118.86.128
+    hostname: STSTL00018A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.131
+        loopback10_ipv4: 10.118.86.128
+  - datalinkIp: 10.118.86.127
+    hostname: STSTL00019A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.130
+        loopback10_ipv4: 10.118.86.127
+  - datalinkIp: 10.118.86.130
+    hostname: STSTL00020A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.133
+        loopback10_ipv4: 10.118.86.130
+  - datalinkIp: 10.118.86.125
+    hostname: STSTL00026A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.128
+        loopback10_ipv4: 10.118.86.125
+  - datalinkIp: 10.118.86.118
+    hostname: STSTL00035A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.121
+        loopback10_ipv4: 10.118.86.118
+  - datalinkIp: 10.118.86.117
+    hostname: STSTL00039A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.120
+        loopback10_ipv4: 10.118.86.117
+  - datalinkIp: 10.118.86.112
+    hostname: STSTL00044A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.115
+        loopback10_ipv4: 10.118.86.112
+  - datalinkIp: 10.118.86.109
+    hostname: STSTL00053A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.112
+        loopback10_ipv4: 10.118.86.109
+  - datalinkIp: 10.118.86.103
+    hostname: STSTL00060A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.106
+        loopback10_ipv4: 10.118.86.103
+  - datalinkIp: 10.118.86.100
+    hostname: STSTL00069A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.103
+        loopback10_ipv4: 10.118.86.100
+  - datalinkIp: 10.118.86.95
+    hostname: STSTL00076A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.98
+        loopback10_ipv4: 10.118.86.95
+  - datalinkIp: 10.118.86.94
+    hostname: STSTL00079A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.97
+        loopback10_ipv4: 10.118.86.94
+  - datalinkIp: 10.118.86.93
+    hostname: STSTL00089A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.96
+        loopback10_ipv4: 10.118.86.93
+  - datalinkIp: 10.118.86.92
+    hostname: STSTL00091A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.95
+        loopback10_ipv4: 10.118.86.92
+  - datalinkIp: 10.118.86.87
+    hostname: STSTL00114A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.90
+        loopback10_ipv4: 10.118.86.87
+  - datalinkIp: 10.118.86.166
+    hostname: STSTL00121A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.169
+        loopback10_ipv4: 10.118.86.166
+  - datalinkIp: 10.118.86.85
+    hostname: STSTL00129A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.88
+        loopback10_ipv4: 10.118.86.85
+  - datalinkIp: 10.118.86.80
+    hostname: STSTL00146A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.83
+        loopback10_ipv4: 10.118.86.80
+  - datalinkIp: 10.118.86.131
+    hostname: STSTL00147A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.134
+        loopback10_ipv4: 10.118.86.131
+  - datalinkIp: 10.140.196.250
+    hostname: STSTL00153A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.119
+        loopback10_ipv4: 10.140.196.250
+  - datalinkIp: 10.118.86.119
+    hostname: STSTL00155A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.122
+        loopback10_ipv4: 10.118.86.119
+  - datalinkIp: 10.118.86.79
+    hostname: STSTL00160A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.82
+        loopback10_ipv4: 10.118.86.79
+  - datalinkIp: 10.118.86.199
+    hostname: STSTL00176A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.202
+        loopback10_ipv4: 10.118.86.199
+  - datalinkIp: 10.118.86.206
+    hostname: STSTL00187A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.209
+        loopback10_ipv4: 10.118.86.206
+  - datalinkIp: 10.118.86.74
+    hostname: STSTL00190A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.77
+        loopback10_ipv4: 10.118.86.74
+  - datalinkIp: 10.118.86.200
+    hostname: STSTL00191A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.203
+        loopback10_ipv4: 10.118.86.200
+  - datalinkIp: 10.118.86.122
+    hostname: STSTL00192A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.125
+        loopback10_ipv4: 10.118.86.122
+  - datalinkIp: 10.118.86.121
+    hostname: STSTL00198A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.124
+        loopback10_ipv4: 10.118.86.121
+  - datalinkIp: 10.118.86.73
+    hostname: STSTL00201A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.76
+        loopback10_ipv4: 10.118.86.73
+  - datalinkIp: 10.118.86.132
+    hostname: STSTL00207A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.135
+        loopback10_ipv4: 10.118.86.132
+  - datalinkIp: 10.118.86.72
+    hostname: STSTL00210A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.75
+        loopback10_ipv4: 10.118.86.72
+  - datalinkIp: 10.118.86.115
+    hostname: STSTL00217A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.118
+        loopback10_ipv4: 10.118.86.115
+  - datalinkIp: 10.118.86.66
+    hostname: STSTL00224A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.69
+        loopback10_ipv4: 10.118.86.66
+  - datalinkIp: 10.118.86.133
+    hostname: STSTL00230A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.136
+        loopback10_ipv4: 10.118.86.133
+  - datalinkIp: 10.118.86.134
+    hostname: STSTL00239A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.137
+        loopback10_ipv4: 10.118.86.134
+  - datalinkIp: 10.118.86.137
+    hostname: STSTL00243A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.140
+        loopback10_ipv4: 10.118.86.137
+  - datalinkIp: 10.118.86.218
+    hostname: STSTL00245A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.221
+        loopback10_ipv4: 10.118.86.218
+  - datalinkIp: 10.118.86.207
+    hostname: STSTL00246A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.210
+        loopback10_ipv4: 10.118.86.207
+  - datalinkIp: 10.118.86.65
+    hostname: STSTL00249A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.68
+        loopback10_ipv4: 10.118.86.65
+  - datalinkIp: 10.118.86.63
+    hostname: STSTL00250B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.66
+        loopback10_ipv4: 10.118.86.63
+  - datalinkIp: 10.118.86.62
+    hostname: STSTL00251A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.65
+        loopback10_ipv4: 10.118.86.62
+  - datalinkIp: 10.118.86.61
+    hostname: STSTL00252A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.64
+        loopback10_ipv4: 10.118.86.61
+  - datalinkIp: 10.118.86.60
+    hostname: STSTL00255A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.63
+        loopback10_ipv4: 10.118.86.60
+  - datalinkIp: 10.118.86.67
+    hostname: STSTL00256A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.70
+        loopback10_ipv4: 10.118.86.67
+  - datalinkIp: 10.118.87.30
+    hostname: STSTL00265A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.85.33
+        loopback10_ipv4: 10.118.87.30
+  - datalinkIp: 10.118.86.56
+    hostname: STSTL00270A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.59
+        loopback10_ipv4: 10.118.86.56
+  - datalinkIp: 10.118.86.51
+    hostname: STSTL00273A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.54
+        loopback10_ipv4: 10.118.86.51
+  - datalinkIp: 10.118.86.53
+    hostname: STSTL00274A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.56
+        loopback10_ipv4: 10.118.86.53
+  - datalinkIp: 10.118.86.138
+    hostname: STSTL00276A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.141
+        loopback10_ipv4: 10.118.86.138
+  - datalinkIp: 10.118.86.47
+    hostname: STSTL00281A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.50
+        loopback10_ipv4: 10.118.86.47
+  - datalinkIp: 10.118.86.44
+    hostname: STSTL00282A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.47
+        loopback10_ipv4: 10.118.86.44
+  - datalinkIp: 10.118.86.139
+    hostname: STSTL00288B-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.142
+        loopback10_ipv4: 10.118.86.139
+  - datalinkIp: 10.118.86.55
+    hostname: STSTL00295A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.58
+        loopback10_ipv4: 10.118.86.55
+  - datalinkIp: 10.118.86.52
+    hostname: STSTL00296A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.55
+        loopback10_ipv4: 10.118.86.52
+  - datalinkIp: 10.118.86.236
+    hostname: STSTL00301A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.239
+        loopback10_ipv4: 10.118.86.236
+  - datalinkIp: 10.118.86.140
+    hostname: STSTL00310A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.143
+        loopback10_ipv4: 10.118.86.140
+  - datalinkIp: 10.118.86.202
+    hostname: STSTL00314A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.205
+        loopback10_ipv4: 10.118.86.202
+  - datalinkIp: 10.118.86.39
+    hostname: STSTL00315A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.42
+        loopback10_ipv4: 10.118.86.39
+  - datalinkIp: 10.118.86.42
+    hostname: STSTL00325A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.45
+        loopback10_ipv4: 10.118.86.42
+  - datalinkIp: 10.118.86.30
+    hostname: STSTL00326A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.33
+        loopback10_ipv4: 10.118.86.30
+  - datalinkIp: 10.118.86.27
+    hostname: STSTL00332A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.30
+        loopback10_ipv4: 10.118.86.27
+  - datalinkIp: 10.118.86.24
+    hostname: STSTL00338A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.27
+        loopback10_ipv4: 10.118.86.24
+  - datalinkIp: 10.118.86.253
+    hostname: STSTL00341A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.85.0
+        loopback10_ipv4: 10.118.86.253
+  - datalinkIp: 10.118.86.23
+    hostname: STSTL00348A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.26
+        loopback10_ipv4: 10.118.86.23
+  - datalinkIp: 10.118.86.204
+    hostname: STSTL00353A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.207
+        loopback10_ipv4: 10.118.86.204
+  - datalinkIp: 10.118.86.205
+    hostname: STSTL00360A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.208
+        loopback10_ipv4: 10.118.86.205
+  - datalinkIp: 10.118.86.46
+    hostname: STSTL00363A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.49
+        loopback10_ipv4: 10.118.86.46
+  - datalinkIp: 10.118.86.40
+    hostname: STSTL00365A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.43
+        loopback10_ipv4: 10.118.86.40
+  - datalinkIp: 10.118.87.6
+    hostname: STSTL00368A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.85.9
+        loopback10_ipv4: 10.118.87.6
+  - datalinkIp: 10.118.86.38
+    hostname: STSTL00374A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.41
+        loopback10_ipv4: 10.118.86.38
+  - datalinkIp: 10.118.86.35
+    hostname: STSTL00375A-CS000-CSR001.cicd.corp.dish-wireless.net
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.38
+        loopback10_ipv4: 10.118.86.35
+  - datalinkIp: 10.118.86.145
+    hostname: STSTL00378A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.148
+        loopback10_ipv4: 10.118.86.145
+  - datalinkIp: 10.118.86.146
+    hostname: STSTL00379A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.149
+        loopback10_ipv4: 10.118.86.146
+  - datalinkIp: 10.118.86.31
+    hostname: STSTL00383A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.34
+        loopback10_ipv4: 10.118.86.31
+  - datalinkIp: 10.118.86.147
+    hostname: STSTL00390A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.150
+        loopback10_ipv4: 10.118.86.147
+  - datalinkIp: 10.118.86.149
+    hostname: STSTL00440A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.152
+        loopback10_ipv4: 10.118.86.149
+  - datalinkIp: 10.118.86.150
+    hostname: STSTL00448A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.118.84.153
+        loopback10_ipv4: 10.118.86.150
+  - datalinkIp: 10.40.218.134
+    hostname: SYSYR00102A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.142
+        loopback10_ipv4: 10.40.218.134
+  - datalinkIp: 10.40.218.153
+    hostname: SYSYR00108A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.161
+        loopback10_ipv4: 10.40.218.153
+  - datalinkIp: 10.40.219.6
+    hostname: SYSYR00119A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.217.14
+        loopback10_ipv4: 10.40.219.6
+  - datalinkIp: 10.40.218.227
+    hostname: SYSYR00138A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.235
+        loopback10_ipv4: 10.40.218.227
+  - datalinkIp: 10.40.219.27
+    hostname: SYSYR00276A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.217.35
+        loopback10_ipv4: 10.40.219.27
+  - datalinkIp: 10.40.218.229
+    hostname: SYSYR00378A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.237
+        loopback10_ipv4: 10.40.218.229
+  - datalinkIp: 10.40.218.231
+    hostname: SYSYR00400A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.239
+        loopback10_ipv4: 10.40.218.231
+  - datalinkIp: 10.40.218.214
+    hostname: SYSYR00418A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.222
+        loopback10_ipv4: 10.40.218.214
+  - datalinkIp: 10.40.219.57
+    hostname: SYSYR00435A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.217.65
+        loopback10_ipv4: 10.40.219.57
+  - datalinkIp: 10.40.218.206
+    hostname: SYSYR00457A-CS000-CSR001
+    day1_params:
+      external_params:
+        loopback0_ipv4: 10.40.216.214
+        loopback10_ipv4: 10.40.218.206

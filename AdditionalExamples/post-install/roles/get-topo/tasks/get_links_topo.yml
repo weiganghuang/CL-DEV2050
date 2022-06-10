@@ -1,0 +1,17 @@
+---
+
+# pre-requsite:   jwt.yml task 
+- name: get-topo
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: GET
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/nbi/optima/v1/restconf/data/ietf-network-state:networks"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    
+  

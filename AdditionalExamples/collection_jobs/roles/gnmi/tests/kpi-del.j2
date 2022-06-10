@@ -1,0 +1,14 @@
+{%- set path = item.paths.split(',')[0] %}  
+{%- set org_elem = path.split(':') %}
+{%- if item.paths.split(',') | length > 1 %}
+    {%- set sensor = '/'.join(org_elem[1].split('/')[:-1]) %} 
+{%- else %}
+    {%- set sensor = org_elem[1] %} 
+{%- endif %}
+
+{
+   "application_context": {
+            "application_id": "{{ application_id_prefix}}{{org_elem[0]}}",
+            "context_id": "{{sensor}}"
+     }
+}

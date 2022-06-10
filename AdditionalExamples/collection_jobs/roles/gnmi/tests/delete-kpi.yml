@@ -1,0 +1,88 @@
+---
+- hosts: localhost
+  vars_files: 
+    - '/Users/weigang/git/CNC-Automation/collection/roles/gnmi-sensor/defaults/main.yml'
+    - '/Users/weigang/git/CNC-Automation/collection/roles/gnmi-sensor/defaults/kpis-delete.yml'
+   
+  tasks:
+    
+    # - name: create collection payload
+      
+    #   template:
+    #     src: "/Users/weigang/git/CNC-Automation/collection/roles/gnmi-sensor/templates/kpi.j2"
+    #     dest: "{{tmp_file_path}}/{{item.name}}.json"
+    #   with_nested: 
+    #     - "{{kpis}}"
+    #     - "{{item1"
+      
+    - name: Create collection job json
+      # debug:
+      #   msg: "{{item.name}}=== {{item.default}}"
+      # loop: "{{kpis}}"
+      
+      
+      template:
+        src: "/Users/weigang/git/CNC-Automation/collection/roles/gnmi-sensor/templates/kpi-del.j2"
+        dest: "{{tmp_file_path}}/del-{{item.name}}.json"
+      loop: "{{kpis}}"
+
+    - name: get.ticket.step1
+      uri:
+        validate_certs: no
+        status_code: [201, 202]
+        method: POST
+        url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/sso/v1/tickets"
+        return_content: yes
+        body: "username={{cnc_user}}&password={{cnc_pw}}"
+        headers:
+          Content-Type: application/x-www-form-urlencoded
+      register: ApiTicket
+
+    - debug:
+        msg: "{{ ApiTicket.content }}"
+
+    - name: get.jwt.step2
+      uri:
+        validate_certs: no
+        status_code: [200, 201, 202]
+        method: POST
+        url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/sso/v1/tickets/{{ApiTicket.content}}"
+        return_content: yes
+        body_format: form-urlencoded
+        body: 
+          service: "https://{{cnc_ip}}:{{cnc_port}}/app-dashboard"
+        headers:
+          Content-Type: application/x-www-form-urlencoded
+      register: myJWT
+
+    - debug:
+        msg: "{{myJWT.content}}"
+
+
+    - name: create collection jobs
+      uri:
+        validate_certs: no
+        status_code: [200, 201, 202]
+        method: DELETE
+        url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/collection/v1/collectionjob"
+        return_content: yes
+        headers:
+          Content-Type: application/yang-data+json
+          Accept: application/yang-data+json
+          Authorization: "Bearer {{ myJWT.content }}"
+        body_format: json
+        body: "{{ lookup('file', '{{tmp_file_path}}/del-{{item.name}}.json')}}"
+      with_items: "{{kpis}}"
+      loop_control:
+        pause: 1
+      register: myOutput
+
+    - debug:
+        msg: "current index==> {{myidx}}"
+      with_items: "{{myOutput.results}}"
+      loop_control: 
+        label: "{{item.json.result.request_result}}" 
+        index_var: myidx
+
+
+

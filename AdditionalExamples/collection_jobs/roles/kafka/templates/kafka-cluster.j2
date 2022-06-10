@@ -1,0 +1,36 @@
+{
+    "providers": [
+        {
+            "name": "{{item.server}}",
+            "connectivity_info": [
+{%- for ip in item.ips %}
+                {
+                    "type": "ROBOT_MSVC_TRANS_KAFKA",
+                    "ipaddrs": [
+                        {
+                            "inet_af": "ROBOT_INET_ADDR_TYPE_v4",
+                            "inet_addr": "{{ip.ip}}",
+                            "mask": "32"
+                        }
+                    ],
+                    "port": {{ip.port}}
+{% if loop.index == loop.length %}
+            }
+{% else %}
+            },
+{% endif %}
+{%- endfor %}
+            ],
+            "family": "ROBOT_PROVIDER_DESTINATION",
+            "properties": {
+                "DESTINATION_TYPE": "destination_type_kafka",
+                "ENCODING": "json",
+                "COMPRESSION_TYPE_CONFIG": "none",
+                "IS_SECURITY_ENABLED": "false",
+                "MAX_REQUEST_SIZE_CONFIG": "100000000",
+                "LINGER_MS_CONFIG": "500",
+                "BATCH_SIZE_CONFIG": "16384"
+            }
+        }
+    ]
+}

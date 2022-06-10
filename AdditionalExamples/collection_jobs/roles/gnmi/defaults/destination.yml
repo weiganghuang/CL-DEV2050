@@ -1,0 +1,5 @@
+---
+# group_vars/vars
+destinations: [10.130.131.90, 10.140.131.95, 10.140.131.92, 10.140.131.93]
+destination_uuids: [13fa80ce-87ed-441b-adf2-d48fda304325, d448a2c6-6616-4a44-b24e-d2da0dd42f5c, dbd3a452-94ea-479e-9768-bb7f766c2b35, 42f0d431-4df0-41f3-9573-d8c5bca20da0]
+

@@ -1,0 +1,4 @@
+- name: get into JWT
+  import_tasks: ../../../common-tasks/jwt.yml
+- name: create_dg_pool
+  import_tasks: create_dg_pool.yml

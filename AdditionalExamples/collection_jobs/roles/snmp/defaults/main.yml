@@ -1,0 +1,8 @@
+---
+# group_vars/vars
+test_flag: ''
+device_tag_name: "{{test_flag}}snmp"
+destination_context_id: "{{test_flag}}LAB001TRTCDGVIASMP"
+application_id_prefix: "{{test_flag}}ex_snmp_"
+tmp_file_path: /tmp/
+
