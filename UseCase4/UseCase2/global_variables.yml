@@ -1,8 +1,0 @@
----
-
-# get_crosswork_authentication role variable
-cnc_ip: 198.18.134.219
-cnc_port: 30603
-
-upper_limit: 10
-ansible_python_interpreter: /usr/local/bin/python3
