@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#ansible-playbook prepare_hosts.yml > /tmp/nooutput
-sleep 2
-# cat hosts-list
+ansible-playbook prepare_hosts.yml > /tmp/nooutput
 
 cat hosts-dy.json
