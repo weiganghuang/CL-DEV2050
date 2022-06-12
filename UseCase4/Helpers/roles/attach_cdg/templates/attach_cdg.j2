@@ -1,0 +1,16 @@
+{% if device_uuids[item.host_name] is defined %}
+{
+    "dgDeviceMappings": [
+        {
+            "cdg_duuid": "{{item.vdguuid}}",,
+            "device_uuid": [
+                "{{device_uuids[item.host_name]}}"
+                
+            ],
+            "mapping_oper": "ADD_OPER"
+            
+        }
+         
+    ]
+}
+{% endif %}

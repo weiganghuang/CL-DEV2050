@@ -1,0 +1,23 @@
+---
+- name: delete devices
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: DELETE
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes"
+    return_content: yes
+    headers:
+      Content-Type: application/yang-data+json
+      Accept: application/yang-data+json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('template', 'delete_devices.j2')}}"
+  register: myOutput
+  
+  
+
+  
+
+
+
+

@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  gather_facts: false
+  connection: local
+  vars_files:
+    - "{{playbook_dir}}/global_variables.yml"
+    - "{{playbook_dir}}/vault_variables.yml"
+
+  roles:
+    - device_onboarding
+  

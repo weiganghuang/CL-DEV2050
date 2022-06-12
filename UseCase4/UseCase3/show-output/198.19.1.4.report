@@ -1,0 +1,29 @@
+show clock
+-----
+05:35:36.807 UTC Tue Jun 7 2022
+
+show platform
+-----
+Node              Type                       State             Config state
+--------------------------------------------------------------------------------
+0/0/CPU0          R-IOSXRV9000-LC-C          IOS XR RUN        NSHUT
+0/RP0/CPU0        R-IOSXRV9000-RP-C(Active)  IOS XR RUN        NSHUT
+
+show install active summary
+-----
+Label : 7.3.2
+
+    Active Packages: 13
+        xrv9k-xr-7.3.2 version=7.3.2 [Boot image]
+        xrv9k-isis-2.1.0.0-r732
+        xrv9k-eigrp-1.0.0.0-r732
+        xrv9k-mpls-2.1.0.0-r732
+        xrv9k-k9sec-3.2.0.0-r732
+        xrv9k-bng-1.0.0.0-r732
+        xrv9k-mcast-3.0.0.0-r732
+        xrv9k-li-x-1.1.0.0-r732
+        xrv9k-mpls-te-rsvp-3.1.0.0-r732
+        xrv9k-ospf-3.0.0.0-r732
+        xrv9k-mgbl-3.0.0.0-r732
+        xrv9k-m2m-2.0.0.0-r732
+        xrv9k-base-2.0.0.186-r732.CSCuv93809

@@ -1,0 +1,24 @@
+---
+- name: invoke attach device to CDG API to attached device (currently not attached to a CDG) to CDG
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: PUT
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/dg/devicemapping"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: "{{ lookup('template', 'attach_cdg.j2') }}"
+  register: attachCDGOutput
+  loop: "{{devices}}"
+  
+  
+
+  
+
+
+
+

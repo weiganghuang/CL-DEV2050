@@ -1,0 +1,19 @@
+{
+    "routers": {
+        "hosts": [
+{% for item in (device_info.content | from_json).data %}
+{% if loop.index != loop.length %}
+            "{{item.node_ip.inet_addr}}",
+{% else %}
+            "{{item.node_ip.inet_addr}}"
+{% endif %}
+{% endfor %}
+        ],
+        "vars": {
+            "ansible_network_os": "iosxr",
+            "ansible_port": 22,
+            "ansible_user": "{% raw %}{{ansible_user_var}}{% endraw %}",
+            "ansible_password": "{% raw %}{{ansible_pass_var}}{% endraw %}"
+        }
+    }
+}

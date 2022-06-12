@@ -1,0 +1,14 @@
+---
+
+dhcp:
+
+{% for item in result_loopback_10.results -%}
+{% if (item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'] is defined) and (loopback0_dict[item.output.data['tailf-ncs:devices'].device[0].name] is defined) %}
+  - datalinkIp: {{item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip}}
+    hostname: {{item.output.data['tailf-ncs:devices'].device[0].name}}
+    day1_params:
+      external_params:
+        loopback0_ipv4: {{ loopback0_dict[item.output.data['tailf-ncs:devices'].device[0].name] }}
+        loopback10_ipv4: {{item.output.data['tailf-ncs:devices'].device[0].config['tailf-ned-cisco-ios-xr:interface'].Loopback[0].ipv4.address.ip}}
+{% endif %}        
+{%- endfor %}

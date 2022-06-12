@@ -1,0 +1,13 @@
+
+- name: get JWT
+  import_tasks: "{{playbook_dir}}/common-tasks/jwt.yml"
+
+- name: import task to get all device node ip
+  import_tasks: "{{playbook_dir}}/common-tasks/get_all_devices_from_cnc.yml"
+  
+- name: create hosts json file
+  template:
+    src: "hosts-dy.j2"
+    dest: "hosts-dy.json"
+  
+

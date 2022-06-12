@@ -1,0 +1,30 @@
+---
+# tasks file for gather-show-cmd
+
+- name: Gather XR command list
+  cisco.iosxr.iosxr_command:
+    commands:
+      - show clock
+      - show platform
+      - show install active summary
+  register: cmd_output
+
+- debug:
+    msg: "{{item | replace('\\n', '\n')}}"
+  loop: "{{cmd_output.stdout}}"
+
+- name: save output to local directory
+  copy:
+    content: | 
+      show clock
+      -----
+      {{ cmd_output.stdout[0] | replace('\\n', '\n') }}
+
+      show platform
+      -----
+      {{ cmd_output.stdout[1] | replace('\\n', '\n') }}
+
+      show install active summary
+      -----
+      {{ cmd_output.stdout[2] | replace('\\n', '\n') }}
+    dest: "show-output/{{ inventory_hostname }}.report"

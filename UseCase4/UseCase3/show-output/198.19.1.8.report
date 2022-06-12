@@ -1,0 +1,17 @@
+show clock
+-----
+05:35:44.300 UTC Tue Jun 7 2022
+
+show platform
+-----
+Node		Type		PLIM		State		Config State
+-----------------------------------------------------------------------------
+0/0/CPU0        RP(Active)      N/A             IOS XR RUN      PWR,NSHUT,MON
+
+show install active summary
+-----
+Default Profile:
+  SDRs:
+    Owner
+  Active Packages:
+    disk0:xrvr-fullk9-x-6.6.3

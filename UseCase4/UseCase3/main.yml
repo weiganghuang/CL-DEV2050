@@ -1,0 +1,13 @@
+---
+
+
+- hosts: routers
+  vars_files: 
+    - "{{playbook_dir}}/global_variables.yml"
+    - "{{playbook_dir}}/vault_variables.yml"
+
+  gather_facts: no
+  connection: network_cli
+  roles:
+    - gather_show_cmd_output
+

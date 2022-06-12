@@ -1,0 +1,17 @@
+{
+    "data": [
+{% for item in devices %}
+{% if device_uuids[item.host_name] is defined %}
+        {
+            "uuid": "{{device_uuids[item.host_name]}}",
+            "admin_state": "ROBOT_ADMIN_STATE_UP"
+{% if loop.index == loop.length %}
+        }
+{% else %}
+        },
+{% endif %}
+{% endif %}
+{% endfor %}
+    ]            
+        
+}

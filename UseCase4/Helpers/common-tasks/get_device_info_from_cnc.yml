@@ -1,0 +1,50 @@
+---
+
+# pre-requsite: jwt.yml task 
+
+- name: get device info
+  uri:
+    validate_certs: no
+    status_code: [200, 201, 202]
+    method: POST
+    url: "https://{{cnc_ip}}:{{cnc_port}}/crosswork/inventory/v1/nodes/query"
+    return_content: yes
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Authorization: "Bearer {{ myJWT.content }}"
+    body_format: json
+    body: 
+      filter:
+        host_name: "{{item.host_name}}"
+  register: device_ids
+  loop: "{{devices}}"
+  when: (i>=0) and (i< upper_limit )
+  loop_control:
+    index_var: i
+
+- name: save device output
+  set_fact:
+      device_uuids: "{{device_uuids | default({}) | combine({item.json.data[0].host_name: item.json.data[0].uuid} )}}"
+      device_ips: "{{device_ips | default({}) | combine({item.json.data[0].host_name: item.json.data[0].node_ip.inet_addr} )}}"
+      device_ip_to_uuids: "{{device_ip_to_uuids | default({}) | combine({item.json.data[0].node_ip.inet_addr: item.json.data[0].uuid} )}}"
+  when: (item.json.data[0] is defined)
+  loop: "{{ device_ids.results }}"
+
+
+- name: display device uuid saved
+  debug:
+    var: device_uuids
+  tags: device_uuids
+
+- name: display device ip saved
+  debug:
+    var: device_ips
+  tags: device_ips
+
+- name: display device ip to uuids saved
+  debug:
+    var: device_ip_to_uuids
+  tags: device_ip_to_uuids
+  
+  
