@@ -8,6 +8,6 @@
 
   roles:
     - device_onboarding
+    - obtain_cdg_info
+    - attach_device_to_cdg
     - enable_gnmi
-    # - attach_device_to_cdg
-    #- obtain_cdg_info
